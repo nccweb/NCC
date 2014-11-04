@@ -1,0 +1,56 @@
+<script type="text/javascript">
+$(function(){
+	
+var searchWord='Sign up';
+var exists=$('li:contains('+searchWord+')').length;// see if element(s) exists that matches by checking length
+
+
+
+if( exists){
+	//alert('found sign up');
+	if( document.cookie.indexOf( "signUp" ) < 0 ) {
+    $( "#nccdialog" ).dialog({ 
+    title: "Sign up if you are a club member",
+    modal: true,
+	resizable: false,
+	width: 400,
+    hide: 'slide',
+	buttons: {
+                Ok: function() {
+                    document.cookie = 'signUp = true; expires = Fri, 31 Dec 9999 23:59:59 GMT; path = /';
+                    $( this ).dialog( "close" );
+                }
+            }   
+    });
+    }
+}
+})
+</script>
+
+<style media="screen" type="text/css">
+
+.dialogdiv{
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 90%;
+	color:#FDD017;
+	text-align:left;
+	background:#254117 !important;
+	border: 0.5px solid #dadada;
+	box-shadow: 0px 0px 16px #dadada;
+	padding:2px 2px 2px 2px;
+}
+
+}
+	.ui-dialog{
+		border: 0.5px solid #dadada;
+		-webkit-box-shadow: 3px 5px 11px 0px rgba(50, 50, 50, 0.95);
+		-moz-box-shadow: 3px 5px 11px 0px rgba(50, 50, 50, 0.95);
+		box-shadow:3px 5px 11px 0px rgba(50, 50, 50, 0.95);		
+}
+</style>
+ 
+
+<div id="nccdialog" class="dialogdiv">
+<p>If you are a member of Newbury Cricket Club, please <a onclick="openSignUpPopup(); return false;" href="#" style="color:#fff;">Sign Up</a> to use this website.</p>
+</div>
+

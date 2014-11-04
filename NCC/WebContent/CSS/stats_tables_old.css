@@ -1,0 +1,101 @@
+
+	.batting_widget tr.batting_statistics_header, /* the Batting and Team stats table have the same class name batting_statistics_header*/
+	.bowling_statistics_header
+	{
+        display: none;
+    }
+		
+	.batting_widget  tr td:first-child ,
+	.bowling_stats_widget tr td:first-child	
+	{
+		display: none;
+	}
+	
+    .batting_widget table,
+	.bowling_stats_widget table
+	{
+        border: none;
+        padding: 0;
+        line-height: 1.5rem;
+		margin-bottom: 0px;
+    }
+
+    .batting_widget,
+	.bowling_stats_widget	
+	{
+        overflow: hidden;
+        border:  1px solid rgb(221, 221, 221);
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        padding: 0.2rem 0.8rem;
+        border-radius: 4px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+		box-shadow: 0 5px 15px #808080;
+		background-color: #254117 !important;
+    }
+	
+    .batting_widget,
+    .batting_widget h3 ,
+	.bowling_stats_widget,
+	.bowling_stats_widget h3,
+	.team_stats_widget,
+	.team_stats_widget  h3
+	{
+        font-size: medium;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-weight: normal;
+        text-align: left !important;
+    }
+
+    .batting_widget h3,
+	.bowling_stats_widget h3,
+	.team_stats_widget  h3{
+        margin-bottom: 2px;
+		color:#FDD017;
+    }
+
+	.batting_widget td a,
+	.bowling_stats_widget td a,
+	.team_stats_widget td a{
+        color:#FDD017;
+    }
+  
+    .batting_widget td , 
+	.bowling_stats_widget  td,
+	.team_stats_widget  td	
+	{
+        border: none;
+        display: inline-block;
+        padding: 0 0.3rem 0 0;
+        /*background-color: white !important;*/
+		font-size: 12px;
+		background-color: #254117 !important;
+		color:#FDD017;
+		
+    }
+	
+		
+	.batting_widget td.moveRight,
+	.bowling_stats_widget td.moveCenter{
+        font-weight: bold;
+		color: #FFFFFF;
+    }
+	.batting_widget,
+    .bowling_stats_widget,
+    .team_stats_widget {
+        width: 250px !important;
+        height: 300px !important;
+        /*left: 15px !important;*/
+		background: none;
+    }
+	.team_stats_widget td{
+		padding: 0 0.3rem 0 0;
+        /*background-color: white !important;*/
+		font-size: 12px;
+		background-color: #254117 !important;
+		color:#FDD017;
+	}
+
+

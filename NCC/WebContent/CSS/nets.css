@@ -1,0 +1,156 @@
+
+body {
+	margin:0;
+	padding:0;
+	border:0;			/* This removes the border around the viewport in old versions of IE */
+	width:100%;
+	background:#fff;
+	min-width:600px;    	/* Minimum width of layout - remove line if not required */
+					/* The min-width property does not work in old versions of Internet Explorer */
+	font-size:90%;
+}
+
+a {
+	color:#369;
+}
+a:hover {
+	color:#fff;
+	background:#369;
+	text-decoration:none;
+}
+h1, h2, h3 {
+	margin:.8em 0 .8em 0;
+	padding:0;
+}
+p {
+	margin:.4em 0 .8em 0;
+	padding:0;
+}
+/* 'widths' sub menu */
+#layoutdims {
+	clear:both;
+	background:#eee;
+	border-top:4px solid #000;
+	margin:0;
+	padding:6px 15px !important;
+	text-align:right;
+}
+/* column container */
+.colmask {
+	position:relative;	/* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;		/* This chops off any overhanging divs */
+	border: 1px solid #dadada;
+   	box-shadow: 0px 0px 6px #254117;
+}
+/* common column settings */
+.colright,
+.colmid,
+.colleft {
+	float:left;
+	width:100%;
+	position:relative;
+}
+.col1,
+.col2,
+.col3 {
+	float:left;
+	position:relative;
+	padding:0 0 1em 0;
+	overflow:hidden;
+}
+/* 2 Column (left menu) settings */
+.leftmenu {
+	background:#fff;		/* right column background colour */
+}
+.leftmenu .colleft {
+	right:75%;			/* right column width */
+	background:#254117;	/* left column background colour */
+}
+.leftmenu .col1 {
+	width:71%;			/* right column content width */
+	left:102%;			/* 100% plus left column left padding */
+}
+.leftmenu .col2 {
+	width:21%;			/* left column content width (column width minus left and right padding) */
+	left:6%;			/* (right column left and right padding) plus (left column left padding) */
+	/*background:#254117;*/
+}
+/* Footer styles */
+#footer {
+	clear:both;
+	float:left;
+	width:100%;
+	border-top:1px solid #000;
+}
+#footer p {
+	padding:10px;
+	margin:0;
+}
+
+/*---my style------------------------------------------------------------------*/
+
+.h2gold{
+	text-align:center;
+    margin:.8em 0 .2em 0;
+    padding:0;     
+    color:#FDD017;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    line-height: inherit;
+}
+
+.h3green{
+	text-align:center;
+    margin:.8em 0 .2em 0;
+    padding:0;     
+    color:#254117;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    line-height: inherit;
+}
+
+/*--------for contact us positioning two images side by side in div-*/
+
+.main_block {width: 200px;height: 125px; position: relative;margin-left:auto; margin-right: auto; top:8px; z-index:1;}
+.main_block:before,.main_block:after { overflow:hidden; content:""; display:table; }
+.main_block:after { clear:both; }
+
+.inner_block {
+ display: inline-block;
+ float:left;
+	width:50%;
+	padding-top:3px;
+	padding-bottom:6px;
+}
+
+.inner_block img { width:100%; height:auto; vertical-align:middle; }
+
+/*------END-for contact us positioning two images side by side in div---*/
+
+div.img-container {
+     width: 200px;
+     height: auto;
+     position: relative;
+     margin-left: auto;
+     margin-right: auto;
+     overflow: hidden;
+ }
+
+img.cropped {
+    /*position: absolute;*/
+    margin: auto ;
+        top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display:block;
+    padding-top:8px;
+}
+
+    /*----this is for accordian pics---*/
+.page{margin: 0 auto;padding: 10px;}
+
+/*----this is for accordian pics end---*/
+
+/*--end of my style--*/

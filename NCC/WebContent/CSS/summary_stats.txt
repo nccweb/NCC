@@ -1,0 +1,91 @@
+
+       <style>
+    .stats_table h3,
+    .stats_table h4,
+    .stats_table form,
+    .stats_table h4,
+    .stats_table table thead,
+    .stats_table tr:not(:first-child),
+    .stats_table tr td:first-child
+    {
+        display: none;
+    }
+
+    .stats_table table {
+       border-left: 1px solid rgb(221, 221, 221);
+    }
+
+    .stats_table {
+        overflow: hidden;
+        max-width: 200px;
+    }
+    
+    .widget{
+        max-width: 205px !important;
+        max-height: 70px;
+        border: 1px solid rgb(221, 221, 221);
+       box-shadow: 0 5px 15px #808080;
+      
+    }
+    .stats_table table:before {
+        padding: 7px;
+        margin-top: 7px;
+    }
+    
+    
+    
+    .batting_widget table:before {
+        content: "Most runs - 2012";
+        color: #254117;
+    }
+    
+    
+    .batting_widget ~ .batting_widget table:before {
+            content: "Most runs - 2013";
+    }
+    
+      .batting_widget ~ .batting_widget ~ .batting_widget table:before {
+                content: "Most runs - 2014";
+    }
+
+    .bowling_stats_widget table:before {
+        content: "Most wickets - 2014";
+    }
+    
+    .bowling_stats_widget ~  .bowling_stats_widget table:before {
+            content: "Most wickets - 2013";
+    }
+    
+    .bowling_stats_widget ~  .bowling_stats_widget ~  .bowling_stats_widget table:before {
+                content: "Most wickets - 2012";
+    }
+    
+    
+    .fielding_stats_widget table:before {
+        content: "Most fielding wickets - 2014";
+    }
+    
+    .fielding_stats_widget ~ .fielding_stats_widget table:before {
+            content: "Most fielding wickets - 2013";
+    }
+    
+    .fielding_stats_widget ~ .fielding_stats_widget ~ .fielding_stats_widget table:before {
+            content: "Most fielding wickets - 2012";
+    }
+    
+    
+    // First team stats widget.
+    .team_stats_widget table:before {
+        content: "Most wins";
+    }
+    
+    // Second team stats widget.
+    .team_stats_widget ~ .team_stats_widget table:before {
+        content: "Most games played";
+    }
+    
+    // Third team stats widget.
+    .team_stats_widget ~ .team_stats_widget ~ .team_stats_widget table:before {
+        content: "Least games played";
+    }
+</style>

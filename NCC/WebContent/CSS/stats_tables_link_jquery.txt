@@ -1,0 +1,16 @@
+
+<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/21998060/nccweb/pages_css/Homepage_stats.css" /> 
+ <link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/21998060/nccweb/accordion/css/accordion.css" />
+ <link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/21998060/nccweb/pages_css/stats_tables.css" />
+
+<script>
+$(window).load(function(){ 
+    $(".table td:contains(' Newbury CC - Under 13 ')").html("Under 13");
+	$(".table td:contains(' Newbury CC - Under 11 ')").html("Under 11");
+	$(".table td:contains(' Newbury CC - Under 15 ')").html("Under 15");
+	$(".table td:contains(' Newbury CC - 1st XI ')").html("1st XI");
+	$(".table td:contains(' Newbury CC - 2nd XI ')").html("2nd XI");
+	$(".table td:contains(' Newbury CC - 3rd XI ')").html("3rd XI");
+ 
+});
+</script>
