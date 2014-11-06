@@ -1,0 +1,22 @@
+https://dl.dropboxusercontent.com/u/21998060/nccweb/background/jquery/vegas/jquery.vegas.js
+https://dl.dropboxusercontent.com/u/21998060/nccweb/background/css/vegas/jquery.vegas.css
+
+
+<script type="text/javascript" src="https://dl.dropboxusercontent.com/u/21998060/nccweb/background/jquery/vegas/jquery.vegas.js">
+</script>
+
+<link rel="stylesheet" type="text/css" href="https://dl.dropboxusercontent.com/u/21998060/nccweb/background/css/vegas/jquery.vegas.css" />
+  
+<script type="text/javascript">
+  $(function() {
+  $.vegas({
+    src:'https://dl.dropboxusercontent.com/u/21998060/nccweb/background/backgrounds/melbourne-cricket-stadium-jpg-305160.jpg'
+	
+  });
+  $.vegas('overlay', {
+    src:'https://dl.dropboxusercontent.com/u/21998060/nccweb/background/images/overlays/04.png',
+	  valign:'20%', // top, center, bottom or %
+	align:'right' // left, center, right or %
+  });
+});
+</script>

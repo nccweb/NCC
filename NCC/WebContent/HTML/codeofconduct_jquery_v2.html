@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Untitled 1</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<style media="screen" type="text/css">
+#instructions{padding: 10px 0; background:yellow; color:brown;}
+#employee-info-div{
+    width:40%; 
+    float:right; 
+    padding:5px; 
+    background:wheat; 
+    color:blue;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<input type="checkbox" id="employee-id" name="employeeId" onmouseover="produceDialog()"/>
+<div id="employee-info-div"></div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    function produceDialog(){
+        $("#employee-info-div").dialog({
+            open : function ( event, ui ) {
+            $(".ui-dialog-titlebar-close").hide();
+        },
+        dialogClass : 'fixed-dialog',
+        resizable : false,
+        height : 150,
+        width : 250,
+        modal : false,
+        create : function ( event ) {
+
+            $(event.target).parent().css('position', 'fixed');
+        },
+        });
+    }
+    
+    $("#employee-id").hover(function(){
+        produceDialog();
+});
+});
+ 
+ </script>
+
+
+</body>
+
+</html>

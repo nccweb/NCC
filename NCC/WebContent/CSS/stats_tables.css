@@ -1,4 +1,4 @@
-﻿	.batting_widget,
+	.batting_widget,
 	.bowling_stats_widget,
 	.fixtures_widget,
 	.team_stats_widget{
@@ -167,4 +167,7 @@
 
 	.bowling_stats_widget,
 	.batting_widget,
+	.team_stats_widget,
 	.fixtures_widget{position:absolute;z-index:100;}
+	
+	

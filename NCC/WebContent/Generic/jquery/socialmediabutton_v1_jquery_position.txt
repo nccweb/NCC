@@ -1,0 +1,42 @@
+  <style>
+        .share-button {position: absolute; z-index: 2003; }
+  </style>
+
+ <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:700&text=new+Share(".share-button");' rel='stylesheet' type='text/css'>
+
+  <div class='share-button'></div>
+  
+  <script src='https://dl.dropboxusercontent.com/u/21998060/nccweb/SocialMediaShareButton/share.min.js'></script>
+  <script>
+	config = {
+		
+		ui: {
+			flyout:'bottom center',
+            // change the flyout direction of the shares. chose from `top left`, `top center`, `top right`, `bottom left`, `bottom right`, `bottom center`, `middle left`, or `middle right` [Default: `top center`]
+			
+		},
+	    networks: {
+			pinterest: {
+				enabled: false
+			}
+		}
+	}
+   
+    var share = new Share(".share-button",config);
+
+    
+  </script>
+  
+  <script type="text/javascript">
+	$(function(){
+		$(".share-button").position({
+		my:        "right center",
+		at:        "center center",
+		of:        $(".navbar-inner"),
+		collision: "fit none"
+	})
+
+
+});
+</script>
+  

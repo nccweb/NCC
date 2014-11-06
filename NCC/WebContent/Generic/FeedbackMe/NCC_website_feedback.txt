@@ -1,0 +1,26 @@
+
+
+<script src="https://dl.dropboxusercontent.com/u/21998060/nccweb/FeedbackMe/jquery.feedback_me.js"></script>
+<link href="https://dl.dropboxusercontent.com/u/21998060/nccweb/FeedbackMe/jquery.feedback_me.css" rel="stylesheet" type="text/css" />
+
+
+
+<script type="text/javascript">
+   $(document).ready(function () {
+    //set up some minimal options for the feedback_me plugin
+    fm_options = {
+        show_form : false,
+        position : "right-top",
+		title_label: "Website feedback",
+		trigger_label: "Feedback",
+        iframe_url : "https://docs.google.com/forms/d/17EdQeIpSYm-btUJPDceHrJnRyXHshukmA2ccGxl-vr0/viewform?embedded=true"
+    };
+ 
+    //init feedback_me plugin
+    fm.init(fm_options);
+ 
+});
+</script>
+
+	
+	

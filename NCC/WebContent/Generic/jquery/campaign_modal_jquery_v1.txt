@@ -1,0 +1,84 @@
+<script type="text/javascript">
+  
+  $(function() {
+  if( document.cookie.indexOf( "ncc_campaign" ) < 0 ) {
+    $( "#ncccampaigndialog" ).dialog({
+	dialogClass: 'titleStuff',
+	closeOnEscape: false,	
+    title: "Donation for ground equipment",
+    modal: true,
+	resizable: true,
+	width: 450,
+    hide: 'slide',
+	open: function(event, ui){
+            $('<a />', {
+                class: 'emailButton track',
+                text: 'Contribute now',
+                href: 'https://www.findmeagrant.org/wberks/payment/paymentform.aspx?appid=84b63fda-6e44-4190-ae2d-8377460224f1',
+				target: '_blank'
+            })
+            .appendTo($(".ui-dialog-buttonpane"))
+            .click(function(){
+				document.cookie = 'ncc_campaign = true; expires = Fri, 31 Dec 9999 23:59:59 GMT; path = /';
+                $(event.target).dialog('close');
+            });
+    },
+	buttons: {
+                Later: function() {
+                    $( this ).dialog( "close" );
+                }
+            }  
+   
+    });
+    } 
+    
+  }  
+  );
+  </script>
+
+<style media="screen" type="text/css">
+
+.campaigndialogdiv{
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 12px;
+	color:#FDD017;
+	text-align:left;
+	background:#254117 !important;
+	border: 0.5px solid #dadada;
+	box-shadow: 0px 0px 16px #dadada;
+	padding:2px 2px 2px 2px;
+}
+
+}
+	.ui-dialog{
+		border: 0.5px solid #dadada;
+		-webkit-box-shadow: 3px 5px 11px 0px rgba(50, 50, 50, 0.95);
+		-moz-box-shadow: 3px 5px 11px 0px rgba(50, 50, 50, 0.95);
+		box-shadow:3px 5px 11px 0px rgba(50, 50, 50, 0.95);		
+}
+
+.titleStuff .ui-dialog{
+		border: 0.5px solid #dadada;
+		-webkit-box-shadow: 3px 5px 11px 0px rgba(50, 50, 50, 0.95);
+		-moz-box-shadow: 3px 5px 11px 0px rgba(50, 50, 50, 0.95);
+		box-shadow:3px 5px 11px 0px rgba(50, 50, 50, 0.95);		
+}
+.titleStuff .ui-dialog-titlebar{
+	background:#254117 !important;
+}
+.titleStuff .ui-dialog-titlebar .ui-dialog-title{
+	color:#FDD017;
+}
+.titleStuff .ui-dialog-titlebar-close{
+	display: none;
+}
+</style>
+ 
+
+<div id="ncccampaigndialog" class="campaigndialogdiv">
+
+<p>Newbury CC is seeking to raise £2,350 towards replacement or refurbishment of essential grounds equipment to continue to provide excellent sporting facilities for local people including community groups and children.</p>
+<p>Any donation that you make will be supplemented with the same amount by Greenham Common Trust and GiftAid will be added. As an example, a £10 donation will become £22.50 (£10 Greenham Trust topup + £2.50 GiftAid).</p> 
+<p>So please donate generously to keep your favourite cricket club in top shape.</p>
+
+</div>

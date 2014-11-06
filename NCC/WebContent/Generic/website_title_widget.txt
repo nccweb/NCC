@@ -1,0 +1,101 @@
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="shortcut icon" href="https://dl.dropboxusercontent.com/u/21998060/nccweb/images/favicon.ico" type="image/x-icon" />
+
+<style>
+    .navbar .nav li.dropdown>.dropdown-toggle .caret {
+	border-top-color: #FDD017;}
+    #site_nav li:hover ul {
+    	display: block;
+    	position: absolute;
+    	margin: 0;
+    	padding: 0; 
+    	}
+    #site_nav li:hover li {
+    	float: none; }
+    	
+    #site_nav li:hover li a {
+	background-color: #254117;
+
+
+box-shadow: 5px 5px 5px #888888;
+	color: #FDD017;}
+    
+    #site_nav li li a:hover {
+    	color: #fff;
+    	background: #254117 !important;
+    }
+</style>
+
+<!--Share button-->
+
+<style>
+        .share-button {position: absolute; z-index: 2003; }
+  </style>
+
+ <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:700&text=new+Share(".share-button");' rel='stylesheet' type='text/css'>
+
+  <div class='share-button'></div>
+  
+  <script src='https://dl.dropboxusercontent.com/u/21998060/nccweb/SocialMediaShareButton/share.min.js'></script>
+  <script>
+	config = {
+		
+		ui: {
+			flyout:'bottom center',
+            /* change the flyout direction of the shares. chose from `top left`, `top center`, `top right`, `bottom left`, `bottom right`, `bottom center`, `middle left`, or `middle right` [Default: `top center`]*/
+			
+		},
+	    networks: {
+			pinterest: {
+				enabled: false
+			}
+		}
+	}
+   
+    var share = new Share(".share-button",config);
+
+    
+  </script>
+
+ <!--Position of the share button--> 
+  <script type="text/javascript">
+	$(function(){
+		$(".share-button").position({
+		my:        "right center",
+		at:        "center center",
+		of:        $(".navbar-static-top"),
+		collision: "fit none"
+	})
+
+
+});
+</script>
+
+
+<!--end of share button-->
+
+<!--Feedback form--->
+<script src="https://dl.dropboxusercontent.com/u/21998060/nccweb/FeedbackMe/jquery.feedback_me.js"></script>
+ <link href="https://dl.dropboxusercontent.com/u/21998060/nccweb/FeedbackMe/jquery.feedback_me.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+   $(document).ready(function () {
+    //set up some minimal options for the feedback_me plugin
+    fm_options = {
+        show_form : false,
+        position : "right-top",
+		title_label: "Website feedback",
+		trigger_label: "Feedback",
+        iframe_url : "https://docs.google.com/forms/d/17EdQeIpSYm-btUJPDceHrJnRyXHshukmA2ccGxl-vr0/viewform?embedded=true"
+    };
+ 
+    //init feedback_me plugin
+    fm.init(fm_options);
+ 
+});
+</script>
+
+<!--end of feedback form -->
+
