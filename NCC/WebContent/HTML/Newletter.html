@@ -7,7 +7,7 @@
 <meta name="generator" content="Bootply" />
 <!-- <meta name="viewport"
 	content="width=device-width, initial-scale=1, maximum-scale=1"> -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0; user-scalable=0;">
 
 
 
@@ -45,7 +45,17 @@
 <link
 	href="https://dl.dropboxusercontent.com/u/21998060/nccweb/libraries/bootstrap_media_lightbox/bootstrap-media-lightbox.css"
 	rel="stylesheet">
-
+	
+<style media="screen" type="text/css">
+@media screen and (max-width: 360px) and (-webkit-device-pixel-ratio: 2){
+    td{
+        font-size: 73%;
+    }
+    th{
+        font-size: 70%;
+    }
+}
+</style>
 </head>
 <body>
 
@@ -54,28 +64,34 @@
 	<header class="masthead">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-10 pull-right">
-					<h1>Stag News</h1>
-					<p class="lead">The newsletter of Newbury Cricket Club.</p>
+				<div class="col-xs-9 col-md-9 pull-right">
+				
+					<h1 style="margin-top:5px;">Stag News</h1>
+					<h3 style="margin-top:5px;">The newsletter of Newbury Cricket Club.</h3>
 					<p class="lead label label-default">Issue 35, December 2013</p>
+					<hr>
+					<p class="lead">
+					<a href="https://twitter.com/newburycc" class="twitter-follow-button" data-show-count="false">Follow @newburycc</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+		'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+					</p>
 					
 				</div>
-				<div class="col-md-2">
-					<div>
+				<div class="col-xs-3 col-md-3">
+
+					
 						<a title="To homepage" href="http://newbury.play-cricket.com">
 							<img
 								src="https://dl.dropboxusercontent.com/u/21998060/nccweb/newsletter/images/NCC_Logo_CL_Web_80x113.png"
-								class="img-responsive">
+								class="img-responsive center-block">
 						</a>
-							
-					</div>
+				
 				</div>
 			</div>
 		</div>
 	</header>
 	
-	
-	
+
+
 
 	<!-- Begin Body -->
 	<div class="container">
@@ -484,9 +500,9 @@
 						<div class="row">
 							<div class="col-md-6">
 								<a class="lightbox"
-									href="https://dl.dropboxusercontent.com/u/21998060/images/charlie/cricket%2006sep2014%20005_edit.jpg"
+									href="https://dl.dropboxusercontent.com/u/21998060/images/charlie/cricket%2006sep2014%20005.JPG"
 									title="Ist XI 2014"> <img
-									src="https://dl.dropboxusercontent.com/u/21998060/images/charlie/cricket%2006sep2014%20005_edit.jpg"
+									src="https://dl.dropboxusercontent.com/u/21998060/images/charlie/cricket%2006sep2014%20005.JPG"
 									class="img-thumbnail img-responsive" />
 								</a>
 							</div>
@@ -785,85 +801,57 @@
 									</ul>
 									<div id="myTabContent" class="tab-content">
 										<div class="tab-pane fade active in" id="1stBatting">
-											<p>1st XI batting stats</p>
+											<p>1st XI batting stats....</p>
 											<table
-												class="table table-condensed table-responsive table-hover table-bordered">
+												class="table table-condensed table-responsive table-hover table-striped table-bordered">
 												<thead>
 													<tr>
-														<th class="col-sm-5">#</th>
+														<th class="col-sm-1">#</th>
+														<th class="col-sm-5">Player</th>
 														<th class="col-sm-2">Innings</th>
-														<th class="col-sm-2">HS</th>
 														<th class="col-sm-1">Runs</th>
+														<th class="col-sm-1">HS</th>
 														<th class="col-sm-2">Average</th>
 													</tr>
 												</thead>
-												<tbody>
-													<tr>
-														<td>Rajeev Hanabe</td>
-														<td>10</td>
-														<td>140</td>
-														<td>300</td>
-														<td>40</td>
-													</tr>
-													<tr>
-														<td>Mr. B</td>
-														<td>20</td>
-														<td>80</td>
-														<td>200</td>
-														<td>23</td>
-													</tr>
-												</tbody>
+												<!-- Taken from the widget on the website -->
+												<tbody><tr><td>1</td><td><a href="/website/player_stats_widget/batting_stats/1873037?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Amalka Naimanage</a></td><td>13</td><td>251</td><td><a href="/website/results/2189273" target="_blank">68</a></td><td>20.92</td></tr><tr><td>2</td><td><a href="/website/player_stats_widget/batting_stats/302238?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Neil Farrow</a></td><td>8</td><td>248</td><td><a href="/website/results/2189253" target="_blank">77*</a></td><td>35.43</td></tr><tr><td>3</td><td><a href="/website/player_stats_widget/batting_stats/1919034?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Andrew Douglas</a></td><td>10</td><td>226</td><td><a href="/website/results/2189231" target="_blank">41</a></td><td>25.11</td></tr><tr><td>4</td><td><a href="/website/player_stats_widget/batting_stats/57028?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Ed Uden</a></td><td>15</td><td>218</td><td><a href="/website/results/2189274" target="_blank">33</a></td><td>14.53</td></tr><tr><td>5</td><td><a href="/website/player_stats_widget/batting_stats/18541?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Charlie Anstey</a></td><td>16</td><td>198</td><td><a href="/website/results/2189229" target="_blank">52</a></td><td>12.38</td></tr><tr><td>6</td><td><a href="/website/player_stats_widget/batting_stats/453244?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Suryaprakash Sastry</a></td><td>9</td><td>188</td><td><a href="/website/results/2189266" target="_blank">52</a></td><td>20.89</td></tr><tr><td>7</td><td><a href="/website/player_stats_widget/batting_stats/18552?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Rajeev Hanabe</a></td><td>11</td><td>129</td><td><a href="/website/results/2189260" target="_blank">33</a></td><td>18.43</td></tr><tr><td>8</td><td><a href="/website/player_stats_widget/batting_stats/18538?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Kevin Mills</a></td><td>11</td><td>96</td><td><a href="/website/results/2189273" target="_blank">22</a></td><td>8.73</td></tr><tr><td>9</td><td><a href="/website/player_stats_widget/batting_stats/2615295?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Mike Beaumont</a></td><td>7</td><td>85</td><td><a href="/website/results/2189228" target="_blank">52</a></td><td>12.14</td></tr><tr><td>10</td><td><a href="/website/player_stats_widget/batting_stats/515278?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Luke Gregory</a></td><td>8</td><td>76</td><td><a href="/website/results/2189229" target="_blank">25</a></td><td>10.86</td></tr></tbody>
 											</table>
 										</div>
 										<div class="tab-pane fade" id="1stXIbowling">
 											<p>1st XI bowling stats.</p>
 											<table
-												class="table table-condensed table-responsive table-hover table-bordered">
+												class="table table-condensed table-responsive table-hover table-striped table-bordered">
 												<thead>
 													<tr>
-														<th class="col-sm-5">#</th>
-														<th class="col-sm-1">Overs</th>
-														<th class="col-sm-2">Maidens</th>
-														<th class="col-sm-1">Runs</th>
-														<th class="col-sm-2">Wickets</th>
-														<th class="col-sm-1">Average</th>
+														<th class="col-sm-1 text-center">#</th>
+														<th class="col-sm-5 text-center">Player</th>
+														<th class="col-sm-1 text-center">Overs</th>
+														<th class="col-sm-1 text-center">Maidens</th>
+														<th class="col-sm-1 text-center">Runs</th>
+														<th class="col-sm-2 text-center">Wickets</th>
+														<th class="col-sm-1 text-center">Average</th>
 													</tr>
 												</thead>
-												<tbody>
-													<tr>
-														<td>Mr A</td>
-														<td>10</td>
-														<td>1</td>
-														<td>300</td>
-														<td>4</td>
-														<td>12.2</td>
-													</tr>
-													<tr>
-														<td>Mr. B</td>
-														<td>30</td>
-														<td>1</td>
-														<td>340</td>
-														<td>6</td>
-														<td>13.2</td>
-													</tr>
-												</tbody>
+												<tbody><tr><td>1</td><td><a href="/website/player_stats_widget/bowling_stats/18541?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Charlie Anstey</a></td><td class="text-center">182.2</td><td class="text-center">34</td><td class="text-center">604</td><td class="text-center">46</td><td class="text-center">13.13</td></tr><tr><td>2</td><td><a href="/website/player_stats_widget/bowling_stats/18538?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Kevin Mills</a></td><td class="text-center">206.1</td><td class="text-center">51</td><td class="text-center">583</td><td class="text-center">43</td><td class="text-center">13.56</td></tr><tr><td>3</td><td><a href="/website/player_stats_widget/bowling_stats/18552?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Rajeev Hanabe</a></td><td class="text-center">104.1</td><td class="text-center">20</td><td class="text-center">345</td><td class="text-center">21</td><td class="text-center">16.43</td></tr><tr><td>4</td><td><a href="/website/player_stats_widget/bowling_stats/1873034?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Arun Sinha</a></td><td class="text-center">53.0</td><td class="text-center">9</td><td class="text-center">176</td><td class="text-center">13</td><td class="text-center">13.54</td></tr><tr><td>5</td><td><a href="/website/player_stats_widget/bowling_stats/984361?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Matt Corne</a></td><td class="text-center">24.0</td><td class="text-center">4</td><td class="text-center">116</td><td class="text-center">6</td><td class="text-center">19.33</td></tr></tbody>
 											</table>
 										</div>
 
 										<div class="tab-pane fade" id="2ndXIBatting">
-											<p>2nd XI batting.</p>
+											<p>2nd XI batting...</p>
 											<table
-												class="table table-condensed table-responsive table-hover table-bordered">
+												class="table table-condensed table-responsive table-hover table-striped table-bordered">
 												<thead>
 													<tr>
-														<th class="col-sm-5">#</th>
+														<th class="col-sm-1">#</th>
+														<th class="col-sm-5">Player</th>
 														<th class="col-sm-2">Innings</th>
-														<th class="col-sm-2">HS</th>
 														<th class="col-sm-1">Runs</th>
+														<th class="col-sm-1">HS</th>
 														<th class="col-sm-2">Average</th>
 													</tr>
 												</thead>
-												<tbody>
+												<!-- <tbody>
 													<tr>
 														<td>Mr A</td>
 														<td>10</td>
@@ -878,7 +866,9 @@
 														<td>200</td>
 														<td>23</td>
 													</tr>
-												</tbody>
+												</tbody> -->
+												<!-- Taken from the widget on the website -->
+												<tbody><tr><td>1</td><td><a href="/website/player_stats_widget/batting_stats/18547?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> John O'Sullivan</a></td><td>10</td><td>292</td><td><a href="/website/results/2189966" target="_blank">84*</a></td><td>36.5</td></tr><tr><td>2</td><td><a href="/website/player_stats_widget/batting_stats/797895?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Paul Mason</a></td><td>5</td><td>204</td><td><a href="/website/results/2189966" target="_blank">99</a></td><td>40.8</td></tr><tr><td>3</td><td><a href="/website/player_stats_widget/batting_stats/643824?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Brad Alton</a></td><td>10</td><td>174</td><td><a href="/website/results/2189953" target="_blank">83</a></td><td>24.86</td></tr><tr><td>4</td><td><a href="/website/player_stats_widget/batting_stats/18539?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Paul Monger</a></td><td>6</td><td>124</td><td><a href="/website/results/2189953" target="_blank">53</a></td><td>31.0</td></tr><tr><td>5</td><td><a href="/website/player_stats_widget/batting_stats/1786003?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Sat Pal</a></td><td>4</td><td>111</td><td><a href="/website/results/2189987" target="_blank">48</a></td><td>27.75</td></tr><tr><td>6</td><td><a href="/website/player_stats_widget/batting_stats/515269?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Simon Digweed</a></td><td>4</td><td>104</td><td><a href="/website/results/2190000" target="_blank">51</a></td><td>26.0</td></tr><tr><td>7</td><td><a href="/website/player_stats_widget/batting_stats/42459?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Martin Walker</a></td><td>8</td><td>84</td><td><a href="/website/results/2189966" target="_blank">15</a></td><td>10.5</td></tr><tr><td>8</td><td><a href="/website/player_stats_widget/batting_stats/42461?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> John Duncan</a></td><td>4</td><td>70</td><td><a href="/website/results/2189981" target="_blank">35</a></td><td>23.33</td></tr><tr><td>9</td><td><a href="/website/player_stats_widget/batting_stats/42460?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Austin Keep</a></td><td>6</td><td>51</td><td><a href="/website/results/2189981" target="_blank">23</a></td><td>10.2</td></tr><tr><td>10</td><td><a href="/website/player_stats_widget/batting_stats/1098727?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Nick Fitzwilliam</a></td><td>3</td><td>50</td><td><a href="/website/results/2189974" target="_blank">32</a></td><td>16.67</td></tr></tbody>
 											</table>
 										</div>
 
@@ -887,53 +877,38 @@
 										<div class="tab-pane fade" id="2ndXIbowling">
 											<p>2nd XI bowling.</p>
 											<table
-												class="table table-condensed table-responsive table-hover table-bordered">
+												class="table table-condensed table-responsive table-hover table-striped table-bordered">
 												<thead>
 													<tr>
-														<th class="col-sm-5">#</th>
-														<th class="col-sm-1">Overs</th>
-														<th class="col-sm-2">Maidens</th>
-														<th class="col-sm-1">Runs</th>
-														<th class="col-sm-2">Wickets</th>
-														<th class="col-sm-1">Average</th>
+														<th class="col-sm-1 text-center">#</th>
+														<th class="col-sm-5 text-center">Player</th>
+														<th class="col-sm-1 text-center">Overs</th>
+														<th class="col-sm-1 text-center">Maidens</th>
+														<th class="col-sm-1 text-center">Runs</th>
+														<th class="col-sm-2 text-center">Wickets</th>
+														<th class="col-sm-1 text-center">Average</th>
 													</tr>
 												</thead>
-												<tbody>
-													<tr>
-														<td>Mr A</td>
-														<td>10</td>
-														<td>1</td>
-														<td>300</td>
-														<td>4</td>
-														<td>12.2</td>
-													</tr>
-													<tr>
-														<td>Mr. B</td>
-														<td>30</td>
-														<td>1</td>
-														<td>340</td>
-														<td>6</td>
-														<td>13.2</td>
-													</tr>
-												</tbody>
+												<tbody><tr><td>1</td><td><a href="/website/player_stats_widget/bowling_stats/1786003?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Sat Pal</a></td><td class="text-center">79.4</td><td class="text-center">14</td><td class="text-center">246</td><td class="text-center">19</td><td class="text-center">12.95</td></tr><tr><td>2</td><td><a href="/website/player_stats_widget/bowling_stats/42459?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Martin Walker</a></td><td class="text-center">99.1</td><td class="text-center">18</td><td class="text-center">262</td><td class="text-center">19</td><td class="text-center">13.79</td></tr><tr><td>3</td><td><a href="/website/player_stats_widget/bowling_stats/42461?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> John Duncan</a></td><td class="text-center">23.5</td><td class="text-center">3</td><td class="text-center">97</td><td class="text-center">9</td><td class="text-center">10.78</td></tr><tr><td>4</td><td><a href="/website/player_stats_widget/bowling_stats/1919024?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Sandesh Gala</a></td><td class="text-center">45.3</td><td class="text-center">4</td><td class="text-center">188</td><td class="text-center">9</td><td class="text-center">20.89</td></tr><tr><td>5</td><td><a href="/website/player_stats_widget/bowling_stats/665896?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Will Seath</a></td><td class="text-center">52.0</td><td class="text-center">5</td><td class="text-center">153</td><td class="text-center">9</td><td class="text-center">17.0</td></tr><tr><td>6</td><td><a href="/website/player_stats_widget/bowling_stats/1932810?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Russell Bartlett</a></td><td class="text-center">53.2</td><td class="text-center">4</td><td class="text-center">221</td><td class="text-center">9</td><td class="text-center">24.56</td></tr><tr><td>7</td><td><a href="/website/player_stats_widget/bowling_stats/2681037?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Ahmed Khan</a></td><td class="text-center">32.0</td><td class="text-center">3</td><td class="text-center">83</td><td class="text-center">5</td><td class="text-center">16.6</td></tr></tbody>
 											</table>
 										</div>
 										<!--  -->
 
 										<div class="tab-pane fade" id="3rdXIBatting">
-											<p>3rd XI batting</p>
+											<p>3rd XI batting...</p>
 											<table
-												class="table table-condensed table-responsive table-hover table-bordered">
+												class="table table-condensed table-responsive table-hover table-striped table-bordered">
 												<thead>
 													<tr>
-														<th class="col-sm-5">#</th>
+														<th class="col-sm-1">#</th>
+														<th class="col-sm-5">Player</th>
 														<th class="col-sm-2">Innings</th>
-														<th class="col-sm-2">HS</th>
 														<th class="col-sm-1">Runs</th>
+														<th class="col-sm-1">HS</th>
 														<th class="col-sm-2">Average</th>
 													</tr>
 												</thead>
-												<tbody>
+												<!-- <tbody>
 													<tr>
 														<td>Mr A</td>
 														<td>10</td>
@@ -948,46 +923,30 @@
 														<td>200</td>
 														<td>23</td>
 													</tr>
-												</tbody>
+												</tbody> -->
+												<!-- Taken from the widget on the website -->
+												<tbody><tr><td>1</td><td><a href="/website/player_stats_widget/batting_stats/1024201?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Matt Comber</a></td><td>10</td><td>105</td><td><a href="/website/results/2190115" target="_blank">52*</a></td><td>11.67</td></tr><tr><td>2</td><td><a href="/website/player_stats_widget/batting_stats/1633872?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Ben Robinson</a></td><td>9</td><td>87</td><td><a href="/website/results/2190145" target="_blank">24</a></td><td>9.67</td></tr><tr><td>3</td><td><a href="/website/player_stats_widget/batting_stats/679192?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Michael Seath</a></td><td>10</td><td>77</td><td><a href="/website/results/2190173" target="_blank">24</a></td><td>7.7</td></tr><tr><td>4</td><td><a href="/website/player_stats_widget/batting_stats/1919026?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Sam Gaskin</a></td><td>4</td><td>72</td><td><a href="/website/results/2190115" target="_blank">33*</a></td><td>24.0</td></tr><tr><td>5</td><td><a href="/website/player_stats_widget/batting_stats/638438?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Joel Gregory</a></td><td>4</td><td>59</td><td><a href="/website/results/2190145" target="_blank">31</a></td><td>14.75</td></tr><tr><td>6</td><td><a href="/website/player_stats_widget/batting_stats/665896?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Will Seath</a></td><td>3</td><td>41</td><td><a href="/website/results/2190121" target="_blank">29</a></td><td>13.67</td></tr><tr><td>7</td><td><a href="/website/player_stats_widget/batting_stats/42462?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> David Chapman</a></td><td>6</td><td>40</td><td><a href="/website/results/2190121" target="_blank">18</a></td><td>8.0</td></tr><tr><td>8</td><td><a href="/website/player_stats_widget/batting_stats/1024207?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Matt Manners</a></td><td>6</td><td>28</td><td><a href="/website/results/2190128" target="_blank">14</a></td><td>4.67</td></tr><tr><td>9</td><td><a href="/website/player_stats_widget/batting_stats/1326584?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Robin Bartlett</a></td><td>3</td><td>23</td><td><a href="/website/results/2190129" target="_blank">10</a></td><td>7.67</td></tr><tr><td>10</td><td><a href="/website/player_stats_widget/batting_stats/700480?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Matt Smith</a></td><td>7</td><td>18</td><td><a href="/website/results/2190173" target="_blank">7*</a></td><td>4.5</td></tr></tbody>
 											</table>
 										</div>
 										<!--  -->
 
 										<div class="tab-pane fade" id="3rdXIbowling">
 											<p>3rd XI bowling</p>
-										<table
-												class="table table-responsive table-hover table-bordered">
+											<table
+												class="table table-condensed table-responsive table-hover table-striped table-bordered">
 												<thead>
 													<tr>
-														<th class="col-sm-5">#</th>
-														<th class="col-sm-1">Overs</th>
-														<th class="col-sm-2">Maidens</th>
-														<th class="col-sm-1">Runs</th>
-														<th class="col-sm-2">Wickets</th>
-														<th class="col-sm-1">Average</th>
+														<th class="col-sm-1 text-center">#</th>
+														<th class="col-sm-5 text-center">Player</th>
+														<th class="col-sm-1 text-center">Overs</th>
+														<th class="col-sm-1 text-center">Maidens</th>
+														<th class="col-sm-1 text-center">Runs</th>
+														<th class="col-sm-2 text-center">Wickets</th>
+														<th class="col-sm-1 text-center">Average</th>
 													</tr>
 												</thead>
-												<tbody>
-													<tr>
-														<td>Rajeev Hanabe</td>
-														<td>10</td>
-														<td>1</td>
-														<td>300</td>
-														<td>4</td>
-														<td>12.2</td>
-													</tr>
-													<tr>
-														<td>Mr. B</td>
-														<td>30</td>
-														<td>1</td>
-														<td>340</td>
-														<td>6</td>
-														<td>13.2</td>
-													</tr>
-												</tbody>
+												<tbody><tr><td>1</td><td><a href="/website/player_stats_widget/bowling_stats/679192?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Michael Seath</a></td><td class="text-center">112.2</td><td class="text-center">18</td><td class="text-center">342</td><td class="text-center">23</td><td class="text-center">14.87</td></tr><tr><td>2</td><td><a href="/website/player_stats_widget/bowling_stats/700480?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Matt Smith</a></td><td class="text-center">48.0</td><td class="text-center">2</td><td class="text-center">228</td><td class="text-center">12</td><td class="text-center">19.0</td></tr><tr><td>3</td><td><a href="/website/player_stats_widget/bowling_stats/1765166?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> M Cullum</a></td><td class="text-center">44.5</td><td class="text-center">11</td><td class="text-center">189</td><td class="text-center">10</td><td class="text-center">18.9</td></tr><tr><td>4</td><td><a href="/website/player_stats_widget/bowling_stats/1919020?rule_type_id=179" target="_blank"><span class="glyphicon glyphicon-user"></span> Will Davis</a></td><td class="text-center">28.2</td><td class="text-center">1</td><td class="text-center">113</td><td class="text-center">8</td><td class="text-center">14.13</td></tr></tbody>
 											</table>
-											
-
 										</div>
 
 
@@ -1122,7 +1081,8 @@
 		$( window ).load(function() {
 		$(".subnav").hide(); 
 		$(".navbar").hide();
-		$('.footer').hide();	
+		$('.footer').hide();
+		$('#progress').hide();
 	});	
 	</script>
 
