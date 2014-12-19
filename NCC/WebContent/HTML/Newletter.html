@@ -39,6 +39,92 @@
 	href="https://dl.dropboxusercontent.com/u/21998060/nccweb/libraries/bootstrap_media_lightbox/bootstrap-media-lightbox.css"
 	rel="stylesheet">
 
+<!-- Google Analytics -->
+     
+<!-- 
+ add all of this in a html widget FOR EACH PAGE
+ CHANGE THE TITLE AS PER THE PAGE
+-->
+
+ <!-- Google Analytics -->
+<script>
+$(document).prop('title', 'Newbury CC - Stag News 2014');
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-55063786-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+<!-- Function to track URL clicks Google Analytics -->
+<!-- https://support.google.com/analytics/answer/1136920?hl=en -->
+
+<script>
+<!--
+ Function that tracks a click on an outbound link in Google Analytics.
+ This function takes a valid URL string as an argument, and uses that URL string
+ as the event label.
+
+ Track clicks to a link. If new_window is true the google analytics request
+ will be made synchronously, because browsers block new windows from opening unless
+ it is done DURING an on click event. If new_window is false, the request will
+ be made asynchronously, and the current window url will be changed.
+-->
+
+var trackOutboundLink = function(url, new_window) {
+  ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
+    function () {
+      if (!new_window) {
+        document.location = url;
+      }
+    }
+  });
+  if (new_window){
+    window.open(url);
+  }
+}
+</script>
+
+<!-- 
+* Add an onclick event to all links with class name "track", which will trigger
+* the above defined trackOutboundLink function
+*/-->
+
+<script>
+$(document).ready(function(){
+  // set google analytics onclick link event on each link with class track
+  $('a.track').each(function(index, element){
+    element = $(element);
+    var link = element.attr('href');
+    var new_window = element.attr('target') == '_blank' ? true : false;
+    element.click(function(){
+      trackOutboundLink(link, new_window);
+      return false;
+    });
+  });
+});
+</script>
+
+<!--
+	http://www.maxmakedesign.co.uk/development/2014/outbound-links-new-window-analytics/
+	how to use: <a class="track" href="/my-tracked-page-link">TRACKED LINK</a>
+	Simple add the class name track to html tag
+-->
+      
+    
+
+    
+
+
+
+<!-- Social media share button -->
+<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:700&text=new+Share(".share-button");' rel='stylesheet' type='text/css'>
+
 <style media="screen" type="text/css">
 @media screen and (max-width: 360px) and (-webkit-device-pixel-ratio: 2)
 	{
@@ -48,6 +134,8 @@
 	th {
 		font-size: 70%;
 	}
+
+	
 }
 </style>
 
@@ -72,13 +160,22 @@
 	margin: 10px auto 30px;
 	padding: 0;
 }
+	.header {
+	/*min-height:180px;*/
+  	background-color:#25117;
+	
+}
 </style>
 <!--  -->
 
 
-<link
+<!-- <link
 	href="https://dl.dropboxusercontent.com/u/21998060/nccweb/newsletter/css/styles.css"
-	rel="stylesheet">
+	rel="stylesheet"> -->
+<link
+	href="https://googledrive.com/host/0B70qndiGPyERLWJaNGhCSFB1anc/styles.css"
+	rel="stylesheet">	
+	
 </head>
 <body>
 	<header class="masthead">
@@ -86,17 +183,16 @@
 			<div class="row">
 				<div class="col-xs-9 col-md-9 pull-right">
 
-					<h1 style="margin-top: 5px;">Stag News</h1>
-					<h3 style="margin-top: 5px;">The newsletter of Newbury Cricket
-						Club.</h3>
+					<h1 style="margin-top: 5px;">Stag News <small> The newsletter of Newbury Cricket
+						Club.</small></h1>
 					<p class="lead label label-default">Issue 35, December 2014</p>
-					<hr style="border-top: 1px solid #E4DFDF;">
-					<p class="lead">
+				<!-- <hr style="border-top: 1px solid #E4DFDF;"> -->
+<!-- 					<p class="lead hidden-xs" style="margin-top: 5px">
 						<a href="https://twitter.com/newburycc"
 							class="twitter-follow-button" data-show-count="false">Follow
 							@newburycc</a>
 						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+		'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-					</p>
+					</p> -->
 
 				</div>
 				<div class="col-xs-3 col-md-3">
@@ -110,6 +206,8 @@
 
 				</div>
 			</div>
+			
+
 		</div>
 	</header>
 
@@ -164,8 +262,20 @@
 										</ul></li>
 								</ul>
 							</div>
+
 						</div>
+						<p class="lead hidden-xs" style="margin-top: 5px">
+							<a href="https://twitter.com/newburycc"
+								class="twitter-follow-button" data-show-count="false">Follow
+								@newburycc</a>
+							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+		'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+						</p>
+						<div class="visible-md visible-lg share-button">
+
+						</div>
+
 					</div>
+												
 					<!--/panel body-->
 				</div>
 				<!--/panel-->
@@ -340,7 +450,7 @@
 											share of work for the club off the pitch.</p>
 
 										<p>
-											<small><b>by Ed Uden - Editor of Stag News</b></small>
+											<small><b>by Ed Uden - <small>Editor of Stag News</small></b></small>
 										</p>
 									</span>
 
@@ -362,7 +472,7 @@
 
 									</ul>
 							<p>
-								<b>Charlie Anstey - 1st XI Captain for 19 years</b>
+								<b>Charlie Anstey - <small>1st XI Captain for 19 years</small></b>
 							</p>									
 								</div>
 
@@ -476,7 +586,7 @@
 							</div>
 							<div class="col-md-4">
 								<img
-									src="https://googledrive.com/host/0B70qndiGPyERaEQ1Z3d1UU9pMmc/Kevin_mills782_smaller_192x289.jpg"
+									src="https://googledrive.com/host/0B70qndiGPyEReG5CLUJLX3FNcEU/Kevin_mills782_smaller_192x289.jpg"
 									title="Kevin Mills - 1st XI captain 2015"
 									class="img-thumbnail img-responsive">
 
@@ -491,7 +601,7 @@
 							<small>Paul Monger</small>
 						</p>
 						<img
-							src="https://googledrive.com/host/0B70qndiGPyERaEQ1Z3d1UU9pMmc/paulmonger.jpg"
+							src="https://googledrive.com/host/0B70qndiGPyEReG5CLUJLX3FNcEU/paulmonger.jpg"
 							title="Paul Monger - Secretary, NCC"
 							class="img-thumbnail img-responsive pull-right"> <em><p>I am
 								both excited and nervous about taking on the role of Honorary
@@ -532,7 +642,7 @@
 							<small>Brad Alton</small>
 						</p>
 						<img
-							src="https://googledrive.com/host/0B70qndiGPyERaEQ1Z3d1UU9pMmc/Screenshot_2014-12-15-17-34-22-1.png"
+							src="https://googledrive.com/host/0B70qndiGPyEReG5CLUJLX3FNcEU/Screenshot_2014-12-15-17-34-22-1.png"
 							title="Brad Alton, Captain 2nd XI 2015"
 							class="img-thumbnail img-responsive pull-right"> <em><p>I am
 								honoured to have been voted in as the new 2nd XI captain. After
@@ -607,24 +717,24 @@
 
 							<ul class="bxslider4">
 								<li><img
-									src="https://googledrive.com/host/0B70qndiGPyERaEQ1Z3d1UU9pMmc/DSC_0087_zpsda0eecff.jpg" /></li>
+									src="https://googledrive.com/host/0B70qndiGPyEReG5CLUJLX3FNcEU/DSC_0087_zpsda0eecff.jpg" /></li>
 								<li><img
-									src="https://googledrive.com/host/0B70qndiGPyERaEQ1Z3d1UU9pMmc/DSC_0000014_zps23ca91b9.JPG" /></li>
+									src="https://googledrive.com/host/0B70qndiGPyEReG5CLUJLX3FNcEU/DSC_0000014_zps23ca91b9.JPG" /></li>
 								<li><img
-									src="https://googledrive.com/host/0B70qndiGPyERaEQ1Z3d1UU9pMmc/DSC_0081_zps21d162cf.JPG" /></li>
+									src="https://googledrive.com/host/0B70qndiGPyEReG5CLUJLX3FNcEU/DSC_0081_zps21d162cf.JPG" /></li>
 								<li><img
-									src="https://googledrive.com/host/0B70qndiGPyERaEQ1Z3d1UU9pMmc/DSC_0083_zps8b290762.JPG" /></li>
+									src="https://googledrive.com/host/0B70qndiGPyEReG5CLUJLX3FNcEU/DSC_0083_zps8b290762.JPG" /></li>
 								<li><img
-									src="https://googledrive.com/host/0B70qndiGPyERaEQ1Z3d1UU9pMmc/DSC_0083_zps8b290762.JPG" /></li>
+									src="https://googledrive.com/host/0B70qndiGPyEReG5CLUJLX3FNcEU/DSC_0083_zps8b290762.JPG" /></li>
 								<li><img
-									src="https://googledrive.com/host/0B70qndiGPyERaEQ1Z3d1UU9pMmc/DSC_0098_zps5596cefb.jpg" /></li>
+									src="https://googledrive.com/host/0B70qndiGPyEReG5CLUJLX3FNcEU/DSC_0098_zps5596cefb.jpg" /></li>
 								<li><img
-									src="https://googledrive.com/host/0B70qndiGPyERaEQ1Z3d1UU9pMmc/P1040437_zps61020c3c.jpg" /></li>
+									src="https://googledrive.com/host/0B70qndiGPyEReG5CLUJLX3FNcEU/P1040437_zps61020c3c.jpg" /></li>
 								<li><img
-									src="https://googledrive.com/host/0B70qndiGPyERaEQ1Z3d1UU9pMmc/P1040439_zpsf5bc2459.JPG" /></li>
+									src="https://googledrive.com/host/0B70qndiGPyEReG5CLUJLX3FNcEU/P1040439_zpsf5bc2459.JPG" /></li>
 
 								<li><img
-									src="https://googledrive.com/host/0B70qndiGPyERaEQ1Z3d1UU9pMmc/P1040440_zps2cce4f27.jpg" /></li>
+									src="https://googledrive.com/host/0B70qndiGPyEReG5CLUJLX3FNcEU/P1040440_zps2cce4f27.jpg" /></li>
 							</ul>
 							<hr>
 							<h2 id="recrtmt">Recruitment drive for 2015</h2>
@@ -655,7 +765,7 @@
 									have a chance of attracting a new player.</p></em>
 
 							<p>
-								<b>Nick Ferguson - Recruitment Officer, NCC</b>
+								<b>Nick Ferguson - <small>Recruitment Officer, NCC</small></b>
 							</p>
 
 						</div>
@@ -698,7 +808,7 @@
 								opportunity to shadow my final year. Thank you to all who have
 								assisted me over the years and to my long suffering wife Carrie.</p>
 							<p>
-								<b>Stephen Gregory - Junior Section Coordinator and Coach</b>
+								<b>Stephen Gregory - <small>Junior Section Coordinator and Coach</small></b>
 							</p>
 						</div>
 
@@ -740,7 +850,7 @@
 									Milne, David and Sandy Rosier , Paul Monger and Ed Uden for
 									their support and help during the season.</p>
 								<p>
-									<b>John O'Sullivan - U11 Team Manager</b>
+									<b>John O'Sullivan - <small>U11 Team Manager</small></b>
 								</p>
 							</span>
 						</div>
@@ -795,7 +905,7 @@
 									providing refreshments. Thanks also to Luke for his enthusiasm
 									and assistance in helping me train the team.</p>
 								<p>
-									<b>Stephen Gregory - U13 Team Manager</b>
+									<b>Stephen Gregory - <small>U13 Team Manager</small></b>
 								</p>
 							</span>
 						</div>
@@ -843,7 +953,7 @@
 									a management team to allow the team to enjoy the successful
 									year they deserve next season.</p>
 								<p>
-									<b>Charles Anstey - U15 (stand-in) Team Manager</b>
+									<b>Charles Anstey - <small>U15 (stand-in) Team Manager</small></b>
 								</p>
 							</span>
 						</div>
@@ -857,10 +967,10 @@
 
 						<h2 id="1stXIreport">1st XI recover after poor start</h2>
 						<a id="lightbox2"
-							href="https://googledrive.com/host/0B70qndiGPyERaEQ1Z3d1UU9pMmc/1stXI_Team_1920.jpg"
+							href="https://googledrive.com/host/0B70qndiGPyEReG5CLUJLX3FNcEU/1stXI_Team_1920.jpg"
 							title="Ist XI Team 2014"
 							class="thumbnail img-responsive pull-right"> <img
-							src="https://googledrive.com/host/0B70qndiGPyERaEQ1Z3d1UU9pMmc/1stXI_Team_1920.jpg" />
+							src="https://googledrive.com/host/0B70qndiGPyEReG5CLUJLX3FNcEU/1stXI_Team_1920.jpg" />
 						</a>
 						<p>Rather like last year the first eleven made a relatively
 							poor start to the season, failing to put runs on the board and
@@ -901,7 +1011,7 @@
 									an enthusiasm for the game that has made playing cricket for
 									Newbury so worthwhile.</p>
 								<p>
-									<b>Charlie Anstey - 1st XI captain for 2014</b>
+									<b>Charlie Anstey - <small>1st XI captain for 2014</small></b>
 								</p>
 							</span>
 						</div>
@@ -990,7 +1100,7 @@
 									for their help during the season, Roly for the pitches and
 									finally, to Jonno, who again skippered in my absence.</p>
 								<p>
-									<b>Paul Monger - 2nd XI captain for 2014 </b>
+									<b>Paul Monger - <small>2nd XI captain for 2014</small></b>
 								</p>
 
 							</span>
@@ -1096,7 +1206,7 @@
 
 						<hr>
 
-						<div class="well">
+						<div class="well well-sm">
 							<h2>Ahead of the game in social media</h2>
 							<p>As most of you are aware, we have a thriving social media
 								environment for the club, from the play-cricket website which
@@ -1113,7 +1223,7 @@
 							<p>Turning to the other social media sites we have, namely
 								Twitter, Facebook and TeamApp (the club’s mobile app), we’ve
 								gone from strength to strength on this also. In little over 18
-								months, our Twitter page (@newburycc) has over 1,350 followers,
+								months <a href="https://twitter.com/newburycc" target="_blank">@newburycc</a> has over 1,350 followers,
 								with well over 2,600 tweets being sent by the club in that time,
 								covering our daily online ‘newspaper’, live match updates and
 								other topics of interest. Through our social media efforts, the
@@ -1142,7 +1252,7 @@
 								experience.</p>
 
 							<p>
-								<b>Martin Walker - Twitter ninja and Fixture Secretary</b>
+								<b>Martin Walker - <small>Twitter ninja and Fixture Secretary</small></b>
 							</p>
 
 						</div>
@@ -3600,10 +3710,44 @@
 		$("script[src='/assets/fullcalendar.min-700b803209ae78e351d776f9aaecdff0.js']").remove();
 		$('link[rel=stylesheet][href="/assets/base-80ed0d11f7fcad9af72d4583155887e1.css"]').remove();
 		$('link[rel=stylesheet][href="/assets/subsite-2c9dfaa636f3bbfcd10d10724169e9ea.css"]').remove();
-		
-		$(document).prop('title', 'Newbury CC - Stag News December 2014');
 	</script>
 
+<!-- Social media share button -->
+	<script
+		src='https://dl.dropboxusercontent.com/u/21998060/nccweb/SocialMediaShareButton/share.min.js'></script>
 
+	<script>
+	config = {
+		
+		ui: {
+			flyout:'bottom center',
+            // change the flyout direction of the shares. chose from `top left`, `top center`, `top right`, `bottom left`, `bottom right`, `bottom center`, `middle left`, or `middle right` [Default: `top center`]
+			
+		},
+	    networks: {
+			pinterest: {
+				enabled: false
+			}
+		}
+	}
+   
+    var share = new Share(".share-button",config);
+
+    
+  </script>
+
+
+	<script type="text/javascript">
+	$(function(){
+		$(".share-button").position({
+		my:        "right center",
+		at:        "center center",
+		of:        $(".navbar-inner"),
+		collision: "fit none"
+	})
+
+
+});
+</script>
 </body>
 </html>
