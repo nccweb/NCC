@@ -1,0 +1,53 @@
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="shortcut icon" href="https://dl.dropboxusercontent.com/u/21998060/nccweb/images/favicon.ico" type="image/x-icon" />
+
+<style>
+    .navbar .nav li.dropdown>.dropdown-toggle .caret {
+	border-top-color: #FDD017;}
+    #site_nav li:hover ul {
+    	display: block;
+    	position: absolute;
+    	margin: 0;
+    	padding: 0; 
+    	}
+    #site_nav li:hover li {
+    	float: none; }
+    	
+    #site_nav li:hover li a {
+	background-color: #254117;
+
+
+box-shadow: 5px 5px 5px #888888;
+	color: #FDD017;}
+    
+    #site_nav li li a:hover {
+    	color: #fff;
+    	background: #254117 !important;
+    }
+</style>
+
+
+
+<link href="https://dl.dropboxusercontent.com/u/21998060/nccweb/FeedbackMe/jquery.feedback_me.css" rel="stylesheet" type="text/css" />
+<script src="https://dl.dropboxusercontent.com/u/21998060/nccweb/FeedbackMe/jquery.feedback_me.js"></script>
+ 
+<script type="text/javascript">
+   $(document).ready(function () {
+    
+    fm_options = {
+        show_form : false,
+        position : "right-top",
+		title_label: "Website feedback",
+		trigger_label: "Feedback",
+        iframe_url : "https://docs.google.com/forms/d/17EdQeIpSYm-btUJPDceHrJnRyXHshukmA2ccGxl-vr0/viewform?embedded=true"
+    };
+    fm.init(fm_options);
+ 
+});
+</script>
+
+<!--end of feedback form -->
+

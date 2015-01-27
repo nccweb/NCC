@@ -1,0 +1,1 @@
+git (when committing): https://github.com/greazedlightning/NCC.git
