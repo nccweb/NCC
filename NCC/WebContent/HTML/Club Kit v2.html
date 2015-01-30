@@ -4,7 +4,6 @@
 <meta charset="utf-8">
 <title>New Club Kit page</title>
 
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" media="screen"
@@ -22,16 +21,12 @@
 
 <!--  For picture slideshow http://bxslider.com/ -->
 <link rel="stylesheet"
-	href="https://cdn.jsdelivr.net/bxslider/4.1.1/jquery.bxslider.css"
+	href="https://googledrive.com/host/0B70qndiGPyERfkZIdXpkcVItSDd4eXAzM0JDYU5LZzZNbkI5SG40cnM4bkxQbnhxTDVmRkk/jquery.bxslider.css"
 	class="myLink" />
 
 <link rel="stylesheet"
 	href="https://googledrive.com/host/0B70qndiGPyERfjBrM3duQVgzSEdNUmc0eHBpUldwQ3pvNXlDblBXaUtFNUNTeTYyNkt4c0E/ncc_base.css"
 	class="myLink" />
-
-<!-- <link rel="stylesheet"
-	href="https://googledrive.com/host/0B70qndiGPyERfk5KbEJ5cmlQLTctMmlMcFlWTjNvRGZDWk1PUDNRMnM0NlQ5UWJPNWIxdzA/find_Us_v2.css"
-	class="myLink" /> -->
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.sidr/1.2.1/stylesheets/jquery.sidr.dark.css" class="myLink" /> Menu -->
 <link rel="stylesheet" href="https://googledrive.com/host/0B70qndiGPyERfllYMl9UNmdla3hiNllHRW42OHRvendnM3ZFYTdPRFNDNWlDUUwteEUzSkE/jquery.sidr.dark.green.css" class="myLink" />
@@ -42,7 +37,6 @@
       <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
       <script src="../bower_components/respond/dest/respond.min.js"></script>
     <![endif]-->
-
 
 
 </head>
@@ -237,7 +231,7 @@
 							</small>
 						</h3>
 
-						<ul class="bxslider3">
+						<ul class="bxslider_footer">
 							<li><a target="_blank"
 								href="http://www.chilisrestaurant.co.uk/index.html"><img
 									src="https://googledrive.com/host/0B70qndiGPyERNUV1UFZaSWlUdzg/chilis.png" /></a></li>
@@ -299,95 +293,101 @@
 
 	</div><!-- Main container -->
 	
-	<script type="text/javascript"
+<script type="text/javascript"
 		src="https://cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js"></script>
-		
-	<script type="text/javascript">
-		$('link').not('.myLink').remove();
-		/*		$('link[rel=stylesheet][href="/assets/print-a622ffc90d1232b126e42c8adcc31348.css"]').remove();<!--new R2-->*/
-		jQuery('head script[src*="application-7fd426f9bca208f5a7b271011dc35e8b.js"]').remove();<!--new R2-->
-	</script>
 
-	<script type="text/javascript">
-		$( window ).load(function(){
-		$(".subnav").hide(); 
-		//$(".navbar").hide();
-		$('#footer_92961').hide();
-		$('#progress').hide();
-	});	
-	</script>
+<!-- 
+	<script type="text/javascript"
+		src="https://cdn.jsdelivr.net/jquery/1.11.2/jquery.min.js"></script> -->
 
 
 
-
-	<script
+	<script type="text/javascript"
 		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<!--     <script src="../assets/js/bootswatch.js"></script> -->
-	
+
 	<!-- bxSlider libraries for slideshows -->
 	<script
-		src="https://cdn.jsdelivr.net/bxslider/4.1.1/jquery.bxslider.min.js"></script>
+		src="https://googledrive.com/host/0B70qndiGPyERfkZIdXpkcVItSDd4eXAzM0JDYU5LZzZNbkI5SG40cnM4bkxQbnhxTDVmRkk/jquery.bxslider.js"></script>
 
-<!-- Menu -->
-<script src="https://cdn.jsdelivr.net/jquery.sidr/1.2.1/jquery.sidr.js"></script>
+	<!-- Menu -->
+	<script src="https://cdn.jsdelivr.net/jquery.sidr/1.2.1/jquery.sidr.js"></script>
 
 
-<script>
-    $('#responsive-menu-button').sidr({
-      name: 'sidr-main',
-      source: '#nav_menu_div'
-      
-    });
-</script>
+	<script>
+		$('#responsive-menu-button').sidr({
+			name : 'sidr-main',
+			source : '#nav_menu_div'
 
-<!-- ===Menu end -->
-
-	<script type="text/javascript">
-		$(document).ready(function () { $('.dropdown-toggle').dropdown(); }); 
+		});
 	</script>
 
-	<script type="text/javascript">
-	$(document).on('click','.navbar-collapse.in',function(e) {
-    if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
-        $(this).collapse('hide');
-    }});
-	</script>
+	<!-- ===Menu end -->
 
 	<script type="text/javascript">
-		$('.bxslider2, .bxslider1').bxSlider({
-			infiniteLoop: false,
-			//hideControlOnEnd: true,
-			//auto: true,
-  			adaptiveHeight: true,
-  			controls: true,
-  			autoControls: true
+		$(document).ready(function() {
+			$('.dropdown-toggle').dropdown();
 		});
 	</script>
 
 	<script type="text/javascript">
-	$('.bxslider3').bxSlider({
+		$(document).on(
+				'click',
+				'.navbar-collapse.in',
+				function(e) {
+					if ($(e.target).is('a')
+							&& $(e.target).attr('class') != 'dropdown-toggle') {
+						$(this).collapse('hide');
+					}
+				});
+	</script>
+
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+	$('.bxslider_footer').bxSlider({
 		  minSlides: 2,
 		  maxSlides: 4,
 		  slideWidth: 160,
 		  slideMargin: 10
-		});
+		})
+	});
 	</script>
 
 	<script type="text/javascript">
-		$('.bxslider4').bxSlider({
-			infiniteLoop: false,
-			//hideControlOnEnd: true,
-			//auto: true,
-  			adaptiveHeight: true,
-  			controls: false,
-  			slideWidth: 450
-  			//autoControls: true
+		$('link').not('.myLink').remove();
+		/*		$('link[rel=stylesheet][href="/assets/print-a622ffc90d1232b126e42c8adcc31348.css"]').remove();<!--new R2-->*/
+		jQuery(
+				'head script[src*="application-7fd426f9bca208f5a7b271011dc35e8b.js"]')
+				.remove();
+	</script>
+
+<!-- <script type="text/javascript">
+$(document).ready(function(){    
+    //Check if the current URL contains '#'
+    if(document.URL.indexOf("#")==-1){
+        // Set the URL to whatever it was plus "#".
+        url = document.URL+"#";
+        location = "#";
+
+        //Reload the page
+        location.reload(true);
+    }
+});
+</script> -->
+
+	<script type="text/javascript">
+		$(window).load(function() {
+			$(".subnav").hide();
+			//$(".navbar").hide();
+			$('#footer_92961').hide();
+			$('#progress').hide();
 		});
 	</script>
-	
-	 <!-- Google Analytics -->
-<script>
-$(document).prop('title', 'Newbury CC - Club Kit');
+
+	<!-- Google Analytics -->
+	<!-- <script>
+$(document).prop('title', 'Newbury CC - Club kit');
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -395,7 +395,7 @@ $(document).prop('title', 'Newbury CC - Club Kit');
 
   ga('create', 'UA-59120642-1', 'auto');
   ga('send', 'pageview');
-</script>
+</script> -->
 	
 
 
