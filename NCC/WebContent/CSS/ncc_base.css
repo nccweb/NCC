@@ -7,7 +7,7 @@ body {
 	background-color: #fff;
 }
 
-
+/* 
 
 #mobile-header {
 	display: none;
@@ -17,9 +17,9 @@ body {
 color: #FDD017;
 background-color: #254117;
 } 
+ */
 
-
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
 	#mobile-header {
 		display: block;
 	}
@@ -27,13 +27,13 @@ background-color: #254117;
 		display: none;
 	}
 	.sidr ul {
-		/*display: block;*/
+		display: block;
 		margin: 0 0 15px;
 		padding: 0;
 		border-top: 1px solid #dfdfdf;
 		border-bottom: 1px solid #fff
 	}
-}
+} */
 
 .centered-pills {
 	text-align: center;
@@ -53,10 +53,12 @@ background-color: #254117;
 
 * html .centered-pills ul.nav-pills {
 	display: inline;
-} /* IE6 */
+} IE6
 *+html .centered-pills ul.nav-pills {
 	display: inline;
-} /* IE7 */
+} IE7
+ 
+ 
 .batting_widget  tr td:first-child, .bowling_stats_widget tr td:first-child,
 	.batting_widget  tr th:first-child, .bowling_stats_widget tr th:first-child,
 	.team_stats_widget  tr th:first-child, .team_stats_widget  tr td:first-child	
@@ -83,11 +85,10 @@ background-color: #254117;
   	text-shadow: 1px 2px 1px #000;
 }
 
-
-
 .masthead a, .masthead lead {
   	color:#FDD017;
 }
+
 #header_text{
 background-color: rgba(245, 245, 245, 0.3);}
 }
@@ -98,17 +99,16 @@ background-color: rgba(245, 245, 245, 0.3);}
 	background-color: #254117;
 }
 a {
-	color: #1d1d1d;
+	color: #254117;
 	font-weight: normal;
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
 } 
-
-a:hover, a:focus {
+ a:hover, a:focus{
 	color: #254117;
 	text-decoration: underline;
 }
-
+ 
 .horizontal-section-container {
 	padding-top: 10px;
 	padding-bottom: 10px
@@ -146,41 +146,15 @@ h4, .h4, h5, .h5, h6, .h6 {
 }
 
 @media ( min-width : 992px) .section-container {
-	padding-top
-	:
-	 
-	20
-	px
-	;
-	
-
-	padding-bottom
-	:
-	 
-	20
-	px
-	;
+	padding-top:20px;
+	padding-bottom:20px;
 	
 
 }
 
 @media ( min-width : 768px) .section-container {
-	padding-top
-	:
-	 
-	15
-	px
-	;
-	
-
-	padding-bottom
-	:
-	 
-	15
-	px
-	;
-	
-
+	padding-top:15px;
+	padding-bottom:15px;
 }
 
 .section-container {
@@ -209,27 +183,6 @@ h4, .h4, h5, .h5, h6, .h6 {
 	margin: 10px auto 30px;
 	padding: 0;
 }
-
-.stats_table table {
-	line-height: 1.5rem;
-	background-color: #254117 !important;
-}
-
-#team-stats-table-507346>thead>tr>th>a, #team-stats-table-507346>thead>tr>th,
-	#team-stats-table-507346>tbody>tr>td>a, #batting-stats-table-507171>tbody>tr>td>a,
-	#bowling-stats-table-507344>tbody>tr>td>a, #batting-stats-table-507171>thead>tr>th,
-	#bowling-stats-table-507344>thead>tr>th, #team-stats-table-507346>tbody>tr>td,
-	#top_batting_performance_listing_507167>table>tbody>tr>td>a,
-	#batting-stats-table-507171>thead>tr>th a,
-	#top_batting_performance_listing_507167>table>tbody>tr>td,
-	#batting-stats-table-507171>tbody>tr>td,
-	#top_bowling_performance_listing_507168>table>tbody>tr>td,
-	#top_bowling_performance_listing_507168>table>tbody>tr>td>a,
-	#bowling-stats-table-507344>thead>tr>th>a, #bowling-stats-table-507344>tbody>tr>td
-	{
-	color: #FDD017;
-}
-
 .full-width-image {
 display: block;
 width: 100%;
@@ -267,6 +220,32 @@ height: auto;
 	color: #fff;
 	border-color: #254117;
 	background: #254117
+}
+
+.pcss3mm > li .fa {
+	display: block;
+	float: left;
+	width: 10px;
+	margin: 0 12px 0 -4px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 52px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.pcss3mm .grid-container3 > ul > li .fa{
+	display: block;
+	float: left;
+	width: 10px;
+	margin: 0 12px 0 -4px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
 }
 
 @media ( min-width :992px) {

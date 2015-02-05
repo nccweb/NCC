@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>New Fixtures Page</title>
+<title>New Results Page</title>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +14,10 @@
 <link
 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
 	rel="stylesheet" class="myLink" />
+
+<link rel="stylesheet"
+	href="https://googledrive.com/host/0B70qndiGPyERWFpmbWl0a2xjOE0/sky-tabs-homepage.css"
+	class="myLink" />
 
 <!--  For picture slideshow http://bxslider.com/ -->
 <link rel="stylesheet"
@@ -97,21 +101,19 @@
 									data-toggle="dropdown">Stats <b class="caret"></b></a>
 									<ul class="dropdown-menu">
 										<li><a
-											href="http://newbury.play-cricket.com/website/web_pages/66716">Team
+											href="http://newbury.play-cricket.com/website/web_pages/176866#sky-tab1">Team
 												stats</a></li>
 										<li><a
-											href="http://newbury.play-cricket.com/website/web_pages/66717">Batting
+											href="http://newbury.play-cricket.com/website/web_pages/176866#sky-tab2">Batting
 												stats</a></li>
 										<li><a
-											href="http://newbury.play-cricket.com/website/web_pages/66718">Bowling
+											href="http://newbury.play-cricket.com/website/web_pages/176866#sky-tab3">Bowling
 												stats</a></li>
 										<li><a
-											href="http://newbury.play-cricket.com/website/web_pages/66719">Fielding
+											href="http://newbury.play-cricket.com/website/web_pages/176866#sky-tab4">Fielding
 												stats</a></li>
 										<li class="divider"></li>
-										<li><a
-											href="http://newbury.play-cricket.com/website/web_pages/187939">Honours
-												Board</a></li>
+
 									</ul></li>
 
 								<li class="dropdown"><a href="#" class="dropdown-toggle"
@@ -158,9 +160,7 @@
 										<li><a
 											href="http://newbury.play-cricket.com/website/web_pages/187534">Club
 												partners</a></li>
-										<li><a
-											href="http://newbury.play-cricket.com/website/web_pages/189132">Website
-												feedback</a></li>
+										
 									</ul></li>
 
 							</ul>
@@ -182,7 +182,7 @@
 		<div class="container-fluid clearfix">
 			<div class="row">
 				<div class="col-md-9">
-					<h1>Fixtures for 2015 season</h1>
+					<h1>Averages for 2014 season</h1>
 
 				</div>
 				<div class="col-md-3">
@@ -201,33 +201,107 @@
 			<div class="row">
 				<div class="col-md-12">
 
-					<div class="fixtures_widget widget clearfix widget_container  "
-						id="508572">
-						<script type="text/javascript">
-							$.ajax({
-								url : "/website/widgets/" + 508572
-							//, 
-							//success: function(data) {  
-							//$('.main').css("min-height", $(document).height() - 80  + "px");
-							//}  
-							});
-						</script>
+					<div
+						class="sky-tabs sky-tabs-amount-4 sky-tabs-pos-top-justify sky-tabs-anim-flip sky-tabs-response-to-stack">
+						<input type="radio" name="sky-tabs" checked id="sky-tab1"
+							class="sky-tab-content-1" /> <label for="sky-tab1"><span><span><i
+									class="fa fa-table"></i>Team stats</span></span></label> <input type="radio"
+							name="sky-tabs" id="sky-tab2" class="sky-tab-content-2" /> <label
+							for="sky-tab2"><span><span><i
+									class="fa fa-table"></i>Batting averages</span></span></label> <input type="radio"
+							name="sky-tabs" id="sky-tab3" class="sky-tab-content-3" /> <label
+							for="sky-tab3"><span><span><i
+									class="fa fa-table"></i>Bowling averages</span></span></label> <input type="radio"
+							name="sky-tabs" id="sky-tab4" class="sky-tab-content-4" /> <label
+							for="sky-tab4"><span><span><i
+									class="fa fa-table"></i>Fielding averages</span></span></label>
+						<ul>
+							<li class="sky-tab-content-1 text-center">
+								<div class="typography">
+									<div
+										class="team_stats_widget widget clearfix widget_container stats_table team_widget"
+										id="92956">
+										<script type="text/javascript">
+											$
+													.ajax({
+														url : "/website/widgets/" + 92956
+													//, 
+													//success: function(data) {  
+													//$('.main').css("min-height", $(document).height() - 80  + "px");
+													//}  
+													});
+										</script>
 
-						<div id='fixtures_508572'></div>
-					</div>
+										<div id='team_stats_92956'></div>
+									</div>
 
-					<div class="info">
+								</div>
+							</li>
+							<li class="sky-tab-content-2 text-center">
+								<div class="typography">
+									<div
+										class="batting_stats_widget widget clearfix widget_container stats_table batting_widget"
+										id="509525">
+										<script type="text/javascript">
+											$
+													.ajax({
+														url : "/website/widgets/" + 509525
+													//, 
+													//success: function(data) {  
+													//$('.main').css("min-height", $(document).height() - 80  + "px");
+													//}  
+													});
+										</script>
 
-						<h4>Information on Clubs playing in Thames Valley Cricket
-							League</h4>
-						<ul class="unstyled">
-							<li><a href="http://www.tvlcricket.com/maps/index.html"
-								target="_blank">Locations and driving directions</a></li>
-							<li><a href="http://www.tvlcricket.com/clubs14.pdf"
-								target="_blank">PDF download (409 kb) - information for all
-									clubs</a></li>
+										<div id='batting_stats_509525'></div>
+									</div>
+								</div>
+							</li>
+							<li class="sky-tab-content-3 text-center">
+								<div class="typography">
+									<div
+										class="bowling_stats_widget widget clearfix widget_container stats_table bowling_widget"
+										id="92958">
+										<script type="text/javascript">
+											$
+													.ajax({
+														url : "/website/widgets/" + 92958
+													//, 
+													//success: function(data) {  
+													//$('.main').css("min-height", $(document).height() - 80  + "px");
+													//}  
+													});
+										</script>
+
+										<div id='bowling_stats_92958'></div>
+									</div>
+								</div>
+							</li>
+							<li class="sky-tab-content-4 text-center">
+								<div class="typography">
+									<div
+										class="fielding_stats_widget widget clearfix widget_container stats_table fielding_widget"
+										id="92959">
+										<script type="text/javascript">
+											$
+													.ajax({
+														url : "/website/widgets/" + 92959
+													//, 
+													//success: function(data) {  
+													//$('.main').css("min-height", $(document).height() - 80  + "px");
+													//}  
+													});
+										</script>
+
+										<div id='fielding_stats_92959'></div>
+									</div>
+								</div>
+							</li>
+
 						</ul>
 					</div>
+
+
 
 				</div>
 				<!-- col -->
@@ -317,15 +391,8 @@
 	<script type="text/javascript"
 		src="https://cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js"></script>
 
-	<!-- 
-	<script type="text/javascript"
-		src="https://cdn.jsdelivr.net/jquery/1.11.2/jquery.min.js"></script> -->
-
-
-
 	<script type="text/javascript"
 		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	<!--     <script src="../assets/js/bootswatch.js"></script> -->
 
 	<!-- bxSlider libraries for slideshows -->
 	<script
@@ -362,7 +429,27 @@
 					}
 				});
 	</script>
+<!-- For selecting the sky tab directly from main menu -->
+	<script type="text/javascript">
+		function hash_change_handler() {
+			if (location.hash == '#sky-tab1') {
+				$('input#sky-tab1').prop('checked', true);
+			}
+			if (location.hash == '#sky-tab2') {
+				$('input#sky-tab2').prop('checked', true);
+			}
+			if (location.hash == '#sky-tab3') {
+				$('input#sky-tab3').prop('checked', true);
+			}
+			if (location.hash == '#sky-tab4') {
+				$('input#sky-tab4').prop('checked', true);
+			}
+		}
 
+		jQuery(function($) {
+			hash_change_handler();
+		});
+	</script>
 
 
 	<!-- 	<script type="text/javascript">
@@ -434,7 +521,7 @@ $(document).ready(function(){
 
 	<!-- Google Analytics -->
 	<!-- <script>
-$(document).prop('title', 'Newbury CC - Fixtures');
+$(document).prop('title', 'Newbury CC - Results');
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
