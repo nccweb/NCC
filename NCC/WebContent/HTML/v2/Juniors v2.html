@@ -34,33 +34,7 @@
 	<div class="container">
 
 		<header class="masthead">
-
-			<div class="container" id="header_text">
-				<div class="row">
-					<div class="col-xs-4 col-md-3">
-						<a title="To homepage" href="http://newbury.play-cricket.com">
-							<img id="header_logo"
-							src="https://googledrive.com/host/0B70qndiGPyERfkpHZW44VHB5WVVfX3VWVzFKLWtVZGxpODE5VkxOa25laUlpSzFFRE1MMDA/NCC_Logo_CL_Web_80x113.png"
-							class="img-responsive center-block">
-						</a>
-
-					</div>
-					<div class="col-xs-12 col-md-9">
-						<h1>
-							Newbury Cricket Club
-							<p class="lead">Northcroft lane, Newbury RG14 1RS</p>
-							<p class="lead">
-								<a
-									href="http://newbury.play-cricket.com/website/web_pages/184366"
-									target="_blank" title="Club History">Estd. 1822</a>
-							</p>
-						</h1>
-					</div>
-					<!-- col -->
-				</div>
-				<!-- row -->
-			</div>
-			<!-- /cont -->
+			<div id="headercontainer"></div>
 		</header>
 
 		<div class="col-xs-12">
@@ -147,15 +121,25 @@
 					<div class="col-xs-12">
 						<hr class="hor-divider" />
 					</div>
-					<p>For all junior sides, winter nets is every Thursday from 5th February between
-						6pm and 8pm at Newbury College. The U11s start at 6pm and U13s start at 7pm.<br />The U15s start at 8pm on 12th February.<br /></p>  
-						
-						<p>The summer practice night is
-						Mondays from 6.30pm at our ground in Northcroft Lane, Newbury.</p>
-					<p>Junior membership (£35) is open to anyone aged under 17 on 1st September in the preceding year.</p>
-					
-					<p>To join or to make enquiries please <a href="mailto:newburycricketclub@googlegroups.com">send us an email</a> and one of our club officers will get back with all the information.</p>	
-						
+					<p>
+						For all junior sides, winter nets is every Thursday from 5th
+						February between 6pm and 8pm at Newbury College. The U11s start at
+						6pm and U13s start at 7pm.<br />The U15s start at 8pm on 12th
+						February.<br />
+					</p>
+
+					<p>The summer practice night is Mondays from 6.30pm at our
+						ground in Northcroft Lane, Newbury.</p>
+					<p>Junior membership (£35) is open to anyone aged under 17 on
+						1st September in the preceding year.</p>
+
+					<p>
+						To join or to make enquiries please <a
+							href="mailto:newburycricketclub@googlegroups.com">send us an
+							email</a> and one of our club officers will get back with all the
+						information.
+					</p>
+
 				</div>
 				<!-- col -->
 			</div>
@@ -169,14 +153,16 @@
 		<footer class="footer">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-8 col-md-8 pull-left">
+					<div class="col-md-2">
 						<h3>
-							Affiliates<br> <small> Visit our <a
+							Affiliates<br /> <small> Visit our <a
 								href="http://newbury.play-cricket.com/website/web_pages/187534">Affiliates
 									page</a> for exciting discounts and offers
 							</small>
 						</h3>
+					</div>
 
+					<div class="col-md-7">
 						<ul class="bxslider_footer">
 							<li><a target="_blank"
 								href="http://www.chilisrestaurant.co.uk/index.html"><img
@@ -196,27 +182,21 @@
 						</ul>
 					</div>
 
-					<div class="col-lg-4 col-md-4">
-						<div class="pull-right">
-							<h3>
-								<a
-									href="http://newbury.play-cricket.com/website/web_pages/179632">
-									Contact us </a>
-							</h3>
+					<div class="col-md-3" id="address_block">
+						<ul class="fa-ul">
+							<li><i class="fa-li fa fa-map-marker"></i>Newbury Cricket
+								Club, <br /> Northcroft Lane, <br /> Newbury RG14 1RS.</li>
+							<li><i class="fa-li fa fa-phone"></i>01635 47290</li>
+							<li><i class="fa-li fa fa-envelope"></i><a
+								href="mailto:newburycricketclub@googlegroups.com">Email</a></li>
+						</ul>
 
-							<address>
-								Newbury Cricket Club<br> Northcroft Lane, Newbury<br>
-								Berkshire<br> RG14 1RS<br> 01635 47290<br> <a
-									href="mailto:newburycricketclub@googlegroups.com">newburycricketclub@googlegroups.com</a>
-							</address>
-						</div>
 					</div>
 
 				</div>
-
 				<div class="row">
-					<div class="col-md-12 centered-pills">
-						<div>
+					<div class="col-md-12">
+						<div class="centered-pills hidden-xs">
 							<ul class="nav nav-pills">
 								<li><a data-remote="true"
 									href="http://newbury.play-cricket.com/privacy">Privacy
@@ -228,9 +208,9 @@
 									href="http://newbury.play-cricket.com/admin_terms">Administrator
 										Terms and Conditions</a></li>
 							</ul>
+							<div id="copyright">©2000-2015 England and Wales Cricket
+								Board (0030) 4965</div>
 						</div>
-						<div id="copyright">©2000-2015 England and Wales Cricket
-							Board (0030) 4965</div>
 					</div>
 				</div>
 			</div>
@@ -257,6 +237,13 @@
 		$(document)
 				.ready(
 						function() {
+							$
+									.get(
+											'https://googledrive.com/host/0B70qndiGPyERfmQzYnEzSk8zZlZDYUxYemxNNnhHczVRM29tLUh6bU8yNktzNEctQWpxWnM/Header v2.html',
+											function(data) {
+												$("#headercontainer")
+														.html(data);
+											});
 							$
 									.get(
 											'https://googledrive.com/host/0B70qndiGPyERfmY1T1BTemQwYU9ObXdrNWhYRG1LS2tONEF1Y1lHRjQ0U0w2NjlTdzFZekk/Menu v2.html',
