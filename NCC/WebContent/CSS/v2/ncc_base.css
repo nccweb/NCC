@@ -6,39 +6,6 @@ body {
 .container-fluid, .masthead {
 	background-color: #fff;
 }
-
-.centered-pills {
-	text-align: center;
-}
-
-.centered-pills ul.nav-pills {
-	display: inline-block;
-}
-
-.centered-pills li {
-	display: inline;
-}
-
-.centered-pills a {
-	float: left;
-}
-
-* html .centered-pills ul.nav-pills {
-	display: inline;
-} IE6
-*+html .centered-pills ul.nav-pills {
-	display: inline;
-} IE7
- 
- 
-.batting_widget  tr td:first-child, .bowling_stats_widget tr td:first-child,
-	.batting_widget  tr th:first-child, .bowling_stats_widget tr th:first-child,
-	.team_stats_widget  tr th:first-child, .team_stats_widget  tr td:first-child	
-	{
-	display: none;
-}
-
-
 .masthead {
 	background: url(https://googledrive.com/host/0B70qndiGPyERfm9vNlE4TGw3ZWVGRHlHTzJ0ckdHMWFIenVYT3JWU2NLUHhVX2R1ZjFRZzg/cricket_ball_wallpaper_wide.jpg) no-repeat center center;
 	-webkit-background-size: cover;
@@ -49,7 +16,6 @@ body {
 	padding-bottom:20px;
 	vertical-align: bottom; 
 }
-
 .masthead {
 	/*min-height:270px;*/
 	background-color:#254117;
@@ -60,12 +26,11 @@ body {
 .masthead a, .masthead lead {
   	color:#FDD017;
 }
-
 .masthead lead .lead {
 margin-bottom: 5px;
 }
 #header_text{
-background-color: rgba(245, 245, 245, 0.1);}
+background-color: rgba(245, 245, 245, 0.1);
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus
@@ -83,56 +48,45 @@ a {
 	color: #254117;
 	text-decoration: underline;
 }
- 
+
 .horizontal-section-container {
 	padding-top: 10px;
 	padding-bottom: 10px
+} 
+ .centered-pills {
+	text-align: center;
+}
+.centered-pills ul.nav-pills {
+	display: inline-block;
+}
+.centered-pills li {
+	display: inline;
+}
+.centered-pills a {
+	float: left;
+}
+* html .centered-pills ul.nav-pills {
+	display: inline;
+}
+*+html .centered-pills ul.nav-pills {
+	display: inline;
 }
 .footer .bx-wrapper {
 margin: 20px auto 20px;
 }
 #address_block{
-margin-top: 20px;}
-@media ( max-width : 410px) {
-	.btn-responsive {
-		padding: 2px 4px;
-		font-size: 90%;
-		line-height: 1;
-		/*border-radius:3px;*/
-	}
+margin-top: 20px;
 }
-
-media ="screen"
-h4, .h4, h5, .h5, h6, .h6 {
-	margin-top: 10px;
-	margin-bottom: 5px;
-}
-
 .panel {
 	margin-top: 10px;
 }
-
 .well {
 	margin-top: 10px;
 }
-
-@media ( min-width : 992px) .section-container {
-	padding-top:20px;
-	padding-bottom:20px;
-	
-
-}
-
-@media ( min-width : 768px) .section-container {
-	padding-top:15px;
-	padding-bottom:15px;
-}
-
 .section-container {
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
-
 .hor-divider {
 	border: 0;
 	margin: 0;
@@ -142,13 +96,11 @@ h4, .h4, h5, .h5, h6, .h6 {
 	height: 1px;
 	line-height: 0;
 }
-
 .center {
 	display: inline-block;
 	vertical-align: middle;
 	float: none;
 }
-
 /* .bx-wrapper {
 	position: relative;
 	margin: 10px auto 30px;
@@ -158,15 +110,12 @@ h4, .h4, h5, .h5, h6, .h6 {
   margin: 0;
   padding: 0;
 }
-
 .bx-wrapper .bx-caption {
 background: rgba(80, 80, 80, 0.4);
-
 }
 .bx-wrapper .bx-caption span {
 font-family: inherit;
 }
-
 .full-width-image {
 display: block;
 width: 100%;
@@ -178,7 +127,6 @@ height: auto;
 	padding: 0;
 	list-style: none
 }
-
 .social-media-icons>li {
 	display: block;
 	float: left;
@@ -205,7 +153,6 @@ height: auto;
 	border-color: #254117;
 	background: #254117
 }
-
 .pcss3mm > li .fa {
 	display: block;
 	float: left;
@@ -218,7 +165,6 @@ height: auto;
   text-align: center;
   -webkit-font-smoothing: antialiased;
 }
-
 .pcss3mm .grid-container3 > ul > li .fa{
 	display: block;
 	float: left;
@@ -231,7 +177,37 @@ height: auto;
   text-align: center;
   -webkit-font-smoothing: antialiased;
 }
-
+#team-stats-table-507346 > thead > tr > th:nth-child(1),
+#batting-stats-table-509031 > thead > tr > th:nth-child(1),
+#bowling-stats-table-507344 > thead > tr > th:nth-child(1),
+#team-stats-table-507346 > tbody > tr > td:nth-child(1),
+#batting-stats-table-509031 > tbody > tr > td:nth-child(1),
+#bowling-stats-table-507344 > tbody > tr > td:nth-child(1),
+#fielding-stats-table-510577 > thead > tr > th:nth-child(1),
+#fielding-stats-table-510577 > tbody > tr > td:nth-child(1){
+ display:none;
+ }
+media ="screen"
+h4, .h4, h5, .h5, h6, .h6 {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+@media ( max-width : 410px) {
+	.btn-responsive {
+		padding: 2px 4px;
+		font-size: 90%;
+		line-height: 1;
+		/*border-radius:3px;*/
+	}
+}
+@media ( min-width : 992px) .section-container {
+	padding-top:20px;
+	padding-bottom:20px;
+}
+@media ( min-width : 768px) .section-container {
+	padding-top:15px;
+	padding-bottom:15px;
+}
 @media ( min-width :992px) {
 	.social-media-icons>li>* {
 		font-size: 1.7em;
@@ -240,7 +216,6 @@ height: auto;
 		width: 50px
 	}
 }
-
 @media screen and (min-width: 320px) {
 	.masthead h1 {
 		font-size: 22px;
@@ -265,5 +240,4 @@ height: auto;
 		font-size: 52px;}
 	#header_logo{
 	margin-top: 20px;}
-
 }

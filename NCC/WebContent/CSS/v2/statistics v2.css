@@ -1,0 +1,18 @@
+#batting-stats-table-510482{
+	text-align: left;
+}
+#batting-stats-table-510482 > tbody > tr > td.text-right{
+	text-align: left;
+}
+#team-stats-table-92956 > tbody > tr > td:nth-child(2),
+#bowling-stats-table-92958 > tbody > tr > td:nth-child(2),
+#fielding-stats-table-92959 > tbody > tr > td:nth-child(2){
+	text-align: left;
+}
+#team-stats-table-507346 > tbody > tr > td:nth-child(2),
+#batting-stats-table-509031 > tbody > tr > td:nth-child(2),
+#bowling-stats-table-507344 > tbody > tr > td:nth-child(2),
+#fielding-stats-table-510577 > tbody > tr > td:nth-child(2),
+#fielding-stats-table-510577 > tbody > tr > td:nth-child(3){
+	text-align: left;
+}

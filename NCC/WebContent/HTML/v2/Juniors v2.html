@@ -32,7 +32,6 @@
 </head>
 <body>
 	<div class="container">
-
 		<header class="masthead">
 			<div id="headercontainer"></div>
 		</header>
@@ -56,6 +55,43 @@
 		<div class="container-fluid clearfix">
 			<div class="row">
 				<div class="col-md-9">
+					<div class="modal fade" id="myModal">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"
+										aria-hidden="true">×</button>
+									<h3 class="modal-title text-center">Newbury CC is recruiting for
+										junior teams</h3>
+								</div>
+								<div class="modal-body">
+									<h4>Is your son or daughter the next Freddie Flintoff or
+										Charlotte Edwards?</h4>
+									<p>If so, why don't you get them to develop their cricket
+										skills further at Newbury Cricket Club?</p>
+									<p>Our winter training has strated and is on Thursday
+										evenings from 6pm at the fantastic facilities of Newbury
+										College Sports Hall.</p>
+									<p>
+										If your'd like to bring them along to join in with our other
+										budding junior cricketers and receive coaching from ECB
+										qualified coaches, please <a
+											href="mailto: paul.monger@prudential.co.uk"> email our
+											Club Secretary Paul Monger</a>
+									</p>
+
+
+
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-success"
+										data-dismiss="modal">Close</button>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
 					<h1>Junior cricket at Newbury Cricket Club</h1>
 
 				</div>
@@ -221,6 +257,8 @@
 	<!-- Main container -->
 
 
+
+
 	<script type="text/javascript"
 		src="https://cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js"></script>
 
@@ -233,6 +271,11 @@
 	<script
 		src="https://cdn.jsdelivr.net/bxslider/4.1.3/jquery.bxslider.min.js"></script>
 
+	<script type="text/javascript">
+		$(window).load(function() {
+			$('#myModal').modal('show');
+		});
+	</script>
 	<script type="text/javascript">
 		$(document)
 				.ready(
@@ -290,6 +333,8 @@
 			$('#progress').hide();
 		});
 	</script>
+
+
 
 	<!-- Google Analytics -->
 	<!-- <script>
