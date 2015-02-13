@@ -1,0 +1,33 @@
+table.matches_table {
+	border: none;
+	width: 100%;
+}
+table.matches_table td {
+	padding: 4px;
+}
+#fixtures_list_510663>table>tbody>tr:nth-child(1)>th:nth-child(2),
+	#fixtures_list_510663>table>tbody>tr:nth-child(1)>th:nth-child(5),
+	#fixtures_list_510663>table>tbody>tr:nth-child(1)>th:nth-child(6),
+	#fixtures_list_510663>table>tbody>tr:nth-child(1)>th:nth-child(7),
+	#fixtures_list_510663>table>tbody>tr>td:nth-child(2),
+	#fixtures_list_510663>table>tbody>tr>td:nth-child(5),
+	#fixtures_list_510663>table>tbody>tr>td:nth-child(6),
+	#fixtures_list_510663>table>tbody>tr>td:nth-child(7),
+	#fixtures_list_510737>table>tbody>tr:nth-child(1)>th:nth-child(2),
+	#fixtures_list_510737>table>tbody>tr:nth-child(1)>th:nth-child(5),
+	#fixtures_list_510737>table>tbody>tr:nth-child(1)>th:nth-child(6),
+	#fixtures_list_510737>table>tbody>tr:nth-child(1)>th:nth-child(7),
+	#fixtures_list_510737>table>tbody>tr>td:nth-child(2),
+	#fixtures_list_510737>table>tbody>tr>td:nth-child(5),
+	#fixtures_list_510737>table>tbody>tr>td:nth-child(6),
+	#fixtures_list_510737>table>tbody>tr>td:nth-child(7),
+	#fixtures_list_510740>table>tbody>tr:nth-child(1)>th:nth-child(2),
+	#fixtures_list_510740>table>tbody>tr:nth-child(1)>th:nth-child(5),
+	#fixtures_list_510740>table>tbody>tr:nth-child(1)>th:nth-child(6),
+	#fixtures_list_510740>table>tbody>tr:nth-child(1)>th:nth-child(7),
+	#fixtures_list_510740>table>tbody>tr>td:nth-child(2),
+	#fixtures_list_510740>table>tbody>tr>td:nth-child(5),
+	#fixtures_list_510740>table>tbody>tr>td:nth-child(6),
+	#fixtures_list_510740>table>tbody>tr>td:nth-child(7) {
+	display: none;
+}
