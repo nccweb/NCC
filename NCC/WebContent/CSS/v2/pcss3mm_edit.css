@@ -1631,7 +1631,7 @@
 /**/
 /* phone */
 /**/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 	body {
     -webkit-text-size-adjust: none;
   }  
@@ -1795,11 +1795,15 @@
 		display: none;
 	}
 }
+@media ( max-width : 768px) {
+	.pcss3mm li {
+		font-size: 12px;
+	}
+}
 
 /*----------------------------------------------------------------------------*/
 /*                               CUSTOMIZATION                                */
 /*----------------------------------------------------------------------------*/
-
 .pcss3mm,
 .pcss3mm input,
 .pcss3mm textarea,
