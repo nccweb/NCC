@@ -7,7 +7,8 @@ body {
 	background-color: #fff;
 }
 .masthead {
-	background: url(https://googledrive.com/host/0B70qndiGPyERfm9vNlE4TGw3ZWVGRHlHTzJ0ckdHMWFIenVYT3JWU2NLUHhVX2R1ZjFRZzg/cricket_ball_wallpaper_wide.jpg) no-repeat center center;
+	/* background: url(https://googledrive.com/host/0B70qndiGPyERfm9vNlE4TGw3ZWVGRHlHTzJ0ckdHMWFIenVYT3JWU2NLUHhVX2R1ZjFRZzg/cricket_ball_wallpaper_wide.jpg) no-repeat center center; */
+	background: url(https://googledrive.com/host/0B70qndiGPyERfkpHZW44VHB5WVVfX3VWVzFKLWtVZGxpODE5VkxOa25laUlpSzFFRE1MMDA/cricket_ball_wallpaper_wide_crop.jpg) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -187,11 +188,41 @@ height: auto;
 #fielding-stats-table-510577 > tbody > tr > td:nth-child(1){
  display:none;
  }
+
+
 media ="screen"
 h4, .h4, h5, .h5, h6, .h6 {
 	margin-top: 10px;
 	margin-bottom: 5px;
 }
+@media(max-width: 480px) {
+.masthead {
+		padding-top: 2px;
+		max-height: 90px;
+	}
+	.container {
+		padding-right: 2px;
+		padding-left: 2px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	#header_logo_xs {
+		max-width: 70%;
+		max-height: auto;
+		margin-top: 5px;
+	}
+	.masthead h1 {
+		font-size: 13pt;
+		margin-top: 2px;
+		margin-bottom: 2px;
+	}
+	.masthead h2 {
+		font-size: 11pt;
+		margin-top: 2px;
+		margin-bottom: 2px;
+	}
+}
+
 @media ( max-width : 410px) {
 	.btn-responsive {
 		padding: 2px 4px;
@@ -217,17 +248,17 @@ h4, .h4, h5, .h5, h6, .h6 {
 	}
 }
 @media screen and (min-width: 320px) {
-	.masthead h1 {
+/* 	.masthead h1 {
 		font-size: 22px;
-	}
+	} */
 	#header_logo{
 	margin-top: 5px;}
 }
-@media only screen and (min-width : 480px) {
+/* @media only screen and (min-width : 480px) {
 	.masthead h1 {
 		font-size: 32px;
 	}
-}
+} */
 @media screen and (min-width: 768px) {
 	.masthead h1 {
 		font-size: 42px;
