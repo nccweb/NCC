@@ -501,122 +501,137 @@ $(document).prop('title', 'Newbury CC - Homepage');
 		</div>
 
 		<!-- Stats tables  ================================================== -->
-
-		<!-- Team Stats ========================================== -->
+		<!-- ==== Top performances ===== -->
 		<div class="container-fluid clearfix">
-			<h2>Team performances for 2014 season</h2>
 			<div class="row">
 				<div class="col-lg-12 col-md-12">
-					<div
-						class="team_stats_widget widget clearfix widget_container stats_table team_widget"
-						id="507346">
-						<script type="text/javascript">
-							$.ajax({
-								url : "/website/widgets/" + 507346
-							//, 
-							//success: function(data) {  
-							//$('.main').css("min-height", $(document).height() - 80  + "px");
-							//}  
-							});
-						</script>
+					<h3>Top performances for 2014 season</h3>
 
-						<div id='team_stats_507346'></div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Batting Stats ========================================== -->
-
-		<div class="container-fluid clearfix">
-			<h2>Player performances for 2014 season</h2>
-			<div class="row">
-				<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 hidden-xs">
-					<div
-						class="top_batting_performance_widget widget clearfix widget_container  "
-						id="507167">
-						<script type="text/javascript">
-							$
-									.ajax({
-										url : "http://newbury.play-cricket.com/website/widgets/" + 507167
+					<ul class="nav nav-pills" id="TopPerfNavPills">
+						<li class="active"><a href="#TeamPerf" data-toggle="tab">Team
+								performance</a></li>
+						<li><a href="#BatPerf" data-toggle="tab">Batting
+								performance</a></li>
+						<li><a href="#BowlPerf" data-toggle="tab">Bowling
+								performance</a></li>
+					</ul>
+					<div id="myPerfTabContent" class="tab-content">
+						<div class="tab-pane fade active in" id="TeamPerf">
+							<div
+								class="team_stats_widget widget clearfix widget_container stats_table team_widget"
+								id="507346">
+								<script type="text/javascript">
+									$.ajax({
+										url : "/website/widgets/" + 507346
 									//, 
 									//success: function(data) {  
 									//$('.main').css("min-height", $(document).height() - 80  + "px");
 									//}  
 									});
-						</script>
-						<div id='top_batting_performance_507167'></div>
-					</div>
-				</div>
-				<!-- col. -->
-				<div class="col-lg-5 col-md-5">
-					<div
-						class="batting_stats_widget widget clearfix widget_container stats_table batting_widget"
-						id="509031">
-						<script type="text/javascript">
-							$.ajax({
-								url : "/website/widgets/" + 509031
-							//, 
-							//success: function(data) {  
-							//$('.main').css("min-height", $(document).height() - 80  + "px");
-							//}  
-							});
-						</script>
+								</script>
 
-						<div id='batting_stats_509031'></div>
+								<div id='team_stats_507346'></div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="BatPerf">
+							<div
+								class="top_batting_performance_widget widget clearfix widget_container  "
+								id="507167">
+								<script type="text/javascript">
+									$
+											.ajax({
+												url : "http://newbury.play-cricket.com/website/widgets/" + 507167
+											//, 
+											//success: function(data) {  
+											//$('.main').css("min-height", $(document).height() - 80  + "px");
+											//}  
+											});
+								</script>
+								<div id='top_batting_performance_507167'></div>
+							</div>
+						</div>
+
+						<div class="tab-pane fade" id="BowlPerf">
+							<div
+								class="top_bowling_performance_widget widget clearfix widget_container  "
+								id="507168">
+								<script type="text/javascript">
+									$.ajax({
+										url : "/website/widgets/" + 507168
+									//, 
+									//success: function(data) {  
+									//$('.main').css("min-height", $(document).height() - 80  + "px");
+									//}  
+									});
+								</script>
+								<div id='top_bowling_performance_507168'></div>
+							</div>
+						</div>
+
 					</div>
-					<!-- col. -->
+
 				</div>
-				<!-- row -->
 			</div>
-			<!-- container -->
 		</div>
-
-		<!-- Bowling Stats ========================================== -->
-
+		
+		<div class="col-xs-12">
+			<hr class="hor-divider" />
+		</div>
+		<!-- ==== Top Averages ===== -->
 		<div class="container-fluid clearfix">
 			<div class="row">
-				<div
-					class="col-lg-7 col-md-7 hidden-xs horizontal-section-container">
-					<div
-						class="top_bowling_performance_widget widget clearfix widget_container  "
-						id="507168">
-						<script type="text/javascript">
-							$.ajax({
-								url : "/website/widgets/" + 507168
-							//, 
-							//success: function(data) {  
-							//$('.main').css("min-height", $(document).height() - 80  + "px");
-							//}  
-							});
-						</script>
-						<div id='top_bowling_performance_507168'></div>
-					</div>
-				</div>
+				<div class="col-lg-12 col-md-12">
+					<h3>Top averages for 2014 season</h3>
+					<ul class="nav nav-pills" id="TopAveNavPills">
+						<li class="active"><a href="#BattingAve" data-toggle="tab">Batting
+								averages</a></li>
+						<li><a href="#BowlAve" data-toggle="tab">Bowling averages</a></li>
+					</ul>
 
-				<div class="col-lg-5 col-md-5">
-					<div
-						class="bowling_stats_widget widget clearfix widget_container stats_table bowling_widget"
-						id="507344">
-						<script type="text/javascript">
-							$.ajax({
-								url : "/website/widgets/" + 507344
-							//, 
-							//success: function(data) {  
-							//$('.main').css("min-height", $(document).height() - 80  + "px");
-							//}  
-							});
-						</script>
-						<div id='bowling_stats_507344'></div>
+					<div id="myAveTabContent" class="tab-content">
+						<div class="tab-pane fade active in" id="BattingAve">
+							<div
+								class="batting_stats_widget widget clearfix widget_container stats_table batting_widget"
+								id="509031">
+								<script type="text/javascript">
+									$.ajax({
+										url : "/website/widgets/" + 509031
+									//, 
+									//success: function(data) {  
+									//$('.main').css("min-height", $(document).height() - 80  + "px");
+									//}  
+									});
+								</script>
+
+								<div id='batting_stats_509031'></div>
+							</div>
+
+						</div>
+						<div class="tab-pane fade" id="BowlAve">
+							<div
+								class="bowling_stats_widget widget clearfix widget_container stats_table bowling_widget"
+								id="507344">
+								<script type="text/javascript">
+									$.ajax({
+										url : "/website/widgets/" + 507344
+									//, 
+									//success: function(data) {  
+									//$('.main').css("min-height", $(document).height() - 80  + "px");
+									//}  
+									});
+								</script>
+								<div id='bowling_stats_507344'></div>
+							</div>
+
+						</div>
+
+
 					</div>
+
+
 				</div>
 			</div>
 		</div>
-
-
-
-
-
 
 		<!-- Footer ========================================== -->
 
