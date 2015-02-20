@@ -31,3 +31,6 @@ table.matches_table td {
 	#fixtures_list_510740>table>tbody>tr>td:nth-child(7) {
 	display: none;
 }
+#fixturesPills{
+	padding: 10px 10px;
+}
