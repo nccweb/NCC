@@ -1791,9 +1791,9 @@
 	.pcss3mm-collapsable:hover li {
 		display: block;
 	}
-	.pcss3mm-collapsable:hover .opener {
+/* 	.pcss3mm-collapsable:hover .opener {
 		display: none;
-	}
+	} */
 }
 @media ( max-width : 768px) {
 	.pcss3mm li {
