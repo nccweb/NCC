@@ -39,6 +39,11 @@ background-color: rgba(245, 245, 245, 0.1);
 	color: #FDD017;
 	background-color: #254117;
 }
+#TopPerfNavPills > li > a, #joinInfoNavPills > li > a {
+padding: 10px 10px;
+}
+#OurTeams{
+border: none;}
 a {
 	color: #254117;
 	font-weight: normal;
