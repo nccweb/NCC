@@ -27,6 +27,13 @@ body {
 .masthead a, .masthead lead {
   	color:#FDD017;
 }
+.masthead h1 {
+	margin-bottom: 2px;
+}
+.masthead h2 {
+	margin-top: 5px;
+	margin-bottom: 2px;
+}
 .masthead lead .lead {
 margin-bottom: 5px;
 }
@@ -117,10 +124,11 @@ margin-top: 20px;
   padding: 0;
 }
 .bx-wrapper .bx-caption {
-background: rgba(80, 80, 80, 0.4);
+background: rgba(37,65,23,0.6);
 }
 .bx-wrapper .bx-caption span {
 font-family: inherit;
+color: #FDD107;
 }
 .full-width-image {
 display: block;
