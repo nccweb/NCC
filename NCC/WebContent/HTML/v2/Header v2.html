@@ -1,3 +1,34 @@
+<style>
+
+#b_announce > div{
+margin: 0 auto 10px;
+}
+#b_announce > div > div.bx-viewport {
+margin: 0 auto 0px;
+}
+
+#b_announce > div > div.bx-viewport > ul > li > div.bx-caption {
+background: rgba(37,65,23,0.9);
+}
+#b_announce > div > div.bx-viewport > ul > li > div.bx-caption > span{
+font-family: inherit;
+color: #FDD107;
+text-shadow: none;
+}
+
+#img_container {
+    position:relative;
+    display:inline-block;
+}
+
+#kennet_button {
+    position:absolute;
+    bottom:70px;
+    right:10px;
+    text-shadow: none;
+}
+</style>
+
 
 <div class="container-fluid  hidden-xs visible-lg visible-md visible-sm"
 	id="header_text">
@@ -23,9 +54,28 @@
 
 		</div>
 		<div class="col-md-5 hidden-xs hidden-sm">
-		<img class="img-responsive thumbnail center-block"
+			<div class="bannerAnnounce" id="b_announce">
+						<ul class="bxslider_bannerAnnounce">
+							<li><img class="img-responsive thumbnail center-block"
 								src="https://googledrive.com/host/0B70qndiGPyERfm5mYWxFc0lPS0laMHF1VVh6U0w3WHpqUWF3MExwQWhybG1CZVQwNnZlNEU/20150225_email_header (3).png"
-								title="Natwest Cricket Force: Come and lend a hand at your club on 28th March to prepare for the exciting 2015 season." />
+								title="Natwest Cricket Force: Come and lend a hand at your club on 28th March to prepare for the exciting 2015 season." /></li>
+							<li>
+							<div id=img_container>
+							<img class="img-responsive thumbnail center-block"
+								src="https://googledrive.com/host/0B70qndiGPyERfkdlSE05R0pCVmFUTEYySlBtM25ocGZnX1FOV3YxWHNLZjN4SXVLSzdmcTQ/kennet_radio.png"
+								title="<b>Kennet Radio Saturday Sport: </b>
+								<b>Newbury Cricket Club's Paul Monger will be live on air from 4 PM on Saturday 7th March to talk about the local cricket scene.</b>" />
+								<a href="http://kennetradio.com/play/" target="_blank" type="button" class="btn btn-success" id="kennet_button">Tune in to Kennet Radio</a>
+								</div>
+								</li>								
+						</ul>
+			</div>
+		
+		
+		
+		<!-- <img class="img-responsive thumbnail center-block"
+								src="https://googledrive.com/host/0B70qndiGPyERfm5mYWxFc0lPS0laMHF1VVh6U0w3WHpqUWF3MExwQWhybG1CZVQwNnZlNEU/20150225_email_header (3).png"
+								title="Natwest Cricket Force: Come and lend a hand at your club on 28th March to prepare for the exciting 2015 season." /> -->
 		
 		</div>
 		<!-- col -->
@@ -66,3 +116,18 @@
 	</div>
 </div>
 <!-- /cont -->
+
+	<script type="text/javascript">
+				$(document).ready(function() {
+					$('.bxslider_bannerAnnounce').bxSlider({
+						auto : true,
+						speed: 700,
+						hideControlOnEnd: true,
+						infiniteLoop : false,
+						adaptiveHeight : true,
+						mode : 'fade',
+						captions : true,
+						controls : true
+					})
+				});
+			</script>
