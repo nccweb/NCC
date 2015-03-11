@@ -19,12 +19,10 @@
 <link rel="stylesheet"
 	href="https://googledrive.com/host/0B70qndiGPyERWFpmbWl0a2xjOE0/sky-tabs_edit.css"
 	class="myLink" />
-
-<!--  For picture slideshow http://bxslider.com/ -->
-<!-- <link rel="stylesheet"
-	href="https://googledrive.com/host/0B70qndiGPyERfkZIdXpkcVItSDd4eXAzM0JDYU5LZzZNbkI5SG40cnM4bkxQbnhxTDVmRkk/jquery.bxslider.css"
-	class="myLink" /> -->
-
+<script type="text/javascript"
+		src="https://cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js"></script>
+<script
+		src="https://cdn.jsdelivr.net/bxslider/4.1.3/jquery.bxslider.min.js"></script>
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/bxslider/4.1.3/jquery.bxslider.css"
 	class="myLink" />
@@ -39,13 +37,6 @@
 <link rel="stylesheet"
 	href="https://googledrive.com/host/0B70qndiGPyERfjBrM3duQVgzSEdNUmc0eHBpUldwQ3pvNXlDblBXaUtFNUNTeTYyNkt4c0E/stats_tables_v2.css"
 	class="myLink" />
-
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
-      <script src="../bower_components/respond/dest/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 <body>
 
@@ -79,15 +70,252 @@
 	<div class="container">
 
 		<header class="masthead">
-			<div id="headercontainer"></div>
-		</header>
+			<div id="headercontainer">
+			<div class="container-fluid  hidden-xs visible-lg visible-md visible-sm"
+	id="header_text">
+	<div class="row">
+		<div class="col-xs-3 col-md-1">
+			<a title="To homepage" href="http://newbury.play-cricket.com"> <img
+				id="header_logo"
+				src="https://googledrive.com/host/0B70qndiGPyERfkpHZW44VHB5WVVfX3VWVzFKLWtVZGxpODE5VkxOa25laUlpSzFFRE1MMDA/NCC_Logo_CL_Web_80x113.png"
+				class="img-responsive center-block">
+			</a>
+		</div>
+		<div class="col-xs-8 col-md-6">
+			<h1>Newbury Cricket Club</h1>
+			<h2 class="lead">
+				Northcroft lane, Newbury RG14 1RS<br>
+				<button type="button" class="btn btn-default disabled">Now
+					recruiting new players</button>
+<!-- 				 <a
+					href="http://newbury.play-cricket.com/website/web_pages/184366"
+					target="_blank" title="Club History">Estd. 1822</a> -->
+			</h2>
+		</div>
+		<div class="col-md-5 hidden-xs hidden-sm">
+			<div class="bannerAnnounce" id="b_announce">
+						<ul class="bxslider_bannerAnnounce">
+							<li><img class="img-responsive thumbnail center-block"
+								src="https://googledrive.com/host/0B70qndiGPyERfm5mYWxFc0lPS0laMHF1VVh6U0w3WHpqUWF3MExwQWhybG1CZVQwNnZlNEU/20150225_email_header (3).png"
+								title="Natwest Cricket Force: Come and lend a hand at your club on 28th March to prepare for the exciting 2015 season." /></li>							
+						</ul>
+			</div>
+		
+		
+		<!-- <img class="img-responsive thumbnail center-block"
+								src="https://googledrive.com/host/0B70qndiGPyERfm5mYWxFc0lPS0laMHF1VVh6U0w3WHpqUWF3MExwQWhybG1CZVQwNnZlNEU/20150225_email_header (3).png"
+								title="Natwest Cricket Force: Come and lend a hand at your club on 28th March to prepare for the exciting 2015 season." /> -->
+		
+		</div>
+		<!-- col -->
+	</div>
+<!-- 	<div class="row">
+		<div class="col-xs-12 col-md-12">
+			<div class="pull-right">
+				<button type="button" class="btn btn-default disabled">Now
+					recruiting new players</button>
+				<h4>Now recruiting new players</h4>
+			</div>
+		</div>
+	</div> -->
+	<!-- row -->
+</div>
+<!-- /cont -->
+<!-- Header for small screen -->
+<div class="container-fluid  hidden-lg hidden-md hidden-sm visible-xs"
+	id="header_text">
+	<div class="row">
+		<div class="col-xs-3">
+			<a title="To homepage" href="http://newbury.play-cricket.com"> <img
+				id="header_logo_xs"
+				src="https://googledrive.com/host/0B70qndiGPyERfkpHZW44VHB5WVVfX3VWVzFKLWtVZGxpODE5VkxOa25laUlpSzFFRE1MMDA/NCC_Logo_CL_Web_80x113.png"
+				class="img-responsive center-block">
+			</a>
 
+		</div>
+		<div class="col-xs-9">
+			<h1>Newbury Cricket Club</h1>
+			<h2 class="lead">
+				Northcroft lane<br> Newbury RG14 1RS
+			</h2>
+			<button type="button" class="btn btn-default btn-xs disabled">New
+				members welcome</button>
+		</div>
+		<!-- col -->
+	</div>
+</div>
+<!-- /cont -->
+
+	<script type="text/javascript">
+				$(document).ready(function() {
+					$('.bxslider_bannerAnnounce').bxSlider({
+						auto : true,
+						speed: 700,
+						hideControlOnEnd: true,
+						infiniteLoop : false,
+						adaptiveHeight : true,
+						mode : 'fade',
+						captions : true,
+						controls : true
+					})
+				});
+			</script>
+			
+			</div>
+		</header>
+	<!-- Header end  ================================================== -->
 		<div class="col-xs-12">
 			<hr class="hor-divider" />
 		</div>
 		<!-- Menu  ================================================== -->
 
-		<div id="menucontainer"></div>
+		<div id="menucontainer">
+		<ul class="pcss3mm pcss3mm-collapsable">
+
+	<!-- opener (required) -->
+	<li class="opener"><a href="javascript:;"><i class="fa fa-reorder"></i>Menu</a>
+	</li>
+	<!--/ opener -->
+	<!-- home -->
+	<li><a href="http://newbury.play-cricket.com/"><i
+			class="fa fa-home"></i>Home</a></li>
+	<!--/ home -->
+
+	<!-- Matches and fixtures -->
+	<li class="dropdown"><a href="javascript:;"><i
+			class="fa fa-star"></i>League cricket</a>
+		<div class="grid-container3">
+			<ul>
+				<li class="dropdown"><a href="javascript:;"><i
+						class="fa fa-check"></i>Matches</a>
+					<div class="grid-container3">
+						<ul>
+							<li><a
+								href="http://newbury.play-cricket.com/website/web_pages/66713"><i
+									class="fa fa-calendar"></i>Fixtures</a></li>
+							<li><a
+								href="http://newbury.play-cricket.com/website/web_pages/66714"><i
+									class="fa fa-trophy"></i>Results</a></li>
+							<li><a
+								href="http://newbury.play-cricket.com/website/web_pages/179175"><i
+									class="fa fa-table"></i> TVCL tables</a></li>
+						</ul>
+					</div></li>
+
+				<li class="dropdown"><a href="javascript:;"><i
+						class="fa fa-check"></i>Stats</a>
+					<div class="grid-container3">
+						<ul>
+							<li><a
+								href="http://newbury.play-cricket.com/website/web_pages/176866#sky-tab1"><i
+									class="fa fa-certificate"></i>Team stats</a></li>
+							<li><a
+								href="http://newbury.play-cricket.com/website/web_pages/176866#sky-tab2"><i
+									class="fa fa-certificate"></i>Batting averages</a></li>
+							<li><a
+								href="http://newbury.play-cricket.com/website/web_pages/176866#sky-tab3"><i
+									class="fa fa-certificate"></i>Bowling averages</a></li>
+							<li><a
+								href="http://newbury.play-cricket.com/website/web_pages/176866#sky-tab4"><i
+									class="fa fa-certificate"></i>Fielding averages</a></li>
+						</ul>
+					</div></li>
+			</ul>
+		</div></li>
+	<!--/ matches and fixtures -->
+
+	<!-- News -->
+	<li class="dropdown"><a href="javascript:;"><i
+			class="fa fa-newspaper-o"></i>News</a>
+		<div class="grid-container3">
+			<ul>
+			<li><a
+					href="http://newbury.play-cricket.com/website/web_pages/183593"><i
+						class="fa fa-newspaper-o"></i>Open Day 2015</a></li>
+				<li><a
+					href="http://newbury.play-cricket.com/website/web_pages/191076"><i
+						class="fa fa-newspaper-o"></i>Club newsletter - Dec 2014</a></li>
+				<!-- <li><a href="http://newbury.play-cricket.com/website/web_pages/191076"><i class="fa fa-lemon"></i>Newsletter archive</a></li> -->
+			</ul>
+		</div></li>
+	<!--/ News -->
+
+	<!-- Training -->
+	<li class="dropdown"><a href="javascript:;"><i
+			class="fa fa-cogs"></i>Training</a>
+		<div class="grid-container3">
+			<ul>
+				<li><a
+					href="http://newbury.play-cricket.com/website/web_pages/187751"><i
+						class="fa fa-cogs"></i>Nets</a></li>
+				<!-- <li><a href="http://newbury.play-cricket.com/website/web_pages/191076"><i class="fa fa-lemon"></i>Newsletter archive</a></li> -->
+			</ul>
+		</div></li>
+	<!--/ Training -->
+
+	<!-- Juniors -->
+	<li><a href="http://newbury.play-cricket.com/website/web_pages/166943"><i class="fa fa-child"></i>Juniors</a>
+	</li>
+	<!--/ Juniors -->
+
+	<!-- Join the club -->
+	<li class="dropdown"><a href="javascript:;"><i
+			class="fa fa-users"></i>Join the club</a>
+		<div class="grid-container3">
+			<ul>
+				<li><a
+					href="http://newbury.play-cricket.com/website/web_pages/184299#joinUs"><i
+						class="fa fa-info"></i>Joining info</a></li>
+				<li><a
+					href="http://newbury.play-cricket.com/website/web_pages/189160"><i
+						class="fa fa-table"></i>Membership form (snr.)</a></li>
+
+
+				<li class="dropdown"><a href="javascript:;"><i
+						class="fa fa-globe"></i> About us</a>
+					<div class="grid-container3">
+						<ul>
+							<li><a
+								href="http://newbury.play-cricket.com/website/web_pages/179632"><i
+									class="fa fa-globe"></i>Find us</a></li>
+							<li><a
+								href="http://newbury.play-cricket.com/website/web_pages/187732"><i
+									class="fa fa-gavel"></i> Club policies</a></li>
+							<li><a
+								href="http://newbury.play-cricket.com/website/web_pages/184366"><i
+									class="fa fa-history"></i> Club history</a></li>
+
+							<li><a
+								href="http://newbury.play-cricket.com/website/web_pages/187534"><i
+									class="fa fa-life-ring"></i> Club partners</a></li>
+							<li><a
+								href="http://newbury.play-cricket.com/website/web_pages/175236"><i
+									class="fa fa-shopping-cart"></i>Club kit</a></li>
+							<li><a
+								href="http://newbury.play-cricket.com/website/web_pages/175288"><i
+									class="fa fa-check"></i>Raise funds</a></li>
+						</ul>
+					</div></li>
+			</ul>
+		</div></li>
+	<!--/ Join the club -->
+
+	<!-- share -->
+	<li class="right dropdown"><a href="javascript:;"><i
+			class="fa fa-bullhorn"></i>Share</a>
+		<div class="grid-container3">
+			<ul>
+				<li><a
+					href="https://twitter.com/intent/tweet? data-url='URL'"><i
+						class="fa fa-twitter"></i>Twitter</a></li>
+				<li><a href="javascript:;"><i
+						class="fa fa-facebook"></i>Facebook</a></li>
+			</ul>
+		</div></li>
+	<!--/ share -->
+</ul>
+		
+		</div>
 
 		<!-- ==========menu end -->
 		<div class="col-xs-12">
@@ -156,6 +384,10 @@
 								src="https://googledrive.com/host/0B70qndiGPyERfnVvSXV2OUNPVGZnV1hXbmh2SGRiYjNtU0tHRXUzbTRsNGI1RUlLSE1DdlU/nccGround.jpg"
 								title="<b>Play for Newbury: </b>
 								Newbury CC is looking for new players to join their senior and junior teams. Get in touch to play at this friendly club." /></li>
+								
+								
+								
+
 						</ul>
 					</div>
 				</div>
@@ -708,117 +940,19 @@
 		</div>
 
 		<!-- Footer ========================================== -->
-
 		<footer class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-2">
-						<h3>
-							Affiliates<br /> <small> Visit our <a
-								href="http://newbury.play-cricket.com/website/web_pages/187534">Affiliates
-									page</a> for exciting discounts and offers
-							</small>
-						</h3>
-					</div>
-
-					<div class="col-md-7">
-						<ul class="bxslider_footer">
-							<li><a target="_blank"
-								href="http://www.chilisrestaurant.co.uk/index.html"><img
-									src="https://googledrive.com/host/0B70qndiGPyERNUV1UFZaSWlUdzg/chilis.png" /></a></li>
-							<li><a href="http://www.rivar.co.uk/" target="_blank"><img
-									src="https://googledrive.com/host/0B70qndiGPyERNUV1UFZaSWlUdzg/rivar.jpg" /></a></li>
-							<li><a target="_blank"
-								href="http://www.starrsportsmassage.co.uk"><img
-									src="https://googledrive.com/host/0B70qndiGPyERNUV1UFZaSWlUdzg/SSMLogo.png" /></a></li>
-							<li><a href="http://www.keepsprinting.com/" target="_blank"><img
-									src="https://googledrive.com/host/0B70qndiGPyERNUV1UFZaSWlUdzg/keeps-printing.gif" /></a></li>
-							<li><a target="_blank" href="http://www.meencanta.co.uk"><img
-									src="https://googledrive.com/host/0B70qndiGPyERNUV1UFZaSWlUdzg/me_encanta.jpg" /></a></li>
-							<li><a href="http://www.uzisports.com/" target="_blank"><img
-									src="https://googledrive.com/host/0B70qndiGPyERNUV1UFZaSWlUdzg/UZI.png"
-									style="height: 90px !important" /></a></li>
-						</ul>
-					</div>
-
-					<div class="col-md-3" id="address_block">
-						<ul class="fa-ul">
-							<li><i class="fa-li fa fa-map-marker"></i>Newbury Cricket
-								Club, <br /> Northcroft Lane, <br /> Newbury RG14 1RS.</li>
-							<li><i class="fa-li fa fa-phone"></i>01635 47290</li>
-							<li><i class="fa-li fa fa-envelope"></i><a
-								href="mailto:newburycricketclub@googlegroups.com">Email</a></li>
-						</ul>
-
-					</div>
-
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="centered-pills hidden-xs">
-							<ul class="nav nav-pills">
-								<li><a data-remote="true"
-									href="http://newbury.play-cricket.com/privacy">Privacy
-										Policy</a></li>
-								<li><a data-remote="true"
-									href="http://newbury.play-cricket.com/terms_and_conditions">Terms
-										and Conditions</a></li>
-								<li><a data-remote="true"
-									href="http://newbury.play-cricket.com/admin_terms">Administrator
-										Terms and Conditions</a></li>
-							</ul>
-							<div id="copyright">©2000-2015 England and Wales Cricket
-								Board (0030) 4965</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			<div id="footercontainer"></div>
 		</footer>
-
-
-
 	</div>
 	<!-- Main container -->
-
-	<script type="text/javascript"
-		src="https://cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js"></script>
-
 	<script type="text/javascript"
 		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-	<!-- bxSlider libraries for slideshows -->
-	<!-- <script
-		src="https://googledrive.com/host/0B70qndiGPyERfkZIdXpkcVItSDd4eXAzM0JDYU5LZzZNbkI5SG40cnM4bkxQbnhxTDVmRkk/jquery.bxslider.min.js"></script> -->
-	<script
-		src="https://cdn.jsdelivr.net/bxslider/4.1.3/jquery.bxslider.min.js"></script>
-
-	<script type="text/javascript">
-				$(document)
-						.ready(
-								function() {
-									$
-											.get(
-													'https://googledrive.com/host/0B70qndiGPyERfmQzYnEzSk8zZlZDYUxYemxNNnhHczVRM29tLUh6bU8yNktzNEctQWpxWnM/Header v2.html',
-													function(data) {
-														$("#headercontainer")
-																.html(data);
-													});
-									$
-											.get(
-													'https://googledrive.com/host/0B70qndiGPyERfmY1T1BTemQwYU9ObXdrNWhYRG1LS2tONEF1Y1lHRjQ0U0w2NjlTdzFZekk/Menu v2.html',
-													function(data) {
-														$("#menucontainer")
-																.html(data);
-													});
-								});
-			</script>
-	<!-- ===Menu end -->
 
 	<script type="text/javascript">
 				$(document).ready(function() {
 					$('.dropdown-toggle').dropdown();
 				});
-			</script>
+	</script>
 
 	<script type="text/javascript">
 				$(document).ready(function() {
@@ -845,40 +979,41 @@
 					})
 				});
 			</script>
-
-	<script type="text/javascript">
-				$(document).ready(function() {
+	<script type="text/javascript">				
+			$(document).ready(function() {
+				$("#headercontainer").load("http://newbury.play-cricket.com/website/web_pages/195965 #ncc_banner",
+						function(){
+					$('.bxslider_bannerAnnounce').bxSlider({
+						auto : true,
+						speed: 700,
+						hideControlOnEnd: true,
+						infiniteLoop : false,
+						adaptiveHeight : true,
+						mode : 'fade',
+						captions : true,
+						controls : true
+					});
+				});
+				$("#menucontainer").load("http://newbury.play-cricket.com/website/web_pages/195965 #ncc_menu");
+				$("#footercontainer").load("http://newbury.play-cricket.com/website/web_pages/195965 #ncc_footer",
+						function(){
 					$('.bxslider_footer').bxSlider({
 						minSlides : 2,
 						maxSlides : 4,
 						slideWidth : 160,
 						slideMargin : 10
-					})
+						});
 				});
-			</script>
-
+			});
+	</script>			
 
 	<script type="text/javascript">
 		$('link').not('.myLink').remove();
-		/*		$('link[rel=stylesheet][href="/assets/print-a622ffc90d1232b126e42c8adcc31348.css"]').remove();<!--new R2-->*/
 		jQuery(
 				'head script[src*="application-7fd426f9bca208f5a7b271011dc35e8b.js"]')
 				.remove();
 	</script>
 
-	<!-- <script type="text/javascript">
-$(document).ready(function(){    
-    //Check if the current URL contains '#'
-    if(document.URL.indexOf("#")==-1){
-        // Set the URL to whatever it was plus "#".
-        url = document.URL+"#";
-        location = "#";
-
-        //Reload the page
-        location.reload(true);
-    }
-});
-</script> -->
 
 	<script type="text/javascript">
 		$(window).load(function() {
