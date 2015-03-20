@@ -1,36 +1,120 @@
-table.matches_table {
+/*from http://css-tricks.com/responsive-data-tables/ */
+/* 	Generic Styling, for Desktops/Laptops	*/
+	
+	#fixtures_filter_508572 > form {
+	border: none;
+	}
+	#fixtures_filter_508572>form>div.section>table>tbody>tr>td {
+	border: none;
+	}
+	.table-bordered {
+		border: none;
+	}
+	#fixtures_list_508572 > table { 
+		width: 100%; 
+		border-collapse: collapse; 
+	}
+	/* Zebra striping */
+	#fixtures_list_508572 > table > tbody > tr:nth-of-type(odd) { 
+		background: #f9f9f9;
+		margin-top: 5px;
+  		margin-bottom: 5px; 
+	}
+ 	#fixtures_list_508572 > table > tbody > tr > th { 
+		background: #dff0d8; 
+		 color: #3c763d; 
+		 
+	}
+	#fixtures_list_508572 > table > tbody > td, th { 
+		padding: 6px; 
+		border: 1px solid #ccc; 
+		text-align: left; 
+	}
+#fixtures_list_508572>table>tbody>tr:nth-child(1)>th:nth-child(6),
+#fixtures_list_508572>table>tbody>tr>td:nth-child(6){
+	display: none;}
+	#fixtures_list_508572>table>tbody>tr:nth-child(1){border:none;}
+	/* 
+	Max width before this PARTICULAR table gets nasty
+	This query will take effect for any screen smaller than 760px
+	and also iPads specifically.
+	*/
+	@media 
+	only screen and (max-width: 760px),
+	(min-device-width: 768px) and (max-device-width: 1024px)  {
+	#match_row_2497935
+		/* Force table to not be like tables anymore */
+		#fixtures_list_508572 > table, tbody, th, td, tr { 
+			display: block; 
+		}
+		#fixtures_filter_508572 > form > div.section > table > tbody > tr.button{
+		margin-bottom: 10px
+		}		
+		/* Hide table headers (but not display: none;, for accessibility) */
+		#fixtures_list_508572 > table > tbody > tr > th { 
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}		
+		#fixtures_list_508572 > table > tbody > tr { border: 1px solid #ccc; }
+		
+		#fixtures_list_508572 > table > tbody > tr > td { 
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid #eee; 
+			position: relative;
+			padding-left: 35%;
+			white-space: normal; 
+		}
+		
+		#fixtures_list_508572 > table > tbody > tr > td:before { 
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 6px;
+			left: 6px;
+			width: 45%; 
+			padding-right: 10px; 
+			white-space: nowrap;
+		}
+		
+		/*
+		Label the data
+		*/
+		#fixtures_list_508572 > table > tbody > tr > td:nth-of-type(1):before { content: "Date"; }
+		#fixtures_list_508572 > table > tbody > tr > td:nth-of-type(2):before { content: "Time"; }
+		#fixtures_list_508572 > table > tbody > tr > td:nth-of-type(3):before { content: "Home team"; }
+		#fixtures_list_508572 > table > tbody > tr > td:nth-of-type(4):before { content: "Away team"; }
+		#fixtures_list_508572 > table > tbody > tr > td:nth-of-type(5):before { content: "Type"; }
+		/* #fixtures_list_508572 > table > tbody > tr > td:nth-of-type(6):before { content: "Ground"; } */
+		#fixtures_list_508572 > table > tbody > tr > td:nth-of-type(7):before { content: "View"; }
+	}
+	@media screen and (min-width:992px){
+	#fixtures_filter_508572 > form > div.section > table > tbody > tr > td {padding: 6px;}
+	table.matches_table {
 	border: none;
 	width: 100%;
-}
-table.matches_table td {
-	padding: 4px;
-}
-#fixtures_list_510663>table>tbody>tr:nth-child(1)>th:nth-child(2),
-	#fixtures_list_510663>table>tbody>tr:nth-child(1)>th:nth-child(5),
-	#fixtures_list_510663>table>tbody>tr:nth-child(1)>th:nth-child(6),
-	#fixtures_list_510663>table>tbody>tr:nth-child(1)>th:nth-child(7),
-	#fixtures_list_510663>table>tbody>tr>td:nth-child(2),
-	#fixtures_list_510663>table>tbody>tr>td:nth-child(5),
-	#fixtures_list_510663>table>tbody>tr>td:nth-child(6),
-	#fixtures_list_510663>table>tbody>tr>td:nth-child(7),
-	#fixtures_list_510737>table>tbody>tr:nth-child(1)>th:nth-child(2),
-	#fixtures_list_510737>table>tbody>tr:nth-child(1)>th:nth-child(5),
-	#fixtures_list_510737>table>tbody>tr:nth-child(1)>th:nth-child(6),
-	#fixtures_list_510737>table>tbody>tr:nth-child(1)>th:nth-child(7),
-	#fixtures_list_510737>table>tbody>tr>td:nth-child(2),
-	#fixtures_list_510737>table>tbody>tr>td:nth-child(5),
-	#fixtures_list_510737>table>tbody>tr>td:nth-child(6),
-	#fixtures_list_510737>table>tbody>tr>td:nth-child(7),
-	#fixtures_list_510740>table>tbody>tr:nth-child(1)>th:nth-child(2),
-	#fixtures_list_510740>table>tbody>tr:nth-child(1)>th:nth-child(5),
-	#fixtures_list_510740>table>tbody>tr:nth-child(1)>th:nth-child(6),
-	#fixtures_list_510740>table>tbody>tr:nth-child(1)>th:nth-child(7),
-	#fixtures_list_510740>table>tbody>tr>td:nth-child(2),
-	#fixtures_list_510740>table>tbody>tr>td:nth-child(5),
-	#fixtures_list_510740>table>tbody>tr>td:nth-child(6),
-	#fixtures_list_510740>table>tbody>tr>td:nth-child(7) {
-	display: none;
-}
-#fixturesPills{
-	padding: 10px 10px;
-}
+	}
+	}
+	
+	
+	/* Smartphones (portrait and landscape) ----------- */
+/* 	@media only screen and (min-device-width : 320px){
+		body { 
+			padding: 0; 
+			margin: 0; 
+			width: 320px;}
+	}
+		@media only screen and (max-device-width : 480px) {
+		body { 
+			padding: 0; 
+			margin: 0; 
+			width: 480px;}
+	} */
+ 	
+	/* iPads (portrait and landscape) ----------- */
+/*  	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		body { 
+			width: 495px; 
+		}
+	} */
