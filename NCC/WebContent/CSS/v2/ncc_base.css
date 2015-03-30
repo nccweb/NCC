@@ -40,15 +40,20 @@ margin-bottom: 5px;
 #header_text{
 background-color: rgba(245, 245, 245, 0.1);
 }
+
 #b_announce > div{
 margin: 0 auto 10px;
+background: none;
+border: 2px solid #B5BAB3;
 }
 #b_announce > div > div.bx-viewport {
 margin: 0 auto 0px;
 }
 
 #b_announce > div > div.bx-viewport > ul > li > div.bx-caption {
-background: rgba(37,65,23,0.9);
+background: rgba(37,65,23,0.4);
+text-align: right;
+font-weight: bold;
 }
 #b_announce > div > div.bx-viewport > ul > li > div.bx-caption > span{
 font-family: inherit;
