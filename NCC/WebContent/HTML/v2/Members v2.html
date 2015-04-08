@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>New members Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" media="screen"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+	class="myLink">
+<link
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+	rel="stylesheet" class="myLink" />
+<script type="text/javascript"
+	src="https://cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js"></script>
+<script
+	src="https://cdn.jsdelivr.net/bxslider/4.1.3/jquery.bxslider.min.js"></script>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/bxslider/4.1.3/jquery.bxslider.css"
+	class="myLink" />
+<link rel="stylesheet" media="screen"
+	href="https://googledrive.com/host/0B70qndiGPyERfktoeGx1YjJ5NzQ5Tm9pWTBYS0lodHRHNXdLc19rVGtta0ctZFBWSi01OFk/pcss3mm_edit.css"
+	class="myLink" />
+<link rel="stylesheet"
+	href="https://googledrive.com/host/0B70qndiGPyERfjBrM3duQVgzSEdNUmc0eHBpUldwQ3pvNXlDblBXaUtFNUNTeTYyNkt4c0E/ncc_base.css"
+	class="myLink" />
+</head>
+<body>
+	<script>
+		$(document).prop('title', 'Newbury CC - Members');
+	</script>
+
+	<!-- Google Tag Manager -->
+	<noscript>
+		<iframe src="//www.googletagmanager.com/ns.html?id=GTM-WTM2FT"
+			height="0" width="0" style="display: none; visibility: hidden"></iframe>
+	</noscript>
+	<script>
+		(function(w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start' : new Date().getTime(),
+				event : 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l='
+					+ l
+					: '';
+			j.async = true;
+			j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-WTM2FT');
+	</script>
+	<!-- End Google Tag Manager -->
+
+	<div class="container">
+
+		<header class="masthead">
+			<div id="headercontainer"></div>
+		</header>
+
+		<!-- Menu  ================================================== -->
+
+		<div id="menucontainer"></div>
+
+		<!-- ==========menu end -->
+		<div class="col-xs-12">
+			<hr class="hor-divider" />
+		</div>
+		<!--    ================================================== -->
+		<div class="container-fluid clearfix">
+			<div class="row">
+				<div class="col-md-9">
+					<h1>Members</h1>
+
+				</div>
+				<div class="col-md-3">
+					<ul class="social-media-icons clearfix">
+						<li><a href="https://www.facebook.com/NewburyCricketClub"
+							target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/newburycc" target="_blank"
+							title="Twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="mailto:newburycricketclub@googlegroups.com"
+							target="_blank" title="Email"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 hidden-lg hidden-md">
+					<div class="alert alert-dismissable alert-info">
+						<button type="button" class="close" data-dismiss="alert">×</button>
+						<strong>Heads up!</strong> This page is better if viewed in
+						landscape mode on your portable device.
+					</div>
+
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<hr class="hor-divider" />
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="members_widget widget clearfix widget_container  "
+						id="520540">
+						<script type="text/javascript">
+							$.ajax({
+								url : "/website/widgets/" + 520540
+							//, 
+							//success: function(data) {  
+							//$('.main').css("min-height", $(document).height() - 80  + "px");
+							//}  
+							});
+						</script>
+
+						<div id='members_520540'></div>
+					</div>
+				</div>
+				<!-- col -->
+			</div>
+			<!-- row -->
+		</div>
+		<!-- container -->
+
+		<!-- container -->
+		<!-- Footer ========================================== -->
+		<footer class="footer">
+			<div id="footercontainer"></div>
+		</footer>
+	</div>
+	<!-- Main container -->
+	<script type="text/javascript"
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<!-- ===Menu end -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.dropdown-toggle').dropdown();
+		});
+	</script>
+
+	<script type="text/javascript">
+		$('table').addClass("table-condensed table-responsive");
+	</script>
+	<script type="text/javascript">
+		$(document)
+				.ready(
+						function() {
+							$("#headercontainer")
+									.load(
+											"http://newbury.play-cricket.com/website/web_pages/195965 #ncc_banner",
+											function() {
+												$('.bxslider_bannerAnnounce')
+														.bxSlider(
+																{
+																	auto : true,
+																	speed : 700,
+																	hideControlOnEnd : true,
+																	infiniteLoop : false,
+																	adaptiveHeight : true,
+																	mode : 'fade',
+																	captions : true,
+																	controls : true
+																});
+											});
+							$("#menucontainer")
+									.load(
+											"http://newbury.play-cricket.com/website/web_pages/195965 #ncc_menu");
+							$("#footercontainer")
+									.load(
+											"http://newbury.play-cricket.com/website/web_pages/195965 #ncc_footer",
+											function() {
+												$('.bxslider_footer').bxSlider(
+														{
+															minSlides : 2,
+															maxSlides : 4,
+															slideWidth : 160,
+															slideMargin : 10
+														});
+											});
+						});
+	</script>
+	<script type="text/javascript">
+		$('link').not('.myLink').remove();
+		jQuery(
+				'head script[src*="application-7fd426f9bca208f5a7b271011dc35e8b.js"]')
+				.remove();
+	</script>
+
+	<script type="text/javascript">
+		$(window).load(function() {
+			$(".subnav").hide();
+			//$(".navbar").hide();
+			$('#footer_92961').hide();
+			$('#progress').hide();
+		});
+	</script>
+</body>
+</html>
