@@ -15,9 +15,11 @@
 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
 	rel="stylesheet" class="myLink" />
 <script type="text/javascript"
-		src="https://cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js"></script>
+	src="https://cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript"
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script
-		src="https://cdn.jsdelivr.net/bxslider/4.1.3/jquery.bxslider.min.js"></script>
+	src="https://cdn.jsdelivr.net/bxslider/4.1.3/jquery.bxslider.min.js"></script>
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/bxslider/4.1.3/jquery.bxslider.css"
 	class="myLink" />
@@ -27,6 +29,16 @@
 <link rel="stylesheet"
 	href="https://googledrive.com/host/0B70qndiGPyERfjBrM3duQVgzSEdNUmc0eHBpUldwQ3pvNXlDblBXaUtFNUNTeTYyNkt4c0E/ncc_base.css"
 	class="myLink" />
+
+<style>
+.label {
+	display: block;
+}
+
+table>tbody>tr>td{
+	padding: 12px;
+}
+</style>
 
 </head>
 <body>
@@ -74,232 +86,252 @@
 		<div class="container-fluid clearfix">
 			<div class="row">
 				<div class="col-md-12">
-					<h1>Club contacts</h1>
 
 
-					<table class="table table-striped table-hover ">
-						<thead>
-							<tr>
+					<!-- 					<div class="about_us_widget widget clearfix widget_container  "
+						id="522541">
+						<script type="text/javascript">
+							$.ajax({
+								url : "/website/widgets/" + 522541
+							//, 
+							//success: function(data) {  
+							//$('.main').css("min-height", $(document).height() - 80  + "px");
+							//}  
+							});
+						</script>
 
-								<th>In the office</th>
-								<th>Name   <small>(Click button for contact details)</small></th>
-								<th>On the field</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>President</td>
-								<td>
-									<div class="bs-component">
-										<button type="button" class="btn btn-default">
-											Mr.Eric Longshaw</button>
-									</div>
-								</td>
-								<td></td>
+						<div id='about_us_522541'></div>
+					</div> -->
+					<div class="panel panel-success">
+						<!-- Default panel contents -->
+						<div class="panel-heading">
+							<h1>Club contacts</h1>
+						</div>
+						<table class="table table-hover ">
+							<thead>
+								<tr>
 
-							</tr>
-							<tr>
-								<td>Chairman</td>
-								<td>
-									<button type="button" class="btn btn-success"
-										data-toggle="popover" data-html="true" data-trigger="focus"
-										data-content='<ul class="fa-ul">
-										<li><i class="fa-li fa fa-phone"></i>07810 567918 / 07795 412051</li>
-										<li><i class="fa-li fa fa-envelope"></i><a
-										href="mailto:johnosullivan01@gmail.com">Email</a></li>
-										</ul>'>
-										John O Sullivan
-									</button>
-								</td>
-								<td>2nd Team Vice Captain</td>
-							</tr>
-							<tr>
-								<td>Secretary</td>
-								<td>
-									<button type="button" class="btn btn-success"
-										data-toggle="popover" data-html="true" data-trigger="focus"
-										data-content='<ul class="fa-ul">
-										<li><i class="fa-li fa fa-phone"></i>07747 564491</li>
-										<li><i class="fa-li fa fa-envelope"></i><a
-										href="mailto:Paul.Monger@prudential.co.uk">Email</a></li>
-										</ul>'>
-										Paul Monger
-									</button>
-								</td>
-								<td><b>3rd Team Captain</b></td>
-							</tr>
-							<tr>
-								<td>Treasurer</td>
-								<td>
-									<button type="button" class="btn btn-success"
-										data-toggle="popover" data-html="true" data-trigger="focus"
-										data-content='<ul class="fa-ul">
-										<li><i class="fa-li fa fa-phone"></i>07747 564491</li>
-										<li><i class="fa-li fa fa-envelope"></i><a
-										href="mailto:Paul.Monger@prudential.co.uk">Email</a></li>
-										</ul>'>
-										Ed Uden
-									</button>
-								</td>
-								<td>1st Team Vice Captain</td>
-							</tr>
-							<tr>
-								<td>Fixture secretary</td>
-								<td>
-									<button type="button" class="btn btn-success"
-										data-toggle="popover" data-html="true" data-trigger="focus"
-										data-content='<ul class="fa-ul">
-										<li><i class="fa-li fa fa-phone"></i>07702 063814</li>
-										<li><i class="fa-li fa fa-envelope"></i><a
-										href="mailto:Martin.Walker@prudential.co.uk">Email</a></li>
-										</ul>'>
-										Martin Walker
-									</button>
-								</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>Recruitment officer</td>
-								<td>
-									<button type="button" class="btn btn-success"
-										data-toggle="popover" data-html="true" data-trigger="focus"
-										data-content='<ul class="fa-ul">
-										<li><i class="fa-li fa fa-phone"></i>07905 517938</li>
-										<li><i class="fa-li fa fa-envelope"></i><a
-										href="mailto:nickfergs@hotmail.com">Email</a></li>
-										</ul>'>
-										Nick Ferguson
-									</button>
-								</td>
-								<td></td>
-							</tr>																					
-							<tr>
-								<td>Junior Section Manager</td>
-								<td>
-									<button type="button" class="btn btn-success"
-										data-toggle="popover" data-html="true" data-trigger="focus"
-										data-content='<ul class="fa-ul">
-										<li><i class="fa-li fa fa-phone"></i>07501 457007</li>
-										<li><i class="fa-li fa fa-envelope"></i><a
-										href="mailto:stegregory101@gmail.com">Email</a></li>
-										</ul>'>
-										Stephen Gregory
-									</button>
-								</td>
-								<td>Under 13 Team Manager</td>
-							</tr>
-							<tr>
-								<td>Club Welfare Officer</td>
-								<td>
-									<button type="button" class="btn btn-success"
-										data-toggle="popover" data-html="true" data-trigger="focus"
-										data-content='<ul class="fa-ul">
-										<li><i class="fa-li fa fa-phone"></i>07709 201531</li>
-										<li><i class="fa-li fa fa-envelope"></i><a
-										href="mailto:smiths.31@sky.com">Email</a></li>
-										</ul>'>
-										Jeanette Smith
-									</button>
-								</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>Committee member</td>
-								<td>
-									<button type="button" class="btn btn-success"
-										data-toggle="popover" data-html="true" data-trigger="focus"
-										data-content='<ul class="fa-ul">
-										<li><i class="fa-li fa fa-phone"></i>07723 363827</li>
-										<li><i class="fa-li fa fa-envelope"></i><a
-										href="mailto:kevmills123@hotmail.co.uk">Email</a></li>
-										</ul>'>
-										Kevin Mills
-									</button>
-								</td>
-								<td><b>1st Team Captain</b></td>
-							</tr>
-							<tr>
-								<td>Committee member</td>
-								<td>
-									<button type="button" class="btn btn-success"
-										data-toggle="popover" data-html="true" data-trigger="focus"
-										data-content='<ul class="fa-ul">
-										<li><i class="fa-li fa fa-phone"></i>07774 319422</li>
-										<li><i class="fa-li fa fa-envelope"></i><a
-										href="mailto:braddazboi@hotmail.co.uk">Email</a></li>
-										</ul>'>
-										Brad Alton
-									</button>
-								</td>
-								<td><b>2nd Team Captain</b></td>
-							</tr>							
-							<tr>
-								<td>Groundsman</td>
-								<td>
-									<button type="button" class="btn btn-success"
-										data-toggle="popover" data-html="true" data-trigger="focus"
-										data-content='<ul class="fa-ul">
-										<li><i class="fa-li fa fa-phone"></i>07780476279</li>
-										<li><i class="fa-li fa fa-envelope"></i><a
-										href="mailto:joelawrance@hotmail.co.uk">Email</a></li>
-										</ul>'>
-										Joe Lawrence
-									</button>
-								</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>
-									<button type="button" class="btn btn-success"
-										data-toggle="popover" data-html="true" data-trigger="focus"
-										data-content='<ul class="fa-ul">
-										<li><i class="fa-li fa fa-phone"></i>07796 447742</li>
-										<li><i class="fa-li fa fa-envelope"></i><a
-										href="mailto:neil@moellerstonecare.co.uk">Email</a></li>
-										</ul>'>
-										Neil Milne
-									</button>
-								</td>
-								<td><b>U11 Team Manager</b></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>
-									<button type="button" class="btn btn-success"
-										data-toggle="popover" data-html="true" data-trigger="focus"
-										data-content='<ul class="fa-ul">
-										<li><i class="fa-li fa fa-phone"></i>07921 065272</li>
-										<li><i class="fa-li fa fa-envelope"></i><a
-										href="mailto:paulbodin@btinternet.com">Email</a></li>
-										</ul>'>
-										Paul Bodin
-									</button>
-								</td>
-								<td><b>U15 Team Manager</b></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>
-									<button type="button" class="btn btn-default"
-										data-toggle="popover" data-html="true" data-trigger="focus"
-										data-content='<ul class="fa-ul">
-										<li><i class="fa-li fa fa-phone"></i>07958 661430</li>
-										<li><i class="fa-li fa fa-envelope"></i><a
-										href="mailto:charlesanstey@btinternet.com">Email</a></li>
-										</ul>'>
-										Charlie Anstey
-									</button>
-								</td>
-								<td>Ex-Captain, Ex-Secretary</td>
-							</tr>																																											
-						</tbody>
-					</table>
+									<th>In the office</th>
+									<th>Name</th>
+									<th>Contact details</th>
+									<th>On the field</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><h4>
+											<span class="label label-default">President</span>
+										</h4></td>
+									<td>
+										<h4>Mr.Eric Longshaw</h4>
+									</td>
+									<td>. </td>
+									<td>. </td>
+								</tr>
+								<tr class="success">
+									<td><h4>
+											<span class="label label-success">Chairman</span>
+										</h4></td>
+									<td><h4>John O Sullivan</h4></td>
+									<td>
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-phone"></i>07810 567918</li>
+											<li><i class="fa-li fa fa-phone"></i>07795 412051</li>
+											<li><i class="fa-li fa fa-envelope"></i><a
+												href="mailto:johnosullivan01@gmail.com">Email</a></li>
+										</ul>
 
+									</td>
+									<td><h4>
+											<span class="label label-default">2nd Team Vice
+												Captain</span>
+										</h4></td>
+								</tr>
+								<tr class="success">
+									<td><h4>
+											<span class="label label-success">Secretary</span>
+										</h4></td>
+									<td>
+										<h4>Paul Monger</h4>
+									</td>
+									<td>
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-phone"></i>07747 564491</li>
+											<li><i class="fa-li fa fa-envelope"></i><a
+												href="mailto:Paul.Monger@prudential.co.uk">Email</a></li>
+										</ul>
+									</td>
+									<td><h4>
+											<span class="label label-default">3rd Team Captain</span>
+										</h4></td>									
+								</tr>
+								<tr>
+									<td><h4>
+											<span class="label label-default">Treasurer</span>
+										</h4></td>
+									<td><h4>Ed Uden</h4></td>
+									<td>
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-phone"></i>07891 016361</li>
+											<li><i class="fa-li fa fa-envelope"></i><a
+												href="mailto:Ed.Uden@prudential.co.uk">Email</a></li>
+										</ul>
+									</td>
+									<td><h4>
+											<span class="label label-default">1st Team Vice
+												Captain</span>
+										</h4></td>
+								</tr>
 
+								<tr>
+									<td><h4>
+											<span class="label label-default">Fixture secretary</span>
+										</h4></td>
+									<td><h4>Martin Walker</h4></td>
+									<td>
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-phone"></i>07702 063814</li>
+											<li><i class="fa-li fa fa-envelope"></i><a
+												href="mailto:Martin.Walker@prudential.co.uk">Email</a></li>
+										</ul>
+									</td>
+									<td>. </td>
+								</tr>
+								<tr>
+									<td><h4>
+											<span class="label label-default">Recruitment officer</span>
+										</h4></td>
+									<td><h4>Nick Ferguson</h4></td>
+									<td>
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-phone"></i>07905 517938</li>
+											<li><i class="fa-li fa fa-envelope"></i><a
+												href="mailto:nickfergs@hotmail.com">Email</a></li>
+										</ul>
+									</td>
+									<td>. </td>
+								</tr>
+								<tr>
+									<td><h4>
+											<span class="label label-default">Junior Section
+												Manager</span>
+										</h4></td>
+									<td><h4>Stephen Gregory</h4></td>
+									<td>
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-phone"></i>07501 457007</li>
+											<li><i class="fa-li fa fa-envelope"></i><a
+												href="mailto:stegregory101@gmail.com">Email</a></li>
+										</ul>
+									</td>
+									<td><h4>
+											<span class="label label-default">Under 13 Team Manager</span>
+										</h4></td>									
+								</tr>
+								<tr>
+									<td><h4>
+											<span class="label label-default">Club Welfare Officer</span>
+										</h4></td>
+									<td><h4>Jeanette Smith</h4></td>
+									<td>
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-phone"></i>07709 201531</li>
+											<li><i class="fa-li fa fa-envelope"></i><a
+												href="mailto:smiths.31@sky.com">Email</a></li>
+										</ul>
+									</td>
+									<td>. </td>
+								</tr>
+								<tr>
+									<td>. </td>
+									<td><h4>Kevin Mills</h4></td>
+									<td>
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-phone"></i>07723 363827</li>
+											<li><i class="fa-li fa fa-envelope"></i><a
+												href="mailto:kevmills123@hotmail.co.uk">Email</a></li>
+										</ul>
+									</td>
+									<td><h4>
+											<span class="label label-default">1st Team Captain</span>
+										</h4></td>
+								</tr>
+								<tr>
+									<td>. </td>
+									<td><h4>Brad Alton</h4></td>
+									<td>
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-phone"></i>07774 319422</li>
+											<li><i class="fa-li fa fa-envelope"></i><a
+												href="mailto:braddazboi@hotmail.co.uk">Email</a></li>
+										</ul>
+									</td>
+									<td><h4>
+											<span class="label label-default">2nd Team Captain</span>
+										</h4></td>
+								</tr>
+								<tr>
+									<td>. </td>
+									<td><h4>Joe Lawrence</h4></td>
+									<td>
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-phone"></i>07780476279</li>
+											<li><i class="fa-li fa fa-envelope"></i><a
+												href="mailto:joelawrance@hotmail.co.uk">Email</a></li>
+										</ul>
+									</td>
+									<td><h4>
+											<span class="label label-default">Groundsman</span>
+										</h4></td>
+								</tr>
+								<tr>
+									<td>. </td>
+									<td><h4>Neil Milne</h4></td>
+									<td>
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-phone"></i>07796 447742</li>
+											<li><i class="fa-li fa fa-envelope"></i><a
+												href="mailto:neil@moellerstonecare.co.uk">Email</a></li>
+										</ul>
+									</td>
+									<td><h4>
+											<span class="label label-default">U11 Team Manager</span>
+										</h4></td>
 
-
-
+								</tr>
+								<tr>
+									<td>. </td>
+									<td><h4>Paul Bodin</h4></td>
+									<td>
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-phone"></i>07921 065272</li>
+											<li><i class="fa-li fa fa-envelope"></i><a
+												href="mailto:paulbodin@btinternet.com">Email</a></li>
+										</ul>
+									</td>
+									<td><h4>
+											<span class="label label-default">U15 Team Manager</span>
+										</h4></td>
+								</tr>
+								<tr>
+									<td><h4>
+											<span class="label label-default">Ex-Captain <br>
+												Ex-Secretary
+											</span>
+										</h4></td>
+									<td><h4>Charlie Anstey</h4></td>
+									<td>
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-phone"></i>07958 661430</li>
+											<li><i class="fa-li fa fa-envelope"></i><a
+												href="mailto:charlesanstey@btinternet.com">Email</a></li>
+										</ul>
+									</td>
+									<td>. </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -311,40 +343,50 @@
 		</footer>
 	</div>
 	<!-- Main container -->
-	<script type="text/javascript"
-		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('.dropdown-toggle').dropdown();
-			$("[data-toggle=popover]").popover();
 		});
 	</script>
-	<script type="text/javascript">				
-			$(document).ready(function() {
-				$("#headercontainer").load("http://newbury.play-cricket.com/website/web_pages/195965 #ncc_banner",
-						function(){
-					$('.bxslider_bannerAnnounce').bxSlider({
-						auto : true,
-						speed: 700,
-						hideControlOnEnd: true,
-						infiniteLoop : false,
-						adaptiveHeight : true,
-						mode : 'fade',
-						captions : true,
-						controls : true
-					});
-				});
-				$("#menucontainer").load("http://newbury.play-cricket.com/website/web_pages/195965 #ncc_menu");
-				$("#footercontainer").load("http://newbury.play-cricket.com/website/web_pages/195965 #ncc_footer",
-						function(){
-					$('.bxslider_footer').bxSlider({
-						minSlides : 2,
-						maxSlides : 4,
-						slideWidth : 160,
-						slideMargin : 10
+
+	<script type="text/javascript">
+		$(document)
+				.ready(
+						function() {
+							$("#headercontainer")
+									.load(
+											"http://newbury.play-cricket.com/website/web_pages/195965 #ncc_banner",
+											function() {
+												$('.bxslider_bannerAnnounce')
+														.bxSlider(
+																{
+																	auto : true,
+																	speed : 700,
+																	hideControlOnEnd : true,
+																	infiniteLoop : false,
+																	adaptiveHeight : true,
+																	mode : 'fade',
+																	captions : true,
+																	controls : true
+																});
+											});
+							$("#menucontainer")
+									.load(
+											"http://newbury.play-cricket.com/website/web_pages/195965 #ncc_menu");
+							$("#footercontainer")
+									.load(
+											"http://newbury.play-cricket.com/website/web_pages/195965 #ncc_footer",
+											function() {
+												$('.bxslider_footer').bxSlider(
+														{
+															minSlides : 2,
+															maxSlides : 4,
+															slideWidth : 160,
+															slideMargin : 10
+														});
+											});
 						});
-				});
-			});
 	</script>
 	<script type="text/javascript">
 		$('link').not('.myLink').remove();
