@@ -43,11 +43,15 @@ margin-bottom: 5px;
 #header_text{
 background-color: rgba(245, 245, 245, 0.1);
 }
-
+#play_of_week{
+	background-color: #254117;	
+	-webkit-border-radius: 10px 10px 0px 0px;
+}
 #b_announce > div{
 margin: 0 auto 10px;
+/* -webkit-border-radius: 0px 0px 10px 10px; */
 /* background: none; */
-/* border: 2px solid #B5BAB3; */
+/*  border: 2px solid #fff; */
 }
 #b_announce > div > div.bx-viewport {
 margin: 0 auto 0px;
@@ -64,8 +68,8 @@ color: #FDD107;
 text-shadow: none;
 }
 .banner_player_text{
-	margin-top: 2px;
-	margin-bottom: 2px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	padding: 5px; 
 }
 .caption1{
