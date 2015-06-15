@@ -25,8 +25,13 @@
 	padding: 0;
 	outline: none;
 	border: 0;
-	background: none;
+	/* background: none; */
 }
+#skyBtn {
+	padding: 6px 12px;
+  	margin-bottom: 0;
+}
+
 .sky-tabs {
 	position: relative;
 /* 	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
