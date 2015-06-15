@@ -169,11 +169,11 @@ padding-left: 65px;
 	vertical-align: middle;
 	float: none;
 }
-/* .bx-wrapper {
+.bx-wrapper {
 	position: relative;
-	margin: 10px auto 30px;
+	margin: 0px auto 15px;
 	padding: 0;
-} */
+}
 .bx-viewport ul {
   margin: 0;
   padding: 0;
