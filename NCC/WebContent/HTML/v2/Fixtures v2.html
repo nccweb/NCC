@@ -295,12 +295,19 @@
 				$("#headercontainer").load("http://newbury.play-cricket.com/website/web_pages/195965 #ncc_banner",
 						function(){
 					$('.bxslider_bannerAnnounce').bxSlider({
+						mode: 'horizontal',
+						infiniteLoop : true,
 						auto : true,
+						autoStart: true,
+						autoDirection: 'next',
+						autoHover: true,
 						speed: 700,
-						hideControlOnEnd: true,
-						infiniteLoop : false,
+						pause: 3000,						
+						pager: false,						
+						infiniteLoop : true,
 						adaptiveHeight : true,
 						mode : 'fade',
+						autoControls: false,
 						captions : true,
 						controls : true
 					});
