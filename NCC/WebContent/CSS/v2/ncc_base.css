@@ -48,8 +48,8 @@ background-color: rgba(245, 245, 245, 0.1);
 	background-color: #254117;	
 	-webkit-border-radius: 5px 5px 0px 0px;
 }
-#b_announce > div{
-margin: 0 auto 10px;
+#b_announce > div {
+margin: 0 auto 10px !important;
 -webkit-border-radius: 0px 0px 5px 5px;
 /* background: none; */
 /*  border: 2px solid #fff; */
