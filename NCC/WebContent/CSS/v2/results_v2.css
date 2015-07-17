@@ -1,41 +1,57 @@
 /*from http://css-tricks.com/responsive-data-tables/ */
 /* 	Generic Styling, for Desktops/Laptops	*/
-	
-	#results_filter_509257 > form {
+#results_filter_509257>form {
 	border: none;
-	}
-	#results_filter_509257>form>div.section>table>tbody>tr>td {
+}
+
+#results_filter_509257>form>div.section>table>tbody>tr>td {
 	border: none;
-	}
-	.table-bordered {
-		border: none;
-	}
-	#results_list_509257 > div > table { 
-		width: 100%; 
-		border-collapse: collapse; 
-	}
-	/* Zebra striping */
-	#results_list_509257 > div > table > tbody > tr:nth-of-type(odd) { 
-		background: #f9f9f9; 
-	}
- 	#results_list_509257 > div > table > tbody > tr > th { 
-		background: #dff0d8; 
-		 color: #3c763d; 
-		 
-	}
-	#results_list_509257 > div > table > tbody > td, th { 
-		padding: 6px; 
-		border: 1px solid #ccc; 
-		text-align: left; 
-	}
+}
 
+.table-bordered {
+	border: none;
+}
 
-	/* 
+#results_list_509257>div>table {
+	width: 100%;
+	border-collapse: collapse;
+}
+/* Zebra striping */
+#results_list_509257>div>table>tbody>tr:nth-of-type(odd) {
+	background: #f9f9f9;
+}
+
+#results_list_509257>div>table>tbody>tr>th {
+	background: #dff0d8;
+	color: #3c763d;
+}
+
+#results_list_509257>div>table>tbody>td, th {
+	padding: 6px;
+	border: 1px solid #ccc;
+	text-align: left;
+}
+
+.well {
+	background-color: rgba(245, 245, 245, 0.06);
+}
+
+.form-control {
+	margin-left: -10px;
+	margin-bottom: 5px;
+}
+
+.btn-group-sm>.btn, .btn-sm {
+	margin-bottom: 5px;
+	margin-top: -20px;
+}
+
+/* 
 	Max width before this PARTICULAR table gets nasty
 	This query will take effect for any screen smaller than 760px
 	and also iPads specifically.
 	*/
-	@media 
+@media 
 	only screen and (max-width: 760px),
 	(min-device-width: 768px) and (max-device-width: 1024px)  {
 	
