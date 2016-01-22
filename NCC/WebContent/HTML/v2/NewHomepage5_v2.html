@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>New Home Page</title>
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" media="screen"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
@@ -50,6 +44,36 @@
 .nav-tabs {
     margin-bottom: 0;
 }
+
+
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: #3c763d;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.2);    
+}
+
+.carousel-indicators p{
+    bottom: 12px;
+}
+
+.carousel-indicators li {
+   position: relative;
+    background-color: #000 \9;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #3c763d;
+    border-radius: 10px;
+}
+.carousel-indicators {
+position: relative;
+top:0px;
+    bottom: 1px;
+}
+
 </style>
 
 </head>
@@ -107,7 +131,7 @@
 							<div class="modal-content">
 								<div class="modal-header">
 									<button type="button" class="close" data-dismiss="modal"
-										aria-hidden="true">Ã—</button>
+										aria-hidden="true">×</button>
 									<h2 class="modal-title">
 										<i class="fa fa-coffee"></i> Coffee Morning
 									</h2>
@@ -148,7 +172,7 @@
 							</a>
 					</h2>
 
-					<p class="text-justify">Thereâ€™s been a Newbury Cricket Club
+					<p class="text-justify">There’s been a Newbury Cricket Club
 						since 1822, and the modern sides first played at their home ground
 						on Northcroft Playing Fields in 1947. Today we have three Thames
 						Valley Cricket League sides, plus an occasional Sunday eleven, and
@@ -159,7 +183,7 @@
 							src="https://googledrive.com/host/0B70qndiGPyERfm9vNlE4TGw3ZWVGRHlHTzJ0ckdHMWFIenVYT3JWU2NLUHhVX2R1ZjFRZzg/NCC_clubmark_RGB_140x140.png"
 							title="ECB Clubmark" class="img-responsive  pull-right">
 					</div>
-					<p class="text-justify">Itâ€™s a special place to play cricket,
+					<p class="text-justify">It’s a special place to play cricket,
 						right in the town centre, with the river along one boundary, and
 						Northcroft lane on the other, and the church spire in the
 						background. In the evening the light across the outfield from a
@@ -169,7 +193,7 @@
 						Newbury, and we like to blend competitive cricket with a friendly
 						atmosphere on and off the pitch at all levels. We play to win and
 						talent is rewarded with challenging league cricket, but not at the
-						expense of the gameâ€™s traditional values of fair play and team
+						expense of the game’s traditional values of fair play and team
 						spirit. And there is room for cricketers of all skill levels to
 						practice and play in a team which suits their individual
 						ambitions.</p>
@@ -193,7 +217,7 @@
 
 					</div>
 					<!-- 					<div class="alert alert-dismissable alert-warning alert-fixed text-center">
-						<button type="button" class="close" data-dismiss="alert">Ã—</button>
+						<button type="button" class="close" data-dismiss="alert">×</button>
 						<h4>Note!</h4>
 						<p>
 							<strong><a
@@ -342,7 +366,7 @@
 									href="https://www.google.co.uk/maps/place/The+Clere+School/@51.3472847,-1.3197968,15.25z/data=!4m2!3m1!1s0x0:0xcec90a45de4f6096">Clere
 									School Newbury.</a>
 							</p>
-							<p>This yearâ€™s winter training will commence on Wednesday,
+							<p>This year’s winter training will commence on Wednesday,
 								February 10th and will this year be held at Clere School,
 								Burghclere, just south of Newbury. We have chosen this venue for
 								a number of reasons including cost, access at peak traffic times
@@ -371,7 +395,7 @@
 									<p>
 										<b>Under 15s only</b> - 7.15 pm to 8.15 pm.
 									</p>
-									<p>The costs for over 15s but under 19s will be Â£3 per
+									<p>The costs for over 15s but under 19s will be £3 per
 										session. The cost for Under 11s/13s/15s is paid separately and
 										will be communicated to parents as part of the membership form
 										process.</p>
@@ -380,15 +404,15 @@
 								<div class="tab-pane fade" id="SeniorNets">
 									<p>Senior nets (including under 15s who want a longer
 										session) and under 19s will be from 8 pm to 10 pm.</p>
-									<p>The fees will be Â£5 per session. Concession fees will be
-										Â£3.</p>
+									<p>The fees will be £5 per session. Concession fees will be
+										£3.</p>
 								</div>
 							</div>
 							<div>
 								<p>New junior and senior members will be most welcome, as
 									will ex-players and anybody that is interested in coaching. The
 									club has also purchased lots of innovative and new training
-									equipment which weâ€™ll make use of during these sessions and the
+									equipment which we’ll make use of during these sessions and the
 									popular bowling machine will be available to be booked (details
 									to be communicated) for players to practice their favourite
 									shots or maybe the shots they need most work at.</p>
@@ -407,7 +431,380 @@
 							<h2 class="panel-title">Player of the week - 2015 season</h2>
 						</div>
 						<div class="panel-body">
-							<div class="POWAnnounce" id="b_announce">
+							<div id="poyCarousel" class="carousel slide" data-ride="carousel">
+								<!-- Indicators -->
+								<!-- <ol class="carousel-indicators">
+									<li data-target="#poyCarousel" data-slide-to="0" class="active"></li>
+									<li data-target="#poyCarousel" data-slide-to="1"></li>
+									<li data-target="#poyCarousel" data-slide-to="2"></li>
+									<li data-target="#poyCarousel" data-slide-to="3"></li>
+									<li data-target="#poyCarousel" data-slide-to="4"></li>
+									<li data-target="#poyCarousel" data-slide-to="5"></li>
+									<li data-target="#poyCarousel" data-slide-to="6"></li>
+									<li data-target="#poyCarousel" data-slide-to="7"></li>
+									<li data-target="#poyCarousel" data-slide-to="8"></li>
+									<li data-target="#poyCarousel" data-slide-to="9"></li>
+									<li data-target="#poyCarousel" data-slide-to="10"></li>
+									<li data-target="#poyCarousel" data-slide-to="11"></li>
+									<li data-target="#poyCarousel" data-slide-to="12"></li>
+									<li data-target="#poyCarousel" data-slide-to="13"></li>
+									<li data-target="#poyCarousel" data-slide-to="14"></li>
+									<li data-target="#poyCarousel" data-slide-to="15"></li>
+									<li data-target="#poyCarousel" data-slide-to="16"></li>
+									<li data-target="#poyCarousel" data-slide-to="17"></li>
+									<li data-target="#poyCarousel" data-slide-to="18"></li>
+									<li data-target="#poyCarousel" data-slide-to="19"></li>
+									<li data-target="#poyCarousel" data-slide-to="20"></li>
+									<li data-target="#poyCarousel" data-slide-to="21"></li>
+									<li data-target="#poyCarousel" data-slide-to="22"></li>
+								</ol> -->
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner" role="listbox">
+
+									<div class="item active">
+										<img class="img-responsive center-block"
+											src="https://googledrive.com/host/0B70qndiGPyERfmFLajRaNmpuRGNDU1hzQ1U3VkI4cWNuQzNCLTZtY1paRmFWdXhYbFQ1azA/untitled.png">
+										<div class="carousel-caption">
+											<h3>Michael Seath</h3>
+											<h4>9th May</h4>
+											<p>
+												<a id="mseath"
+													href="http://newbury.play-cricket.com/website/results/2346567">Match
+													winning 6 wickets</a>
+											</p>
+										</div>
+									</div>
+
+									<div class="item">
+										<img class="img-responsive center-block"
+											src="https://googledrive.com/host/0B70qndiGPyERfmFLajRaNmpuRGNDU1hzQ1U3VkI4cWNuQzNCLTZtY1paRmFWdXhYbFQ1azA/surya.jpg">
+										<div class="carousel-caption">
+											<h3>Surya</h3>
+											<h4>9th May</h4>
+											<p>
+												<a id="ss"
+													href="http://newbury.play-cricket.com/website/results/2344166">Innings
+													building 87 runs.</a>
+											</p>
+										</div>
+									</div>
+									<div class="item">
+										<img class="img-responsive center-block"
+											src="https://googledrive.com/host/0B70qndiGPyERfmFLajRaNmpuRGNDU1hzQ1U3VkI4cWNuQzNCLTZtY1paRmFWdXhYbFQ1azA/josh1.jpg">
+										<div class="carousel-caption">
+											<h3>Josh Harris</h3>
+											<h4>16th May</h4>
+											<p>
+												<a id="jh"
+													href="http://newbury.play-cricket.com/website/results/2344170">Match
+													saving 67 runs batting at 7.</a>
+											</p>
+										</div>
+									</div>
+									<div class="item">
+										<img class="img-responsive center-block"
+											src="https://googledrive.com/host/0B70qndiGPyERfmFLajRaNmpuRGNDU1hzQ1U3VkI4cWNuQzNCLTZtY1paRmFWdXhYbFQ1azA/bowler.JPG">
+										<div class="carousel-caption">
+											<h3>Phil Davis</h3>
+											<h4>16th May</h4>
+											<p>
+												<a id="jh"
+													href="http://newbury.play-cricket.com/website/results/2346573">3
+													Wickets and a stunning catch.</a>
+											</p>
+										</div>
+									</div>
+									<div class="item">
+										<img class="img-responsive center-block"
+											src="https://googledrive.com/host/0B70qndiGPyERfmFLajRaNmpuRGNDU1hzQ1U3VkI4cWNuQzNCLTZtY1paRmFWdXhYbFQ1azA/Pratheesh_small.jpg">
+										<div class="carousel-caption">
+											<h3>Prateesh Rajpal</h3>
+											<h4>23rd May</h4>
+											<p>
+												<a id="jh"
+													href="http://newbury.play-cricket.com/website/results/2344178">Scintillating
+													display of pace bowling (5 wickets)</a>
+											</p>
+										</div>
+									</div>
+									<div class="item">
+										<img class="img-responsive center-block"
+											src="https://googledrive.com/host/0B70qndiGPyERfmFLajRaNmpuRGNDU1hzQ1U3VkI4cWNuQzNCLTZtY1paRmFWdXhYbFQ1azA/mike_beau_small.jpg">
+										<div class="carousel-caption">
+											<h3>Mike Beaumont</h3>
+											<h4>23rd May</h4>
+											<p>
+												<a id="jh"
+													href="http://newbury.play-cricket.com/website/results/2348932">Match
+													winning 74 chasing 164.</a>
+											</p>
+										</div>
+									</div>
+									<div class="item">
+										<img class="img-responsive center-block"
+											src="https://googledrive.com/host/0B70qndiGPyERfmFLajRaNmpuRGNDU1hzQ1U3VkI4cWNuQzNCLTZtY1paRmFWdXhYbFQ1azA/RH_beach2.jpg">
+										<div class="carousel-caption">
+											<h3>Rajeev Hanabe</h3>
+											<h4>30th May</h4>
+											<p>
+												<a id="jh"
+													href="http://newbury.play-cricket.com/website/results/2344181">Match
+													winning 50 n.o. playing under pressure at #8.</a>
+											</p>
+										</div>
+									</div>
+									<div class="item">
+										<img class="img-responsive center-block"
+											src="https://googledrive.com/host/0B70qndiGPyERfmFLajRaNmpuRGNDU1hzQ1U3VkI4cWNuQzNCLTZtY1paRmFWdXhYbFQ1azA/satpal1.jpg">
+										<div class="carousel-caption">
+											<h3>Satpal</h3>
+											<h4>30th May</h4>
+											<p>
+												<a id="jh"
+													href="http://newbury.play-cricket.com/website/results/2346582">
+													All round match winning performance - 4 wickets, 2 catches
+													and 23*.</a>
+											</p>
+										</div>
+									</div>
+									<div class="item">
+										<img class="img-responsive center-block"
+											src="https://googledrive.com/host/0B70qndiGPyERfmFLajRaNmpuRGNDU1hzQ1U3VkI4cWNuQzNCLTZtY1paRmFWdXhYbFQ1azA/bowler.JPG">
+										<div class="carousel-caption">
+											<h3>Zak Forrest</h3>
+											<h4>30th May</h4>
+											<p>
+												<a id="jh"
+													href="http://newbury.play-cricket.com/website/results/2348936">4
+													for 15 of just 3.4. Our budding bowling star.</a>
+											</p>
+										</div>
+									</div>
+									<div class="item">
+										<img class="img-responsive center-block"
+											src="https://googledrive.com/host/0B70qndiGPyERfmFLajRaNmpuRGNDU1hzQ1U3VkI4cWNuQzNCLTZtY1paRmFWdXhYbFQ1azA/satpal1.jpg">
+										<div class="carousel-caption">
+											<h3>Satpal</h3>
+											<h4>6th June</h4>
+											<p>
+												<a id="jh"
+													href="http://newbury.play-cricket.com/website/results/2344187">Newbury
+													CC's demolition man. 5fer in just 4 overs.</a>
+											</p>
+										</div>
+									</div>
+									<!--  -->
+									<div class="item">
+										<img class="img-responsive center-block"
+											src="https://googledrive.com/host/0B70qndiGPyERfmFLajRaNmpuRGNDU1hzQ1U3VkI4cWNuQzNCLTZtY1paRmFWdXhYbFQ1azA/SGala.jpg">
+										<div class="carousel-caption">
+											<h3>Sandesh Gala</h3>
+											<h4>13th June</h4>
+
+											<p>
+												<a id="jh"
+													href="http://newbury.play-cricket.com/website/results/2346593">6
+													wickets in a match winning spell. Bingo!!</a>
+											</p>
+										</div>
+									</div>
+									<div class="item">
+										<img class="img-responsive center-block"
+											src="https://googledrive.com/host/0B70qndiGPyERfmFLajRaNmpuRGNDU1hzQ1U3VkI4cWNuQzNCLTZtY1paRmFWdXhYbFQ1azA/pratty_2.jpg">
+										<div class="carousel-caption">
+											<h3>Pratheesh Rajpal</h3>
+											<h4>20th June</h4>
+
+											<p>
+												<a id="jh"
+													href="http://newbury.play-cricket.com/website/results/2344196">Pratheesh
+													Rajpal's unbeaten 90* led the hosts to victory over
+													Falkland 2s.</a>
+											</p>
+										</div>
+									</div>
+									<div class="item">
+										<img class="img-responsive center-block"
+											src="https://googledrive.com/host/0B70qndiGPyERfmFLajRaNmpuRGNDU1hzQ1U3VkI4cWNuQzNCLTZtY1paRmFWdXhYbFQ1azA/driveyoungman.JPG">
+										<div class="carousel-caption">
+											<h3>Ritvij Dedhe</h3>
+											<h4>20th June</h4>
+
+											<p>
+												<a id="jh"
+													href="http://newbury.play-cricket.com/website/results/2346607">Ritvij
+													Dedhe scoring 65* under difficult conditions to secure a
+													draw.</a>
+											</p>
+										</div>
+									</div>
+									<div class="item">
+										<img class="img-responsive center-block"
+											src="https://googledrive.com/host/0B70qndiGPyERfmFLajRaNmpuRGNDU1hzQ1U3VkI4cWNuQzNCLTZtY1paRmFWdXhYbFQ1azA/KevinMills.jpg">
+										<div class="carousel-caption">
+											<h3>Kevin Mills</h3>
+											<h4>4th July</h4>
+
+											<p>
+												<a id="jh"
+													href="http://newbury.play-cricket.com/website/results/2344205">Kevin
+													Mills (C) scored a talismanic 44 and then took 6 wickets to
+													win the match.</a>
+											</p>
+										</div>
+									</div>
+									<div class="item">
+										<img class="img-responsive center-block"
+											src="https://googledrive.com/host/0B70qndiGPyERfmFLajRaNmpuRGNDU1hzQ1U3VkI4cWNuQzNCLTZtY1paRmFWdXhYbFQ1azA/PhilDavies.jpg">
+										<div class="carousel-caption">
+											<h3>Phil Davis</h3>
+											<h4>4th July</h4>
+
+											<p>
+												<a id="jh"
+													href="http://newbury.play-cricket.com/website/results/2348964">Phil
+													Davis, 89 runs chasing 204 and a cracking catch to boot!</a>
+											</p>
+										</div>
+									</div>
+									<div class="item">
+										<img class="img-responsive center-block"
+											src="https://googledrive.com/host/0B70qndiGPyERfmFLajRaNmpuRGNDU1hzQ1U3VkI4cWNuQzNCLTZtY1paRmFWdXhYbFQ1azA/fitzy.jpg">
+										<div class="carousel-caption">
+											<h3>Nick Fitzwilliam</h3>
+											<h4>11th July</h4>
+
+											<p>
+												<a id="jh"
+													href="http://newbury.play-cricket.com/website/results/2344210">Reincarnated
+													Nick Fitzwilliam produced a fine, steady 54 and took 3
+													catches</a>
+											</p>
+										</div>
+									</div>
+									<div class="item">
+										<img class="img-responsive center-block"
+											src="https://googledrive.com/host/0B70qndiGPyERfmFLajRaNmpuRGNDU1hzQ1U3VkI4cWNuQzNCLTZtY1paRmFWdXhYbFQ1azA/butt.jpg">
+										<div class="carousel-caption">
+											<h3>Chris Butt</h3>
+											<h4>11th July</h4>
+
+											<p>
+												<a id="jh"
+													href="http://newbury.play-cricket.com/website/results/2348965">Chris
+													Butt brewed a magical spell of 7 wickets.</a>
+											</p>
+										</div>
+									</div>
+									<div class="item">
+										<img class="img-responsive center-block"
+											src="https://googledrive.com/host/0B70qndiGPyERfmFLajRaNmpuRGNDU1hzQ1U3VkI4cWNuQzNCLTZtY1paRmFWdXhYbFQ1azA/driveyoungman.JPG">
+										<div class="carousel-caption">
+											<h3>Brad Alton</h3>
+											<h4>18th July</h4>
+
+											<p>
+												<a id="jh"
+													href="http://newbury.play-cricket.com/website/results/2346629">Brad
+													Alton lead the run chase with a fine 64.</a>
+											</p>
+										</div>
+									</div>
+									<div class="item">
+										<img class="img-responsive center-block"
+											src="https://googledrive.com/host/0B70qndiGPyERfmFLajRaNmpuRGNDU1hzQ1U3VkI4cWNuQzNCLTZtY1paRmFWdXhYbFQ1azA/phildavies_2.jpg">
+										<div class="carousel-caption">
+											<h3>Phil Davis</h3>
+											<h4>18th July</h4>
+
+											<p>
+												<a id="jh"
+													href="http://newbury.play-cricket.com/website/results/2348972">The
+													unstoppable Phil Davis scored 86 to set up a target of 254.</a>
+											</p>
+										</div>
+									</div>
+									<div class="item">
+										<img class="img-responsive center-block"
+											src="https://googledrive.com/host/0B70qndiGPyERfmFLajRaNmpuRGNDU1hzQ1U3VkI4cWNuQzNCLTZtY1paRmFWdXhYbFQ1azA/kiran_small.jpg">
+										<div class="carousel-caption">
+											<h3>Kiran P</h3>
+											<h4>1st August</h4>
+
+											<p>
+												<a id="jh"
+													href="http://newbury.play-cricket.com/website/results/2348984">Kiran,
+													the sultan of swing, took 5fer and decimated the
+													opposition.</a>
+											</p>
+										</div>
+									</div>
+									<div class="item">
+										<img class="img-responsive center-block"
+											src="https://googledrive.com/host/0B70qndiGPyERfmFLajRaNmpuRGNDU1hzQ1U3VkI4cWNuQzNCLTZtY1paRmFWdXhYbFQ1azA/eddie_small.jpg">
+										<div class="carousel-caption">
+											<h3>Ed Uden</h3>
+											<h4>22nd August</h4>
+
+											<p>
+												<a id="jh"
+													href="http://newbury.play-cricket.com/website/results/2344240">Ed
+													Uden played a cavalier 73 no chasing down 251 against
+													Falkland CC 2s.</a>
+											</p>
+										</div>
+									</div>
+									<div class="item">
+										<img class="img-responsive center-block"
+											src="https://googledrive.com/host/0B70qndiGPyERfmFLajRaNmpuRGNDU1hzQ1U3VkI4cWNuQzNCLTZtY1paRmFWdXhYbFQ1azA/josh1.jpg">
+										<div class="carousel-caption">
+											<h3>Josh Harris</h3>
+											<h4>29th August</h4>
+
+											<p>
+												<a id="jh"
+													href="http://newbury.play-cricket.com/website/results/2344245">Josh
+													Harris mixed aggression and resolve in his match winning 68
+													against division leaders Royal Ascot.</a>
+											</p>
+										</div>
+									</div>
+									<div class="item">
+										<img class="img-responsive center-block"
+											src="https://googledrive.com/host/0B70qndiGPyERfmFLajRaNmpuRGNDU1hzQ1U3VkI4cWNuQzNCLTZtY1paRmFWdXhYbFQ1azA/matt_corne.jpg">
+										<div class="carousel-caption">
+											<h3>Matt Corne</h3>
+											<h4>5th September</h4>
+
+											<p>
+												<a id="jh"
+													href="http://newbury.play-cricket.com/website/results/2344252">Matt
+													Corne Curtailed his usual flamboyance to score his maiden
+													50 and secure a draw for the team.</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- Left and right controls -->
+								<a class="left carousel-control" href="#poyCarousel"
+									role="button" data-slide="prev"> <span
+									class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a> <a class="right carousel-control" href="#poyCarousel"
+									role="button" data-slide="next"> <span
+									class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+						</div>
+
+
+
+
+
+
+
+						<!--  		<div class="POWAnnounce" id="b_announce">
 								<ul class="bxslider_pow">
 									<li><img class="img-responsive center-block"
 										src="https://googledrive.com/host/0B70qndiGPyERfmFLajRaNmpuRGNDU1hzQ1U3VkI4cWNuQzNCLTZtY1paRmFWdXhYbFQ1azA/untitled.png">
@@ -653,6 +1050,7 @@
 								</ul>
 							</div>
 						</div>
+					-->
 					</div>
 				</div>
 			</div>
@@ -667,7 +1065,7 @@
 						<div class="panel-body">
 							<div class="row">
 								<div class="col-lg-9 col-md-12 col-sm-12">
-									<p class="text-justify">The OSCAâ€™s (Outstanding Service to
+									<p class="text-justify">The OSCA’s (Outstanding Service to
 										Cricket Awards) are aimed at recognising and rewarding the
 										work, commitment and positive impact of volunteers. These
 										volunteers give so much of their time to the game of Cricket
@@ -687,7 +1085,7 @@
 									</p>
 									<p class="text-justify">OSCA (Heartbeat of the Club) award
 										is for that special volunteer that a cricket club simply
-										couldnâ€™t do without, often the roles they carry out are behind
+										couldn’t do without, often the roles they carry out are behind
 										the scenes. They often undertake a number of different roles,
 										and are always there to lend a hand.</p>
 									<p class="text-justify">Over the last 20 years and more,
@@ -886,10 +1284,10 @@
 										<div class="tab-pane fade" id="fees">
 											<div class="well well-sm">
 												<h4>
-													<small> The annual subscription is Â£90, the match
-														fee if selected to play is Â£10 per match. Students, and
+													<small> The annual subscription is £90, the match
+														fee if selected to play is £10 per match. Students, and
 														un-waged members get a 50% discount. Junior membership
-														(Â£35) is open to anyone aged under 17 on 1st September in
+														(£35) is open to anyone aged under 17 on 1st September in
 														the preceding year.</small>
 												</h4>
 
@@ -977,14 +1375,14 @@
 									<ul>
 										<li class="sky-tab-content-1">
 											<div>
-												<p>Newbury CC is seeking to raise Â£3,404 towards
+												<p>Newbury CC is seeking to raise £3,404 towards
 													replacement or refurbishment of essential grounds equipment and clubhouse interior facilities 
 													to continue to provide excellent sporting facilities for
 													local people including community groups and children.</p>
 												<p>Any donation that you make will be supplemented with
 													the same amount by Greenham Common Trust and GiftAid will
-													be added. As an example, a Â£10 donation will become Â£22.50
-													(Â£10 Greenham Trust topup + Â£2.50 GiftAid).</p>
+													be added. As an example, a £10 donation will become £22.50
+													(£10 Greenham Trust topup + £2.50 GiftAid).</p>
 												<p>So please donate generously to keep your favourite
 													cricket club in top shape.</p>												
 												<div class="container-fluid">
@@ -1306,6 +1704,15 @@
     });
 </script>
 
+<script type="text/javascript">
+	$(function () {
+    $('#poyCarousel').carousel({
+        interval: 5000,
+        pause: "false",
+    });
+	
+});
+</script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('.bxslider_rhsNews').bxSlider({
@@ -1406,5 +1813,3 @@
 			$('#progress').hide();
 		});
 	</script>
-</body>
-</html>	
