@@ -11,9 +11,9 @@
 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
 	rel="stylesheet" class="myLink" />
 <script type="text/javascript"
-		src="https://cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js"></script>
+	src="https://cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js"></script>
 <script
-		src="https://cdn.jsdelivr.net/bxslider/4.1.3/jquery.bxslider.min.js"></script>
+	src="https://cdn.jsdelivr.net/bxslider/4.1.3/jquery.bxslider.min.js"></script>
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/bxslider/4.1.3/jquery.bxslider.css"
 	class="myLink" />
@@ -26,6 +26,90 @@
 <link rel="stylesheet"
 	href="https://googledrive.com/host/0B70qndiGPyERfnFYMDFyQVY3TW5va1BPWlVwQ0UxNGJlYnBuZ0toZzNWTnhrT295VC1vWm8/fixtures_v2.css"
 	class="myLink" />
+
+<style>
+@media only screen and (min-width: 992px) {
+	.no-right-pad .results-tbl {
+		border-right: none
+	}
+	.no-left-pad .results-tbl {
+		border-left: none
+	}
+	.result-table-wrapper .row .col-md-6.no-right-pad {
+		padding-right: 0px !important
+	}
+	.result-table-wrapper .row .col-md-6.no-left-pad {
+		padding-left: 0px !important
+	}
+}
+
+@media ( min-width : 768px) and (max-width: 992px) {
+	.result-table-wrapper .row .col-md-6.no-left-pad .table-bordered {
+		border-top: 0px !important
+	}
+	.result-table-wrapper .row .col-md-6.no-right-pad .table-bordered {
+		border-bottom: 0px !important
+	}
+}
+
+.widget form {
+	margin: 0px 0px 10px;
+}
+
+.result-table-wrapper .header {
+	padding: 5px 10px;
+	background: #254117 none repeat scroll 0% 0%;
+	color: #FDD017;
+	border: 1px solid #CCC;
+}
+
+.fixture-result-icon {
+	border: 1px solid #999;
+	color: #FFF;
+	float: right;
+	font-weight: bold;
+	height: 20px;
+	margin: 0px 2px 2px 0px;
+	text-align: center;
+	width: 20px;
+}
+
+.result-w {
+	background: #029E10 none repeat scroll 0% 0%;
+}
+
+.result-l {
+	background: #CF2A27 none repeat scroll 0% 0%;
+}
+
+.result-d {
+	background: #ADD8E6 none repeat scroll 0% 0%;
+}
+
+.result-t {
+	background: #000080 none repeat scroll 0% 0%;
+}
+
+.result-m {
+	background: #555 none repeat scroll 0% 0%;
+}
+
+.result-a {
+	background: #aaa none repeat scroll 0% 0%;
+}
+
+.result-x {
+	background: #000000 none repeat scroll 0% 0%;
+}
+
+.result-green {
+	background: #029e10
+}
+
+.result-red {
+	background: #cf2a27
+}
+</style>
 
 </head>
 <body>
@@ -74,11 +158,10 @@
       ================================================== -->
 
 
-		<div
-			class="container-fluid clearfix">
+		<div class="container-fluid clearfix">
 			<div class="row">
 				<div class="col-md-9">
-					<h1>Fixtures for 2015 season</h1>
+					<h1>Fixtures for 2016 season</h1>
 
 				</div>
 				<div class="col-md-3">
@@ -103,175 +186,33 @@
 
 				</div>
 			</div>
-			<div class="col-xs-12">
-				<hr class="hor-divider" />
-			</div>
-
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-md-12 col-xs 12 col-sm-12">
+					<div id="subsite_popup"></div>
+					<div class="site_content clearfix">
+						<div class="clearfix" id="widgets">
+							<div class="fixtures_widget widget clearfix widget_container  "
+								id="559947"
+								style="top: px; left: px; max-width: px; width: 100%; height: px;">
+								<script type="text/javascript">
+									$.ajax({
+										url : "/website/widgets/" + 559947
+									//, 
+									//success: function(data) {  
+									//$('.main').css("min-height", $(document).height() - 80  + "px");
+									//}  
+									});
+								</script>
 
-					<div class="fixtures_widget widget clearfix widget_container  "
-						id="508572">
-						<script type="text/javascript">
-							$.ajax({
-								url : "/website/widgets/" + 508572
-							//, 
-							//success: function(data) {  
-							//$('.main').css("min-height", $(document).height() - 80  + "px");
-							//}  
-							});							
-						</script>
-				<div id='fixtures_508572'></div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12">
-						<div class="info">
-								<div class="alert alert-info" role="alert">
-									<p>
-										<i class="fa fa-info-circle fa-lg"></i> Information on Clubs
-										playing in Thames Valley Cricket League.
-									</p>
-								</div>
-								<ul class="unstyled">
-									<li><a href="http://www.tvlcricket.com/maps/index.html"
-										target="_blank">Ground locations and driving directions</a></li>
-									<li><a href="http://www.tvlcricket.com/clubs14.pdf"
-										target="_blank">Information for all clubs - PDF download
-											(409 kb) - </a></li>
-								</ul>
+								<div id='fixtures_559947'></div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- col -->
 			</div>
-			<!-- row -->
 		</div>
 		<!-- container -->
 
-		<!-- For mobiles -->
-<!-- 		<div
-			class="container-fluid clearfix visibile-xs hidden-lg hidden-md hidden-sm">
-			<div class="row">
-				<div class="col-md-9">
-					<h1>Fixtures for 2015 season<br><small>Thames Valley Cricket League</small></h1>
-				</div>
-				<div class="col-md-3">
-					<ul class="social-media-icons clearfix">
-						<li><a href="https://www.facebook.com/NewburyCricketClub"
-							target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="https://twitter.com/newburycc" target="_blank"
-							title="Twitter"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="mailto:newburycricketclub@googlegroups.com"
-							target="_blank" title="Email"><i class="fa fa-envelope"></i></a></li>
-					</ul>
-
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-12 hidden-lg hidden-md">
-					<div class="alert alert-dismissable alert-info">
-						<button type="button" class="close" data-dismiss="alert">×</button>
-						<p>
-							<strong>Heads up!</strong> This page is better if viewed in
-							landscape mode on your portable device.
-						</p>
-					</div>
-					<div class="alert alert-warning" role="alert">						
-						<p>
-							<strong><i class="fa fa-info-circle fa-lg"></i> Start
-								times:</strong> Last four games of the season <strong>start at
-								12:30pm.</strong> All other games start at 1:00pm.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12">
-				<hr class="hor-divider" />
-			</div>
-			<div class="row">
-				<div class="col-xs-12">
-
-					<ul class="nav nav-pills" style="margin-bottom: 10px;"
-						id="fixturesPills">
-						<li class="active"><a href="#1stXI" data-toggle="tab">Newbury
-								1st XI</a></li>
-						<li><a href="#2ndXI" data-toggle="tab">Newbury 2nd XI</a></li>
-						<li><a href="#3rdXI" data-toggle="tab">Newbury 3rd XI</a></li>
-
-					</ul>
-					<div id="myTabContent" class="tab-content">
-						<div class="tab-pane fade active in" id="1stXI">
-							<div class="fixtures_widget widget clearfix widget_container  "
-								id="510663">
-								<script type="text/javascript">
-									$.ajax({
-										url : "/website/widgets/" + 510663
-									//, 
-									//success: function(data) {  
-									//$('.main').css("min-height", $(document).height() - 80  + "px");
-									//}  
-									});
-								</script>
-
-								<div id='fixtures_510663'></div>
-							</div>
-						</div>
-						<div class="tab-pane fade" id="2ndXI">
-							<div class="fixtures_widget widget clearfix widget_container  "
-								id="510737">
-								<script type="text/javascript">
-									$.ajax({
-										url : "/website/widgets/" + 510737
-									//, 
-									//success: function(data) {  
-									//$('.main').css("min-height", $(document).height() - 80  + "px");
-									//}  
-									});
-								</script>
-
-								<div id='fixtures_510737'></div>
-							</div>
-						</div>
-
-						<div class="tab-pane fade" id="3rdXI">
-							<div class="fixtures_widget widget clearfix widget_container  "
-								id="510740">
-								<script type="text/javascript">
-									$.ajax({
-										url : "/website/widgets/" + 510740
-									//, 
-									//success: function(data) {  
-									//$('.main').css("min-height", $(document).height() - 80  + "px");
-									//}  
-									});
-								</script>
-
-								<div id='fixtures_510740'></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-12">
-					<div class="info">
-						<div class="alert alert-info" role="alert">
-							<p><i class="fa fa-info-circle fa-lg"></i> Information on Clubs
-								playing in Thames Valley Cricket League.
-							</p>
-						</div>
-						<ul class="unstyled">
-							<li><a href="http://www.tvlcricket.com/maps/index.html"
-								target="_blank">Ground locations and driving directions</a></li>
-							<li><a href="http://www.tvlcricket.com/clubs14.pdf"
-								target="_blank">Information for all	clubs - PDF download (409 kb) - </a></li>
-						</ul>
-					</div>
-				</div>			
-			</div>			
-		</div> -->
-		<!-- container -->
 		<!-- Footer ========================================== -->
 		<footer class="footer">
 			<div id="footercontainer"></div>
@@ -290,39 +231,43 @@
 	<script type="text/javascript">
 		$('table').addClass("table-condensed table-responsive");
 	</script>
-	<script type="text/javascript">				
-			$(document).ready(function() {
-				$("#headercontainer").load("/website/web_pages/195965 #ncc_banner",
-						function(){
-					$('.bxslider_bannerAnnounce').bxSlider({
-						mode: 'horizontal',
-						infiniteLoop : true,
-						auto : true,
-						autoStart: true,
-						autoDirection: 'next',
-						autoHover: true,
-						speed: 700,
-						pause: 3000,						
-						pager: false,						
-						infiniteLoop : true,
-						adaptiveHeight : true,
-						mode : 'fade',
-						autoControls: false,
-						captions : true,
-						controls : true
-					});
+	<script type="text/javascript">
+		$(document).ready(
+				function() {
+					$("#headercontainer").load(
+							"/website/web_pages/195965 #ncc_banner",
+							function() {
+								$('.bxslider_bannerAnnounce').bxSlider({
+									mode : 'horizontal',
+									infiniteLoop : true,
+									auto : true,
+									autoStart : true,
+									autoDirection : 'next',
+									autoHover : true,
+									speed : 700,
+									pause : 3000,
+									pager : false,
+									infiniteLoop : true,
+									adaptiveHeight : true,
+									mode : 'fade',
+									autoControls : false,
+									captions : true,
+									controls : true
+								});
+							});
+					$("#menucontainer").load(
+							"/website/web_pages/195965 #ncc_menu");
+					$("#footercontainer").load(
+							"/website/web_pages/195965 #ncc_footer",
+							function() {
+								$('.bxslider_footer').bxSlider({
+									minSlides : 2,
+									maxSlides : 4,
+									slideWidth : 160,
+									slideMargin : 10
+								});
+							});
 				});
-				$("#menucontainer").load("/website/web_pages/195965 #ncc_menu");
-				$("#footercontainer").load("/website/web_pages/195965 #ncc_footer",
-						function(){
-					$('.bxslider_footer').bxSlider({
-						minSlides : 2,
-						maxSlides : 4,
-						slideWidth : 160,
-						slideMargin : 10
-						});
-				});
-			});
 	</script>
 	<script type="text/javascript">
 		$('link').not('.myLink').remove();
