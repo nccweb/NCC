@@ -1,12 +1,12 @@
      
-<!-- /**
-* add all of this in a html widget FOR EACH PAGE
-* CHANGE THE TITLE AS PER THE PAGE
-*/-->
+<!-- 
+ add all of this in a html widget FOR EACH PAGE
+ CHANGE THE TITLE AS PER THE PAGE
+-->
 
  <!-- Google Analytics -->
 <script>
-$(document).prop('title', 'Newbury CC - Club partners');
+$(document).prop('title', 'Newbury CC - Honours Board');
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -23,17 +23,16 @@ ga('send', 'pageview');
 <!-- https://support.google.com/analytics/answer/1136920?hl=en -->
 
 <script>
-<!--/**
-* Function that tracks a click on an outbound link in Google Analytics.
-* This function takes a valid URL string as an argument, and uses that URL string
-* as the event label.
-*/
-/**
-* Track clicks to a link. If new_window is true the google analytics request
-* will be made synchronously, because browsers block new windows from opening unless
-* it is done DURING an on click event. If new_window is false, the request will
-* be made asynchronously, and the current window url will be changed.
-*/-->
+<!--
+ Function that tracks a click on an outbound link in Google Analytics.
+ This function takes a valid URL string as an argument, and uses that URL string
+ as the event label.
+
+ Track clicks to a link. If new_window is true the google analytics request
+ will be made synchronously, because browsers block new windows from opening unless
+ it is done DURING an on click event. If new_window is false, the request will
+ be made asynchronously, and the current window url will be changed.
+-->
 
 var trackOutboundLink = function(url, new_window) {
   ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
@@ -49,7 +48,7 @@ var trackOutboundLink = function(url, new_window) {
 }
 </script>
 
-<!--/** 
+<!-- 
 * Add an onclick event to all links with class name "track", which will trigger
 * the above defined trackOutboundLink function
 */-->
@@ -69,11 +68,11 @@ $(document).ready(function(){
 });
 </script>
 
-<!--/**
-* http://www.maxmakedesign.co.uk/development/2014/outbound-links-new-window-analytics/
-* how to use: <a class="track" href="/my-tracked-page-link">TRACKED LINK</a>
-* Simple add the class name track to html tag
-*/-->
+<!--
+	http://www.maxmakedesign.co.uk/development/2014/outbound-links-new-window-analytics/
+	how to use: <a class="track" href="/my-tracked-page-link">TRACKED LINK</a>
+	Simple add the class name track to html tag
+-->
       
     
 
