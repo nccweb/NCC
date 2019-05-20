@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>New Membership form</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" media="screen"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+	class="myLink">
+<link
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+	rel="stylesheet" class="myLink" />
+
+<link rel="stylesheet"
+	href="https://cdn.rawgit.com/nccweb/NCC/2017_v1.0/NCC/WebContent/CSS/v2/sky-tabs-homepage.css"
+	class="myLink" />
+<script type="text/javascript"
+		src="https://cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js"></script>
+<script
+		src="https://cdn.jsdelivr.net/bxslider/4.1.3/jquery.bxslider.min.js"></script>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/bxslider/4.1.3/jquery.bxslider.css"
+	class="myLink" />
+<link rel="stylesheet" media="screen"
+	href="https://cdn.rawgit.com/nccweb/NCC/2017_v1.0/NCC/WebContent/CSS/v2/pcss3mm_edit.css"
+	class="myLink" />
+<link rel="stylesheet"
+	href="https://cdn.rawgit.com/nccweb/NCC/2017_v1.0/NCC/WebContent/CSS/v2/ncc_base.css"
+	class="myLink" />
+</head>
+<body>
+	<script>
+		$(document).prop('title', 'Newbury CC - Junior Membership form');
+	</script>
+
+	<!-- Google Tag Manager -->
+	<noscript>
+		<iframe src="//www.googletagmanager.com/ns.html?id=GTM-WTM2FT"
+			height="0" width="0" style="display: none; visibility: hidden"></iframe>
+	</noscript>
+	<script>
+		(function(w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start' : new Date().getTime(),
+				event : 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l='
+					+ l
+					: '';
+			j.async = true;
+			j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-WTM2FT');
+	</script>
+	<!-- End Google Tag Manager -->
+
+	<div class="container">
+
+		<header class="masthead">
+			<div id="headercontainer"></div>
+		</header>
+
+		<!-- Menu  ================================================== -->
+
+		<div id="menucontainer"></div>
+
+		<!-- ==========menu end -->
+		<div class="col-xs-12">
+			<hr class="hor-divider" />
+		</div>
+
+		<!-- Find us
+      ================================================== -->
+
+
+		<div class="container-fluid clearfix">
+			<div class="row-fluid">
+				<div class="col-xs-12 col-md-12">
+					<!-- <iframe
+		src="https://docs.google.com/forms/d/1jZmSbK8HgRjMiiGnlKxOoDMsEM-LvxNCUi5kHTA8s8M/viewform?embedded=true"
+		frameborder="1" marginheight="0"
+		marginwidth="0">;</iframe> -->
+
+					<!-- 	<iframe class="col-md-12 well well-sm"
+           style="height: auto;"
+           src="https://docs.google.com/forms/d/1jZmSbK8HgRjMiiGnlKxOoDMsEM-LvxNCUi5kHTA8s8M/viewform?embedded=true">
+   </iframe> -->
+					<iframe
+						src="https://docs.google.com/forms/d/e/1FAIpQLScP_bndGh845sC6Yvyb-IoKX44tAYBYL6mT9-iGi_MyuKxLhg/viewform?embedded=true"
+						scrolling="auto" frameborder="0" height="1000px" width="100%"></iframe>
+				</div>
+				<!-- col -->
+			</div>
+			<!-- row -->
+		</div>
+		<!-- container -->
+		<!-- Footer ========================================== -->
+		<footer class="footer">
+			<div id="footercontainer"></div>
+		</footer>
+	</div>
+	<!-- Main container -->
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript">				
+			$(document).ready(function() {
+				$("#headercontainer").load("http://newbury.play-cricket.com/website/web_pages/195965 #ncc_banner",
+						function(){
+					$('.bxslider_bannerAnnounce').bxSlider({
+						auto : true,
+						speed: 700,
+						hideControlOnEnd: true,
+						infiniteLoop : false,
+						adaptiveHeight : true,
+						mode : 'fade',
+						captions : true,
+						controls : true
+					});
+				});
+				$("#menucontainer").load("http://newbury.play-cricket.com/website/web_pages/195965 #ncc_menu");
+				$("#footercontainer").load("http://newbury.play-cricket.com/website/web_pages/195965 #ncc_footer",
+						function(){
+					$('.bxslider_footer').bxSlider({
+						minSlides : 2,
+						maxSlides : 4,
+						slideWidth : 160,
+						slideMargin : 10
+						});
+				});
+			});
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function () { $('.dropdown-toggle').dropdown(); }); 
+	</script>
+	
+		<script type="text/javascript">
+		$('link').not('.myLink').remove();
+		jQuery('head script[src*="application-7fd426f9bca208f5a7b271011dc35e8b.js"]').remove();<!--new R2-->
+	</script>
+
+	<script type="text/javascript">
+		$( window ).load(function(){
+		$(".subnav").hide(); 
+		//$(".navbar").hide();
+		$('#footer_92961').hide();
+		$('#progress').hide();
+	});	
+	</script>
+
+</body>
+</html>
